@@ -1,0 +1,11 @@
+.test {
+    color: white;
+}
+
+#test {
+    color: black;
+}
+
+.image {
+    background-image: url('https://code.visualstudio.com/images/favicon.ico');
+}

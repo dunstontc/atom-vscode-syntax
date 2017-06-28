@@ -1,0 +1,36 @@
+.syntax--source.syntax--js {
+  .syntax--keyword.syntax--operator {
+    color: @tag_gray;
+
+
+    // keywords are definded in https://github.com/atom/language-javascript/blob/master/grammars/javascript.cson
+    // search "instanceof" for location
+    &.syntax--delete,
+    &.syntax--in,
+    &.syntax--of,
+    &.syntax--instanceof,
+    &.syntax--new,
+    &.syntax--typeof,
+    &.syntax--void {
+      color: lime;
+    }
+  }
+}
+
+atom-text-editor {
+  .syntax--variable.syntax--language.syntax--this.syntax--js {
+    color: @syntax-fg;
+  }
+  .syntax--boolean {
+      color: @blue_2;
+  }
+  .syntax--source {
+    .syntax--js {
+        .syntax--constant {
+            &.syntax--boolean {
+                color: @blue_2;
+            }
+        }
+    }
+  }
+}

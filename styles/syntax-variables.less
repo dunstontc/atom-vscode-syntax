@@ -1,0 +1,52 @@
+/* SYNTAX VARIABLES */
+
+@import 'colors';
+
+// General colors
+@syntax-text-color:            @syntax-fg;
+@syntax-cursor-color:          @syntax-accent;
+@syntax-selection-color:       lighten(@syntax-background-color, 15%);
+@syntax-selection-flash-color: @syntax-accent;
+@syntax-background-color:      @syntax-bg;
+
+// Guide colors
+@syntax-wrap-guide-color:          @syntax-guide;
+@syntax-indent-guide-color:        @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
+
+// For find and replace markers
+@syntax-result-marker-color:          fade(@syntax-accent, 24%);
+@syntax-result-marker-color-selected: @syntax-accent;
+
+// Gutter colors
+@syntax-gutter-text-color:                @syntax-gutter;
+@syntax-gutter-text-color-selected:       @syntax-fg;
+@syntax-gutter-background-color:          @syntax-bg; // unused
+@syntax-gutter-background-color-selected: lighten(@syntax-bg, 2%);
+
+// Git colors - For git diff info. i.e. in the gutter
+@syntax-color-renamed:  hsl(208, 100%, 60%);
+@syntax-color-added:    hsl(150,  60%, 54%);
+@syntax-color-modified: hsl(40,   60%, 70%);
+@syntax-color-removed:  hsl(0,    70%, 60%);
+
+// For language entity colors
+@syntax-color-variable:   @var-blue;
+@syntax-color-constant:   @num-green;
+@syntax-color-property:   @syntax-fg;
+@syntax-color-value:      @syntax-fg;
+@syntax-color-function:   @flow-pink;
+@syntax-color-method:     @func-yellow;
+@syntax-color-class:      @type-green;
+@syntax-color-keyword:    @flow-pink;
+@syntax-color-tag:        @blue_2;
+@syntax-color-attribute:  @var-blue;
+@syntax-color-import:     @syntax-fg;
+@syntax-color-snippet:    @comment-green; // Comments?
+
+// Custom Syntax Variables (Don't use in packages)
+@syntax-cursor-line:   lighten(@syntax-background-color, 5%); // needs to be semi-transparent to show serach results
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    white;
+@syntax-illegal-bg:    @syntax-color-removed;
