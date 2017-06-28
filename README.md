@@ -3,9 +3,7 @@
 Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>
 
 
-### TODO:
-
-  - __Language Support:__
+### Supported Languages:
 
     - [ ] HTML
     - [ ] CSS
