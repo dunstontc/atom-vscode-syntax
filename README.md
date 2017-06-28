@@ -1,5 +1,36 @@
+![vscode icon](./vscode.png)
+
 # dark-plus-syntax theme
 
-Visual Studio Code's `Dark+` (default dark) theme, ported to Atom.
+Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+
+### TODO:
+
+  - __Language Support:__
+
+    - [ ] HTML
+    - [ ] CSS
+    - [ ] LESS
+    - [ ] SASS & SCSS
+    - [ ] Markdown
+    - [ ] GFL
+    - [ ] JavaScript
+    - [ ] CoffeeScript
+    - [ ] JSON & CSON
+    - [ ] TypeScript
+    - [ ] JSX
+
+  - __General:__
+    - [ ] transition variables to syntax variables
+
+  - __HTML:__
+
+    - [ ] Script tag brackets
+
+
+  - __JavaScript:__
+
+    - [ ] Booleans
+    - [ ] Class brackets
+    - [ ] specific method brackets
