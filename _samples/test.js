@@ -1,52 +1,37 @@
-'use strict';
-
 const roko = require('');
 import { SelectListView, other } from 'atom-select-list';
-export default thing = 'empty';
-
+export default thing = 'empty'; // TODO: find type of default
 
 var funky = function () {
-    let sumtin = Math.floor(8 / 1); // TODO: Fix paren coloring
+    let sumtin = Math.floor(8 / 1);
     console.log('funky');
 }
 
-const superFunk = () => console.log('super funky');
+let superFunk = (something) => console.log(something);
 
-let ex = function(){
+let example = function (){
     if(true){
-        console.log('true');
+        for (number of ten) {
+            console.log(number);
+        };
+        for (x=0; x<10; x++) {};
     }
 }
-
-hola = function () {
-    let ten = 10;
-    for (number of ten) {
-
-    };
-    for (x=0; x<10; x++) {
-
-    }
-}
-
 
 let claysObject = {
-    int:                23,
     float:              23.23,
-    boolean:            true,  // TODO: boolean color: @blue_2
+    boolean:            false,
     string:             'here\'s a string',
-    string2:            "here is another string",
     templateLiteral:    `This template is ${idk} literal`,
     symbol:             symbolic,
-    regexp:             new RegExp( /\.jsx$/ ),
-    array:              ['four', 'two', 'zero']
+    regexp:             new RegExp( /\.jsx$/ ), // TODO: new instance -> @blue_2
 }
 
-// TODO: class curly brackets
 class Polygon {
   constructor(height, width) {
     this.name = 'Polygon';
     this.height = height;
-    this.width = width;
+    this.width = width;   // TODO: this --> @blue_2 && property --> @syntax-fg
   }
 }
 
@@ -56,3 +41,7 @@ class Square extends Polygon {
     this.name = 'Square';
   }
 }
+
+
+let fourCorners = new Square(4); // TODO: instance of needs to be @var-blue
+let four = fourCorners.height;
