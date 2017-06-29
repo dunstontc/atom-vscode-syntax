@@ -83,6 +83,9 @@
   &.syntax--numeric {
     color: @num-green;  // NOTE: numbers
   }
+  &.syntax--new {
+    color: @blue_2; // QUESTION:
+  }
 
   &.syntax--boolean {
     color: @blue_2;  // NOTE: boolean
@@ -114,8 +117,14 @@
   &.syntax--this {
     color: @blue_2;
   }
-}
 
+  // &.syntax--other.syntax--property {
+  &.syntax--property {
+    color: @syntax-text-color;
+  }
+
+}
+// syntax--other syntax--property syntax--js
 
 .syntax--string {
   color: @orange;  // NOTE: strings
@@ -133,7 +142,6 @@
     color: @orange;
   }
 }
-
 
 .syntax--punctuation {
   &.syntax--definition {
@@ -337,4 +345,11 @@
   &.syntax--raw {
     color: @orange;
   }
+}
+
+.syntax--html {
+  &.syntax--tag {
+    color: @tag_gray;
+  }
+
 }

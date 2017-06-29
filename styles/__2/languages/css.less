@@ -1,0 +1,54 @@
+.syntax--css {
+    .syntax--support {
+        &.syntax--constant {
+            color: @orange; // NOTE: CSS Enum
+        }
+
+        &.syntax--property-name {
+            color: @light-blue;
+            // text-align: center;
+        }
+    }
+
+    .syntax--keyword {
+        &.syntax--unit {
+            color: @puke;
+        }
+    }
+
+    .syntax--constant {
+        &.syntax--numeric {
+            color: @puke;
+        }
+
+        &.syntax--color {
+            color: @orange;
+
+            .syntax--punctuation {
+                // color: currentColor;
+                // color: lime;  // QUESTION:
+            }
+        }
+    }
+
+    .syntax--entity {
+        &.syntax--tag {
+            color: @dark-blue; // NOTE: html element names
+        }
+
+        &.syntax--id {
+            color: @dark-yellow;
+        }
+        &.syntax--other.syntax--attribute-name {
+            color: @dark-yellow;
+        }
+    }
+
+    .syntax--punctuation {
+      color: @light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
+        .syntax--delimiter {
+            // color: ;
+            color: lime;  // QUESTION:
+        }
+    }
+}

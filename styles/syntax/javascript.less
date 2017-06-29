@@ -1,38 +1,50 @@
 atom-text-editor {
-  .syntax--source.syntax--js {
-
+  // .syntax--keyword.syntax--operator.syntax--js {
+  //   color: maroon;
+  // }
+  .syntax--js {
     .syntax--keyword.syntax--operator {
-      color: @syntax-fg;  // TODO: what <--
+      // color: @var-blue;  // TODO: what <--
+      &.syntax--default {
+        color: @flow-pink;
+      }
 
       &.syntax--delete,
       &.syntax--in,
-      &.syntax--of,
       &.syntax--instanceof,
-      &.syntax--new,
-      &.syntax--default,
       &.syntax--typeof,
       &.syntax--void {
-        color: @tag_gray; // QUESTION:
+        color: @flow-pink; // QUESTION:
       }
 
+      // &.syntax--of {
+      //   // color: @tag_gray; // QUESTION:
+      //   color: lime;
+      // }
+
+      &.syntax--new {
+        color: @blue_2; // QUESTION:
+      }
+    }
+    .syntax--variable {
       &.syntax--this {
-        color: #00deaf;
+        color: #00deaf; // NOTE: this $$$:
+      }
+
+      &.syntax--of {
+        // color: @tag_gray; // QUESTION:
+        color: lime;
+        // QUESTION:
       }
     }
     .syntax--entity {
-        // color: maroon; // NOTE: ${} # . &
-      &.syntax--name.syntax--type {
-        color: @blue_2;
-      }
-      .syntax--punctuation.syntax--begin,
-      .syntax--punctuation.syntax--end
+      // color: maroon; // NOTE: ${} # . &
       // .syntax--delimiter.syntax--object.syntax--comma
       // .syntax--brace.syntax--curly
-      {
-          color: @blue_2; // NOTE: ${}
+      .syntax--punctuation.syntax--begin,
+      .syntax--punctuation.syntax--end {
+        color: @blue_2; // NOTE: ${}
       }
     }
-
-
-    }
   }
+}
