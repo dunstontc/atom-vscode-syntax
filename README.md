@@ -2,19 +2,19 @@
 
 # dark-plus-syntax theme
 
-Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>
+Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>  
 
-### Supported Languages:
+## Supported Languages:
 
-    - [ ] HTML
-    - [ ] CSS
-    - [ ] LESS
-    - [ ] SASS & SCSS
-    - [ ] Markdown
-    - [ ] GFL
-    - [ ] JavaScript
-    - [ ] CoffeeScript
-    - [ ] JSON & CSON
-    - [ ] TypeScript
-    - [ ] JSX
-    - [ ] VUE
+  - [ ] HTML
+  - [ ] CSS
+  - [ ] LESS
+  - [ ] SASS & SCSS
+  - [ ] Markdown
+  - [ ] GFL
+  - [ ] JavaScript
+  - [ ] CoffeeScript
+  - [x] JSON & CSON
+  - [ ] TypeScript
+  - [ ] JSX
+  - [ ] VUE
