@@ -1,36 +1,38 @@
-.syntax--source.syntax--js {
-  .syntax--keyword.syntax--operator {
-    color: @tag_gray;
-
-
-    // keywords are definded in https://github.com/atom/language-javascript/blob/master/grammars/javascript.cson
-    // search "instanceof" for location
-    &.syntax--delete,
-    &.syntax--in,
-    &.syntax--of,
-    &.syntax--instanceof,
-    &.syntax--new,
-    &.syntax--typeof,
-    &.syntax--void {
-      color: lime;
-    }
-  }
-}
-
 atom-text-editor {
-  .syntax--variable.syntax--language.syntax--this.syntax--js {
-    color: @syntax-fg;
-  }
-  .syntax--boolean {
-      color: @blue_2;
-  }
-  .syntax--source {
-    .syntax--js {
-        .syntax--constant {
-            &.syntax--boolean {
-                color: @blue_2;
-            }
-        }
+  .syntax--source.syntax--js {
+
+    .syntax--keyword.syntax--operator {
+      color: @syntax-fg;  // TODO: what <--
+
+      &.syntax--delete,
+      &.syntax--in,
+      &.syntax--of,
+      &.syntax--instanceof,
+      &.syntax--new,
+      &.syntax--default,
+      &.syntax--typeof,
+      &.syntax--void {
+        color: @tag_gray; // QUESTION:
+      }
+
+      &.syntax--this {
+        color: #00deaf;
+      }
+    }
+    .syntax--entity {
+        // color: maroon; // NOTE: ${} # . &
+      &.syntax--name.syntax--type {
+        color: @blue_2;
+      }
+      .syntax--punctuation.syntax--begin,
+      .syntax--punctuation.syntax--end
+      // .syntax--delimiter.syntax--object.syntax--comma
+      // .syntax--brace.syntax--curly
+      {
+          color: @blue_2; // NOTE: ${}
+      }
+    }
+
+
     }
   }
-}
