@@ -1,19 +1,15 @@
 atom-text-editor {
-    .syntax--js,
     .syntax--source.syntax--js {
-      // color: @light-blue;  // FIXME: variables aren't correctly targeted.
-      &.syntax--variable {
-        // color: @light-blue;
-      }
+      color: @light-blue;  // FIXME: variables aren't correctly targeted.
     }
     .syntax--source.syntax--js,
     .syntax--js {
         .syntax--keyword.syntax--operator {
             // color: @light-blue;  // NOTE: some control
             &.syntax--default {
-                // color: @pink;
             }
-            &.syntax--delete, &.syntax--in,
+            &.syntax--delete,
+            &.syntax--in,
             // &.syntax--of,
             &.syntax--instanceof,
             &.syntax--typeof,
@@ -26,8 +22,7 @@ atom-text-editor {
         }
 
         .syntax--variable {
-            &.syntax--language,
-            &.syntax--this {
+            &.syntax--language{
                 color: @dark-blue; // NOTE: this $$$:
             }
 
@@ -37,44 +32,60 @@ atom-text-editor {
         }
 
         &.syntax--meta { // TODO: Yeah, looking into meta
-          color: @very-light-gray;
+          // color: @very-light-gray;
             &.syntax--class { // NOTE: brackets
                 color: @sefoam-green;
             }
             &.syntax--arguments {
               // color: @light-blue;
+              color: @very-light-gray;
             }
         }
 
-        &.syntax--meta {
+        &.syntax--punctuation {
             // color: maroon; // NOTE: ${} # . &
-            &.syntax--delimiter.syntax--object.syntax--comma,
-            &.syntax--brace.syntax--curly,
-            &.syntax--punctuation.syntax--begin,
-            &.syntax--punctuation.syntax--end {
-                // color: @dark-blue; // NOTE: ${}
+            &.syntax--definition {
+              &.syntax--bracket.syntax--curly {
+                color: @very-light-gray;
+              }
+              &.syntax--brace {
+                &.syntax--curly,
+                &.syntax--square,
+                &.syntax--round {
+                  color: @very-light-gray;
+              }
+              &.syntax--delimiter.syntax--object.syntax--comma,
+              &.syntax--punctuation.syntax--begin,
+              &.syntax--punctuation.syntax--end {
+                  color: maroon; // NOTE: ${}
+              }
+              }
             }
-            // }
         }
-        // &.syntax--other {
+        &.syntax--other {
           &.syntax--readwrite {
-              color: black;
+              // color: black; // NOTE: This can define variables in Babel
           }
 
-          &.syntax--property {
-              color: black;
+          &.syntax--variable {
+            // color: maroon;  // NOTE: Variables, regex interpolation, (uquoted strings?)
+
+
+            &.syntax--parameter {
+              color: maroon;  // QUESTION: define
+            }
           }
-        // }
+        }
     }
     // &.syntax--class {
     //     // color: @sefoam-green;
     // }
     // .syntax--variable {
-    //   color: @var-blue;  // NOTE: Variables, regex interpolation, (uquoted strings?)
+    //   color: maroon;  // NOTE: Variables, regex interpolation, (uquoted strings?)
     //
     //
     //   &.syntax--parameter {
-    //     color: @var-blue;  // QUESTION: define
+    //     color: maroon;  // QUESTION: define
     //   }
     //
     //   &.syntax--this {

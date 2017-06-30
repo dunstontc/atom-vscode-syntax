@@ -5,7 +5,8 @@ atom-text-editor {
     .syntax--js.syntax--jsx,
     .syntax--jsx,
     .syntax--jsx.syntax--js {
-        .syntax--keyword.syntax--operator {
+      color: @very-light-gray;
+        &.syntax--keyword.syntax--operator {
             // color: @var-blue;  // TODO: what <--
             &.syntax--default {
                 color: @pink;
@@ -27,16 +28,14 @@ atom-text-editor {
             }
         }
 
-        .syntax--variable {
-            &.syntax--of {
-                // color: @tag_gray;
-                color: lime; // QUESTION:
-            }
-        }
+        // .syntax--variable {
+        //     &.syntax--of {
+        //         // color: @light-gray;
+        //     }
+        // }
 
         .syntax--entity {
-            // color: maroon; // NOTE: ${} # . &
-            // .syntax--delimiter.syntax--object.syntax--comma
+            .syntax--delimiter.syntax--object.syntax--comma,
             .syntax--brace.syntax--curly,
             .syntax--punctuation.syntax--begin,
             .syntax--punctuation.syntax--end {

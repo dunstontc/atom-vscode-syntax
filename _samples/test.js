@@ -9,7 +9,9 @@ var funky = function () {
 
 let superFunk = (something) => console.log(something);
 
-let example = function (){
+let hurrah = [1, 3, 'seven', debugger];
+
+let example = function () {
     if(true){
         for (number of ten) {
             console.log(number);
@@ -17,7 +19,6 @@ let example = function (){
         for (x=0; x<10; x++) {};
     }
 }
-const anything = 2;
 
 let claysObject = {
     float:              23.23,
@@ -25,14 +26,14 @@ let claysObject = {
     string:             'here\'s a string',
     templateLiteral:    `This template is ${idk} literal`,
     symbol:             symbolic,
-    regexp:             new RegExp( /\.jsx$/ ), // TODO: new instance -> @blue_2
+    regexp:             new RegExp( /\.jsx$/ ),
 }
 
 class Polygon {
   constructor(height, width) {
     this.name = 'Polygon';
     this.height = height;
-    this.width = width;   // TODO: this --> @blue_2 && property --> @syntax-fg
+    this.width = width;
   }
 }
 
@@ -43,5 +44,5 @@ class Square extends Polygon {
   }
 }
 
-let fourCorners = new Square(4); // TODO: instance of needs to be @var-blue
+let fourCorners = new Square(4);
 let four = fourCorners.height;
