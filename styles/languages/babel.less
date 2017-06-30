@@ -1,0 +1,57 @@
+atom-text-editor {
+    // .syntax--keyword.syntax--operator.syntax--js {
+    //   color: maroon;
+    // }
+    .syntax--js.syntax--jsx,
+    .syntax--jsx,
+    .syntax--jsx.syntax--js {
+        .syntax--keyword.syntax--operator {
+            // color: @var-blue;  // TODO: what <--
+            &.syntax--default {
+                color: @pink;
+            }
+
+            &.syntax--delete,
+            &.syntax--in,
+            &.syntax--instanceof,
+            &.syntax--typeof,
+            &.syntax--void {
+                color: @pink; // QUESTION:
+            }
+            // &.syntax--of {
+            //   // color: @tag_gray; // QUESTION:
+            //   color: lime;
+            // }
+            &.syntax--new {
+                color: maroon; // QUESTION:
+            }
+        }
+
+        .syntax--variable {
+            &.syntax--of {
+                // color: @tag_gray;
+                color: lime; // QUESTION:
+            }
+        }
+
+        .syntax--entity {
+            // color: maroon; // NOTE: ${} # . &
+            // .syntax--delimiter.syntax--object.syntax--comma
+            .syntax--brace.syntax--curly,
+            .syntax--punctuation.syntax--begin,
+            .syntax--punctuation.syntax--end {
+                color: @dark-blue; // NOTE: ${}
+            }
+        }
+    }
+}
+// .syntax--entity {
+//     &.syntax--name {
+//         &.syntax--function {
+//             color: @light-yellow;
+//         }
+//
+//         &.syntax--type {
+//             color: @sefoam-green; // NOTE: console, regexp TODO: Add Math here
+//         }
+//     }

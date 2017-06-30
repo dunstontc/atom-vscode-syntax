@@ -1,23 +1,24 @@
 .syntax--punctuation {
     &.syntax--definition {
         &.syntax--comment {
-            color: @syntax-comment-color;
+            // color: @syntax-comment-color;
+            color: @syntax-color-comment; NOTE: comment backslashes
         }
 
         &.syntax--array,
         &.syntax--parameters,
         &.syntax--string,
         &.syntax--variable {
-            // color: ;
+          // color: @very-light-gray; // NOTE: ()s & ''/""/``s
 
             &.syntax--begin, &.syntax--end {
-                // color: ;
+                color: @very-light-gray; // NOTE: ()s & ''/""/``s
             }
         }
 
         &.syntax--heading,
         &.syntax--identity {
-            // color: ;
+          color: @very-light-gray;
         }
 
         &.syntax--bold {
@@ -31,27 +32,29 @@
         }
 
         &.syntax--entity {
-            // color: ;
+          color: @very-light-gray;
+
         }
     }
 
     &.syntax--section {
         &.syntax--array {
-            // color: ;
+          color: @very-light-gray;
         }
 
         &.syntax--embedded {
-            // color: ;
+          color: @very-light-gray;
         }
     }
 
     &.syntax--separator {
         &.syntax--key-value {
-            // color: ;
+                color: @very-light-gray;
         }
     }
 
     &.syntax--terminator {
-        // color: ;
+      color: @very-light-gray;
+
     }
 }

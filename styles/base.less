@@ -1,31 +1,32 @@
-@import "colors";
-@import "variables";
+@import "./colors";
+@import "./variables";
 
-// // @import "./syntax/comment";
-// @import "./syntax/keyword";
-// // @import "./syntax/storage";
-// @import "./syntax/constant";
-// @import "./syntax/variable";
-// // @import "./syntax/invalid";
-// @import "./syntax/string";
-// @import "./syntax/punctuation";
-// @import "./syntax/support";
-// @import "./syntax/entity";
-// @import "./syntax/meta";
-// // @import "./syntax/none";
-// @import "./syntax/markup";
+
+// @import "./syntax/comment";
+@import "./syntax/keyword";
+// @import "./syntax/storage";
+@import "./syntax/const-var";
+// @import "./syntax/invalid";
+@import "./syntax/string";
+@import "./syntax/punctuation";
+@import "./syntax/support";
+@import "./syntax/entity";
+@import "./syntax/meta";
+// @import "./syntax/none";
+@import "./syntax/markup";
 
 
 .syntax--comment {
+    // color: @syntax-comment-color;
     color: @syntax-color-comment;
 }
 .syntax--storage {
-    // color: ;
+    color: @dark-blue;
 }
 
 .syntax--invalid.syntax--illegal {
     background-color: @syntax-text-color;
-    color: @syntax-background-color;
+    color: @syntax-bg;
 }
 
 .syntax--none {

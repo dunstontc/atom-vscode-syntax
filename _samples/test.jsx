@@ -17,7 +17,6 @@ let example = function (){
         for (x=0; x<10; x++) {};
     }
 }
-const anything = 2;
 
 let claysObject = {
     float:              23.23,
@@ -42,6 +41,7 @@ class Square extends Polygon {
     this.name = 'Square';
   }
 }
+
 
 let fourCorners = new Square(4); // TODO: instance of needs to be @var-blue
 let four = fourCorners.height;

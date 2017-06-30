@@ -1,34 +1,54 @@
 .syntax--meta {
+    &.syntax--definition {
+      // color: @light-blue;
+        &.syntax--variable {
+            // color: @light-blue;
+            // QUESTION: define
+        }
+    }
+
     &.syntax--class {
-        // color: ;
+        // color: @sefoam-green;
     }
 
     &.syntax--delimiter {
         &.syntax--period {
-            // color: ;
+            // color: @pink;
         }
     }
-
+    &.syntax--function {
+      &.syntax--parameters.syntax--js {
+        color: lime;
+        .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
+          // font-style: italic;
+          // color: lime;
+        }
+      }
+      &.syntax--arguments {
+        // color: lime;
+        font-style: italic;
+      }
+    }
     &.syntax--link {
         // color: ;
     }
 
     &.syntax--require {
-        // color: ;
+        color: @light-yellow; // NOTE: 'require' for Babel
     }
-
-    &.syntax--selector {
-        // color: ;
-    }
-
+    // &.syntax--selector {
+    //     color: @light-blue;
+    // }
     &.syntax--separator {
         // background-color: ;
-        // color: @syntax-text-color;
+        // color: maroon;
     }
 
     &.syntax--brace {
-        &.syntax--round, &.syntax--square {
-            // color: ;  // NOTE: brackets
+        &.syntax--round,
+        &.syntax--square {
+            color: @very-light-gray;
+            // NOTE: brackets
         }
     }
 }

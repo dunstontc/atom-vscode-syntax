@@ -1,44 +1,45 @@
 .syntax--entity {
     &.syntax--name {
         &.syntax--function {
-            // color: ;
+            color: @light-yellow;
         }
 
         &.syntax--type {
-            // color: ;
+            color: @sefoam-green; // NOTE: console, regexp TODO: Add Math here
         }
     }
 
     &.syntax--other {
         &.syntax--inherited-class {
-            // color: ;
+            color: @sefoam-green;
         }
 
         &.syntax--attribute-name {
             &.syntax--pseudo-element {
-                // color: ;
+                // color: maroon;
             }
 
             &.syntax--attribute {
-                // color: ;
+                // color: @very-light-gray;
             }
         }
     }
 
     &.syntax--name.syntax--class,
     &.syntax--name.syntax--type.syntax--class {
-        // color: ;
+        color: @sefoam-green;  // NOTE: Babel Classes/Types
     }
 
     &.syntax--name.syntax--section {
-        // color: ;
+        // color: maroon;
     }
 
     &.syntax--name.syntax--tag {
-        // color: ;
+        color: pink;
     }
 
     &.syntax--other.syntax--attribute-name {
-        // color: ;
+        // color: @very-light-gray;
+        // color: @light-blue;
     }
 }

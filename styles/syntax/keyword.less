@@ -1,23 +1,38 @@
 .syntax--keyword {
-    // color: ;
+  // color: @sefoam-green;
 
     &.syntax--control {
-        // color: ;
+        color: @pink;
 
         &.syntax--elements {
-            // color: ;
+            color: @pink;
+        }
+
+        &.syntax--module {
+            color: @very-light-gray; // NOTE: import, export, from, default in JavaScript
+        }
+        &.syntax--new {
+          color: black;
+          font-style: italic;
         }
     }
 
     &.syntax--operator {
-        // color: ;
+        color: @very-light-gray; // NOTE: =, /, of, new, :, >, <, ++
+
+
+        &.syntax--new,
+        &.syntax--this
+        {
+           color: @dark-blue; // TODO: define new in Babel/JSX
+        }
     }
 
     &.syntax--other.syntax--special-method {
-        // color: ;
+        // color: @sefoam-green;
     }
 
     &.syntax--other.syntax--unit {
-        // color: ;
+        // color: @puke;
     }
 }

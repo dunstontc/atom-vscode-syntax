@@ -1,0 +1,95 @@
+atom-text-editor {
+    .syntax--js,
+    .syntax--source.syntax--js {
+      // color: @light-blue;  // FIXME: variables aren't correctly targeted.
+      &.syntax--variable {
+        // color: @light-blue;
+      }
+    }
+    .syntax--source.syntax--js,
+    .syntax--js {
+        .syntax--keyword.syntax--operator {
+            // color: @light-blue;  // NOTE: some control
+            &.syntax--default {
+                // color: @pink;
+            }
+            &.syntax--delete, &.syntax--in,
+            // &.syntax--of,
+            &.syntax--instanceof,
+            &.syntax--typeof,
+            &.syntax--void {
+                // color: @pink; // QUESTION:
+            }
+            &.syntax--new {
+                color: @dark-blue;
+            }
+        }
+
+        .syntax--variable {
+            &.syntax--language,
+            &.syntax--this {
+                color: @dark-blue; // NOTE: this $$$:
+            }
+
+            &.syntax--property {
+                color: @very-light-gray; // NOTE: Property in JavaScript
+            }
+        }
+
+        &.syntax--meta { // TODO: Yeah, looking into meta
+          color: @very-light-gray;
+            &.syntax--class { // NOTE: brackets
+                color: @sefoam-green;
+            }
+            &.syntax--arguments {
+              // color: @light-blue;
+            }
+        }
+
+        &.syntax--meta {
+            // color: maroon; // NOTE: ${} # . &
+            &.syntax--delimiter.syntax--object.syntax--comma,
+            &.syntax--brace.syntax--curly,
+            &.syntax--punctuation.syntax--begin,
+            &.syntax--punctuation.syntax--end {
+                // color: @dark-blue; // NOTE: ${}
+            }
+            // }
+        }
+        // &.syntax--other {
+          &.syntax--readwrite {
+              color: black;
+          }
+
+          &.syntax--property {
+              color: black;
+          }
+        // }
+    }
+    // &.syntax--class {
+    //     // color: @sefoam-green;
+    // }
+    // .syntax--variable {
+    //   color: @var-blue;  // NOTE: Variables, regex interpolation, (uquoted strings?)
+    //
+    //
+    //   &.syntax--parameter {
+    //     color: @var-blue;  // QUESTION: define
+    //   }
+    //
+    //   &.syntax--this {
+    //     color: @blue_2;
+    //   }
+    //
+    //   // &.syntax--other.syntax--property {
+    //   &.syntax--property {
+    //     color: @syntax-text-color;
+    //   }
+    //
+    // }
+    // // syntax--other syntax--property syntax--js
+    // &.syntax--definition {
+    //   &.syntax--variable {
+    //     color: @var-blue;  // QUESTION: define
+    //   }
+}

@@ -1,45 +1,64 @@
 .syntax--constant {
-    // color: ;
+    color: @light-blue;
 
     &.syntax--character.syntax--escape {
-        // color: ;
+        color: @light-blue;
     }
 
     &.syntax--numeric {
-        // color: ;
+        color: @puke;
     }
 
-    &.syntax--other.syntax--color {
-        // color: ;
+    &.syntax--boolean {
+        color: @dark-blue;
     }
 
-    &.syntax--other.syntax--symbol {
-        // color: ;
+    &.syntax--other {
+        &.syntax--color {
+            // color: maroon;
+            .syntax--constant {
+                color: black;
+            }
+        }
+
+        &.syntax--symbol {
+            color: maroon;
+        }
     }
 
     &.syntax--language.syntax--null {
-        // color: ;
+        color: maroon;
     }
 }
 
 .syntax--variable {
-    // color: ;
+    color: @light-blue;
 
     &.syntax--interpolation {
-        // color: ;
+        color: @light-blue;
     }
 
     &.syntax--parameter.syntax--function {
-        // color: ;
+        color: @light-blue;
     }
 
     &.syntax--language {
-        // color: ;
+        color: @pink;
+        NOTE : default, this;
     }
 
-    &.syntax--variable {
-        &.syntax--object {
-            // color: ;
-        }
+    &.syntax--object {
+        color: @light-blue;
     }
+
+    // &.syntax--other {
+        // color: @light-blue;
+        &.syntax--readwrite {
+            // color: black;
+        }
+
+        &.syntax--property {
+            // color: black;
+        }
+    // }
 }
