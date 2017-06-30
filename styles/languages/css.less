@@ -20,14 +20,8 @@
         &.syntax--numeric {
             color: @puke;
         }
-
         &.syntax--color {
             color: @orange;
-
-            .syntax--punctuation {
-                // color: currentColor;
-                // color: lime;  // QUESTION:
-            }
         }
     }
 
@@ -45,12 +39,19 @@
     }
 
     .syntax--punctuation {
-      color: @light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
+      color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
+      &.syntax--definition {
+        &.syntax--entity {
+          color: @dark-yellow;
+
+        }
+      }
         .syntax--delimiter {
             // color: ;
             color: lime;  // QUESTION:
         }
     }
+
 }
 // .syntax--keyword {
   // &.syntax--scss,

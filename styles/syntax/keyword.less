@@ -20,10 +20,13 @@
     &.syntax--operator {
         color: @very-light-gray; // NOTE: =, /, of, new, :, >, <, ++
 
-
+        &.syntax--module {
+          &.syntax--all {
+            color: @light-blue; // TODO: this in vanilla
+          }
+        }
         &.syntax--new,
-        &.syntax--this
-        {
+        &.syntax--this {
            color: @dark-blue; // TODO: define new in Babel/JSX
         }
     }

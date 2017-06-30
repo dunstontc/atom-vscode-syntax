@@ -5,17 +5,36 @@
             color: @syntax-color-comment; NOTE: comment backslashes
         }
 
+        &.syntax--parameters {
+          color: @very-light-gray; // TODO: Tweak to @dark-blue
+        }
+
+        &.syntax--modules {
+          color: @very-light-gray;
+
+          &.syntax--begin,
+          &.syntax--end {
+            color: @very-light-gray // FIXME: redundant? other things in 'syntax--module'?
+          }
+        }
         &.syntax--array,
-        &.syntax--parameters,
         &.syntax--string,
         &.syntax--variable {
-          color: @very-light-gray; // NOTE: ()s & ''/""/``s
+          // color: @dark-blue; // NOTE: ()s & ''/""/``s
 
             &.syntax--begin, &.syntax--end {
-                color: @very-light-gray; // NOTE: ()s & ''/""/``s
+              // color: @dark-blue; // NOTE: ()s & ''/""/``s
+                // color: @very-light-gray; // NOTE: ()s & ''/""/``s
             }
         }
 
+        &.syntax--string .syntax--quoted .syntax--template {
+          .syntax--begin,
+          .syntax--end {
+            color: @dark-blue; // NOTE: ()s & ''/""/``s
+              // color: @very-light-gray; // NOTE: ()s & ''/""/``s
+          }
+        }
         &.syntax--heading,
         &.syntax--identity {
           color: @very-light-gray;
@@ -32,7 +51,7 @@
         }
 
         &.syntax--entity {
-          color: @very-light-gray;
+          // color: @very-light-gray;
 
         }
     }
@@ -43,7 +62,7 @@
         }
 
         &.syntax--embedded {
-          color: @very-light-gray;
+          color: @dark-blue;
         }
     }
 
@@ -57,4 +76,10 @@
       color: @very-light-gray;
 
     }
+}
+
+.syntax--template {
+  .syntax--punctuation {
+    color: @dark-blue;
+  }
 }
