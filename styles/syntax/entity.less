@@ -1,0 +1,42 @@
+.syntax--entity {
+    &.syntax--name {
+        &.syntax--function {
+            color: @light-yellow;
+        }
+
+        &.syntax--type {
+            color: @sefoam-green; // NOTE: console, regexp TODO: Add Math here
+        }
+    }
+
+    &.syntax--other {
+        &.syntax--inherited-class {
+            color: @sefoam-green;
+        }
+
+        &.syntax--attribute-name {
+            &.syntax--pseudo-element {
+                color: maroon;
+            }
+
+            &.syntax--attribute {
+                color: @very-light-gray;
+                color: maroon;
+            }
+        }
+    }
+
+    &.syntax--name.syntax--class,
+    &.syntax--name.syntax--type.syntax--class {
+        color: @sefoam-green;  // NOTE: Babel Classes/Types
+    }
+
+    .syntax--name.syntax--section {
+        color: maroon;
+    }
+
+    &.syntax--name.syntax--tag {
+        color: @dark-blue;
+    }
+
+}

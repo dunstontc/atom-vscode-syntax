@@ -1,43 +1,47 @@
 .syntax--markup {
-  &.syntax--bold {
-    color: @flow-pink;
-    font-weight: bold;
-  }
-
-  &.syntax--changed {
-    color: @blue_2;
-  }
-
-  &.syntax--deleted {
-    color: @regex-red;
-  }
-
-  &.syntax--italic {
-    color: @var-blue;
-    font-style: italic;
-  }
-
-  &.syntax--heading {
-    color: @blue_2;
-
-    .syntax--punctuation.syntax--definition.syntax--heading {
-      color: @blue_2;
+    &.syntax--bold {
+        color: @purple;
+        font-weight: bold;
     }
-  }
 
-  &.syntax--link {
-    color: @orange;
-  }
+    &.syntax--changed {
+        color: @dark-blue;
+    }
 
-  &.syntax--inserted {
-    color: @num-green;
-  }
+    &.syntax--deleted {
+        color: @light-red;
+    }
 
-  &.syntax--quote {
-    color: @comment-green;
-  }
+    &.syntax--italic {
+        color: @light-blue;
+        font-style: italic;
+    }
 
-  &.syntax--raw {
-    color: orange;
-  }
+    &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+        color: @dark-blue;
+    }
+
+    &.syntax--inserted {
+        color: @puke;
+    }
+
+    &.syntax--list {
+        // color: ; TODO: List '-' or '*'
+    }
+
+    &.syntax--quote {
+        // color: ;
+    }
+
+    &.syntax--raw.syntax--inline {
+        // color: ;
+    }
+}
+
+.syntax--source.syntax--gfm .syntax--markup {
+    -webkit-font-smoothing: auto;
+
+    &.syntax--heading {
+        color: @sefoam-green;
+    }
 }

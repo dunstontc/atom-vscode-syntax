@@ -1,0 +1,25 @@
+.syntax--support {
+    &.syntax--class {
+        color: @sefoam-green;
+    }
+
+    &.syntax--function {
+        color: @light-yellow; // NOTE: console.log, math.floor
+
+        &.syntax--any-method {
+            color: @pink;
+        }
+    }
+
+    &.syntax--type {
+        &.syntax--object{
+          color: @sefoam-green;  // NOTE: Console in Babel
+        }
+    }
+
+    &.syntax--variable {
+        &.syntax--dom {
+            // color: @light-blue;
+        }
+    }
+}

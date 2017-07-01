@@ -31,6 +31,8 @@ let claysObject = {
     regexp:             new RegExp( /\.jsx$/ ),
 }
 
+let that = /.jsx$/;
+
 class Polygon {
   constructor(height, width) {
     this.name = 'Polygon';

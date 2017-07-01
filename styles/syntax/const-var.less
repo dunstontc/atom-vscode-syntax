@@ -1,0 +1,49 @@
+.syntax--constant {
+    color: @light-blue;
+
+    &.syntax--character.syntax--escape {
+        color: @light-blue;
+    }
+
+    &.syntax--numeric {
+        color: @puke;
+    }
+
+    &.syntax--boolean {
+        color: @dark-blue;
+    }
+
+    &.syntax--other {
+        &.syntax--color {
+          // color: ;
+        }
+
+        &.syntax--symbol {
+            // color: ;
+        }
+    }
+
+    &.syntax--language.syntax--null {
+        color: @light-gray;
+    }
+}
+
+.syntax--variable {
+    color: @light-blue;
+
+    &.syntax--interpolation {
+        color: @light-blue;
+    }
+
+    &.syntax--parameter.syntax--function {
+        color: @light-blue;
+    }
+
+    &.syntax--language {
+        color: @pink; // NOTE : default, this;
+    }
+
+    &.syntax--object {
+        color: @light-blue;
+    }
+}

@@ -1,0 +1,14 @@
+.syntax--html {
+    &.syntax--tag {
+        color: @very-light-gray;
+    }
+    &.syntax--entity {
+      &.syntax--other.syntax--attribute-name {
+        color: @light-blue;
+
+        .syntax--id {
+          color: @light-blue;
+        }
+    }
+  }
+}

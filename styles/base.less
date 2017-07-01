@@ -1,0 +1,34 @@
+@import "./colors";
+@import "./syntax-variables";
+
+
+// @import "./syntax/comment";
+@import "./syntax/keyword";
+// @import "./syntax/storage";
+@import "./syntax/const-var";
+// @import "./syntax/invalid";
+@import "./syntax/string";
+@import "./syntax/punctuation";
+@import "./syntax/support";
+@import "./syntax/entity";
+@import "./syntax/meta";
+// @import "./syntax/none";
+@import "./syntax/markup";
+
+
+.syntax--comment {
+    // color: @syntax-comment-color;
+    color: @syntax-color-comment;
+}
+.syntax--storage {
+    color: @dark-blue;
+}
+
+.syntax--invalid.syntax--illegal {
+    background-color: @syntax-text-color;
+    color: @syntax-bg;
+}
+
+.syntax--none {
+    color: @very-light-gray;
+}
