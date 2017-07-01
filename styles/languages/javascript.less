@@ -80,8 +80,7 @@ atom-text-editor {
                 color: @very-light-gray;
             }
         }
-// syntax--string syntax--quoted syntax--template syntax--js >
-// syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js
+
         &.syntax--punctuation {
             // color: maroon; // NOTE: ${} # . &
             &.syntax--definition {
@@ -127,4 +126,11 @@ atom-text-editor {
     //   &.syntax--variable {
     //     color: @var-blue;  // QUESTION: define
     //   }
+}
+
+.syntax--string.syntax--quoted.syntax--template {
+  .syntax--begin,
+  .syntax--end {
+    color: @dark-blue;
+  }
 }
