@@ -27,7 +27,6 @@
             color: @orange;
         }
 
-        &.syntax--array,
         &.syntax--variable {
             // color: @dark-blue; // NOTE: ()s & ''/""/``s
             &.syntax--begin,
@@ -107,8 +106,13 @@
     }
 }
 
-.syntax--template {
-    &.syntax--punctuation {
-        // color: @dark-blue;
-    }
+// syntax--string syntax--regexp syntax--js
+// syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js
+
+.syntax--string.syntax--regexp {
+  .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+  .syntax--punctuation.syntax--definition.syntax--string.syntax--begin {
+    color: @light-red;
+  }
+
 }

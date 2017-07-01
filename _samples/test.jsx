@@ -14,7 +14,7 @@ let superFunk = (something) => console.log(something);
 let hurrah = [1, 3, 'seven'];
 
 let example = function () {
-    if(true){
+    if(true) {
         for (number of ten) {
             console.log(number);
         };
@@ -30,6 +30,8 @@ let claysObject = {
     symbol:             symbolic,
     regexp:             new RegExp( /\.jsx$/ ),
 }
+
+let that = /.jsx$/;
 
 class Polygon {
   constructor(height, width) {
