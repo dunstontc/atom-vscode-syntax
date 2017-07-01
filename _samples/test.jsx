@@ -1,6 +1,7 @@
 const roko = require('');
 import { SelectListView, other } from 'atom-select-list';
 import * as something from 'atom-select-list';
+import thing from 'my-other-page.js';
 export default thing = 'empty'; // TODO: find type of default
 
 var funky = function () {

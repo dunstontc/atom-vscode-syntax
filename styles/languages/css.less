@@ -1,3 +1,5 @@
+// .syntax--less,
+// .syntax--scss,
 .syntax--css {
     .syntax--support {
         &.syntax--constant {
@@ -20,6 +22,7 @@
         &.syntax--numeric {
             color: @puke;
         }
+        &.syntax--punctuation,
         &.syntax--color {
             color: @orange;
         }
@@ -31,7 +34,7 @@
         }
 
         &.syntax--id {
-            color: @dark-yellow;
+            // color: @dark-yellow;
         }
         &.syntax--other.syntax--attribute-name {
             color: @dark-yellow;
@@ -39,32 +42,31 @@
     }
 
     .syntax--punctuation {
-      color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
+      // color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
       &.syntax--definition {
+        &.syntax--keyword{
+          color: @orange;
+        }
         &.syntax--entity {
           color: @dark-yellow;
 
         }
       }
-        .syntax--delimiter {
-            // color: ;
-            color: lime;  // QUESTION:
-        }
     }
 
 }
-// .syntax--keyword {
-  // &.syntax--scss,
-  // &.syntax--less,
-  // &.syntax--css{
-  //   &.syntax--import {
-  //     color: @light-pink !important;
-  //   }
-  //   &.syntax--at-rule {
-  //     color: @purple !important;
-  //     .syntax--keyword {
-  //       color: @purple;
-  //     }
-  //   }
-  // }
-// }
+.syntax--keyword {
+  &.syntax--scss,
+  &.syntax--less,
+  &.syntax--css{
+    &.syntax--import {
+      color: @pink;
+    }
+    &.syntax--at-rule {
+      // color: @pink;
+      .syntax--keyword {
+        color: @pink;
+      }
+    }
+  }
+}

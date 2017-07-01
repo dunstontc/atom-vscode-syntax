@@ -3,10 +3,6 @@ atom-text-editor {
         color: @light-blue;  // FIXME: variables aren't correctly targeted.
     }
 
-    .syntax--js {
-        // color: yellow;
-    }
-
     .syntax--js,
     .syntax--source.syntax--js {
         // .syntax--keyword.syntax--operator {
@@ -84,7 +80,8 @@ atom-text-editor {
                 color: @very-light-gray;
             }
         }
-
+// syntax--string syntax--quoted syntax--template syntax--js >
+// syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js
         &.syntax--punctuation {
             // color: maroon; // NOTE: ${} # . &
             &.syntax--definition {

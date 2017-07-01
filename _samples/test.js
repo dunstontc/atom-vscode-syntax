@@ -1,6 +1,7 @@
 const roko = require('');
 import { SelectListView, other } from 'atom-select-list';
 import * as something from 'atom-select-list';
+import thing from 'my-other-page.js';
 export default thing = 'empty'; // TODO: find type of default
 
 var funky = function () {
@@ -13,7 +14,7 @@ let superFunk = (something) => console.log(something);
 let hurrah = [1, 3, 'seven'];
 
 let example = function () {
-    if(true){
+    if(true) {
         for (number of ten) {
             console.log(number);
         };

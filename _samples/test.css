@@ -1,8 +1,9 @@
-.test {
+.testing {
     color: white;
+    background-color: #00deaf;
 }
 
-#test {
+#testing {
     color: black;
     flex-direction: column-reverse;
 }

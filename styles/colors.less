@@ -1,12 +1,11 @@
 // These colors are specific to the theme. Do not use in a package!
-// Someone tell me what the above means?
 
 
 @very-light-gray:   #D4D4D4;
-@light-gray:      #808080;
-@gray: gray;
-@dark-gray:     #282c34;
-@very-dark-gray: #1E1E1E;
+@light-gray:        #808080;
+@gray:              @light-gray;
+@dark-gray:         #282c34;
+@very-dark-gray:    #1E1E1E;
 
 @light-red:     #D16969;
 @dark-red:      #F44747;
@@ -23,8 +22,8 @@
 @pink:          #C586C0;
 
 // Base colors -----------------------------------
-@syntax-fg: @light-gray;
-@syntax-bg: @dark-gray;
+@syntax-fg:     @light-gray;
+@syntax-bg:     @dark-gray;
 @syntax-gutter: darken(@syntax-fg, 26%);
 @syntax-guide:  fade(@syntax-fg, 15%);
 @syntax-accent: @bright-blue;

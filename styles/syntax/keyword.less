@@ -11,10 +11,6 @@
         &.syntax--module {
             color: @very-light-gray; // NOTE: import, export, from, default in JavaScript
         }
-        &.syntax--new {
-          // color: black;
-          font-style: italic;
-        }
     }
 
     &.syntax--operator {
@@ -28,6 +24,9 @@
         &.syntax--new,
         &.syntax--this {
            color: @dark-blue; // TODO: define new in Babel/JSX
+        }
+        &.syntax--assignment {
+          color: @very-light-gray;
         }
     }
 
