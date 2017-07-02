@@ -1,0 +1,25 @@
+.syntax--string {
+    color: @orange;
+
+    &.syntax--unquoted{
+        color: @orange;
+    }
+    &.syntax--regexp {
+        color: @light-red; // TODO: Regex slashes
+
+        .syntax--source.syntax--ruby.syntax--embedded {
+            color: @orange;
+        }
+    }
+
+    &.syntax--other.syntax--link {
+        color: @orange;
+    }
+
+    &.syntax--quoted.syntax--template {
+      &.syntax--begin,
+      &.syntax--end {
+        color: @dark-blue !important;
+      }
+    }
+}

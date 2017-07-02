@@ -1,5 +1,9 @@
 .DS_Store
 npm-debug.log
 node_modules
-TODO
+
+
 _reference
+_key.md
+
+styles/_template

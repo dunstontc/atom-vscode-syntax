@@ -1,0 +1,82 @@
+// .syntax--less,
+// .syntax--scss,
+.syntax--css {
+    .syntax--support {
+        &.syntax--constant {
+            color: @orange; // NOTE: CSS Enum
+        }
+
+        &.syntax--property-name {
+            color: @light-blue;
+            // text-align: center;
+        }
+        &.syntax--function {
+          color: @puke;
+        }
+    }
+
+    .syntax--keyword {
+        &.syntax--unit {
+            color: @puke;
+        }
+    }
+
+    .syntax--constant {
+        &.syntax--numeric {
+            color: @puke;
+        }
+        &.syntax--punctuation,
+        &.syntax--color {
+            color: @orange;
+        }
+    }
+
+    .syntax--entity {
+        &.syntax--tag {
+            color: @dark-blue; // NOTE: html element names
+        }
+
+        &.syntax--id {
+            // color: @dark-yellow;
+        }
+        &.syntax--other.syntax--attribute-name {
+            color: @dark-yellow;
+        }
+    }
+
+    .syntax--punctuation {
+      // color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
+      &.syntax--definition {
+        &.syntax--keyword{
+          color: @orange;
+        }
+        &.syntax--entity {
+          color: @dark-yellow;
+
+        }
+      }
+    }
+
+}
+.syntax--keyword {
+  &.syntax--scss,
+  &.syntax--less,
+  &.syntax--css{
+    &.syntax--import {
+      color: @pink;
+    }
+    &.syntax--at-rule {
+      color: @pink;
+      .syntax--keyword {
+        color: @pink;
+      }
+    }
+  }
+}
+
+.syntax--scss {
+  .syntax--punctuation.syntax--definition.syntax--keyword {
+    color: @pink;
+  }
+}
+

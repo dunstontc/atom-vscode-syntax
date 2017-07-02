@@ -1,0 +1,118 @@
+.syntax--punctuation {
+
+    &.syntax--definition {
+
+        &.syntax--comment {
+            color: @comment-green;
+        }
+
+        &.syntax--parameters {
+            color: @very-light-gray; // TODO: Tweak to @dark-blue
+        }
+
+        &.syntax--modules {
+            color: @very-light-gray;
+
+            &.syntax--begin,
+            &.syntax--end {
+                color: @very-light-gray // FIXME: redundant? other things in 'syntax--module'?
+            }
+        }
+
+        &.syntax--keyword {
+            color: @pink;
+        }
+
+        &.syntax--string {
+            color: @orange;
+        }
+
+        &.syntax--variable {
+            // color: @dark-blue; // NOTE: ()s & ''/""/``s
+            &.syntax--begin,
+            &.syntax--end {
+                // color: @dark-blue; // NOTE: ()s & ''/""/``s
+                color: @very-light-gray; // NOTE: ()s & ''/""/``s
+            }
+        }
+
+        &.syntax--method-parameters,
+        &.syntax--function-parameters,
+        &.syntax--parameters,
+        &.syntax--separator,
+        &.syntax--seperator,
+        &.syntax--array {
+          // color: @tag_gray;
+          colod: @very-light-gray;
+        }
+
+        &.syntax--heading,
+        &.syntax--identity {
+            color: @very-light-gray;
+        }
+
+        &.syntax--bold {
+            font-weight: bold;
+        }
+
+        &.syntax--italic {
+            font-style: italic;
+        }
+
+        &.syntax--entity {
+            color: @very-light-gray;
+        }
+    }
+
+    &.syntax--section {
+        &.syntax--array {
+            color: @very-light-gray;
+        }
+
+        &.syntax--embedded {
+            color: @dark-blue;
+        }
+
+        &.syntax--scope {
+            &.syntax--begin,
+            &.syntax--end {
+                // color: @dark-blue; // NOTE: ()s & ''/""/``s
+                color: @very-light-gray; // NOTE: ()s & ''/""/``s
+            }
+        }
+
+        &.syntax--string.syntax--template {
+            &.syntax--begin,
+            &.syntax--end {
+                // color: @dark-blue; // NOTE: ()s & ''/""/``s
+                color: @very-light-gray; // NOTE: ()s & ''/""/``s
+            }
+            &.syntax--method,
+            &.syntax--class,
+            &.syntax--inner-class {
+              color: @very-light-gray;  //  Class Brackets
+            }
+        }
+    }
+
+    &.syntax--separator {
+        &.syntax--key-value {
+            // color: @very-light-gray;
+        }
+    }
+
+    &.syntax--terminator {
+        color: @very-light-gray;
+    }
+}
+
+// syntax--string syntax--regexp syntax--js
+// syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js
+
+.syntax--string.syntax--regexp {
+  .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
+  .syntax--punctuation.syntax--definition.syntax--string.syntax--begin {
+    color: @light-red;
+  }
+
+}

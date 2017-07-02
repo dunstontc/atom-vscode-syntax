@@ -5,116 +5,137 @@
   font-style: italic;
 
   .syntax--markup.syntax--link {
-    color: @syntax-fg;
+    color: @orange;
   }
 }
 
 .syntax--entity {
-
+    // color: maroon; // NOTE: ${} # . &
   &.syntax--name.syntax--type {
     color: @blue_2;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @type-green;
+    // color: @type-green;
+    // color: lime; // QUESTION: define
   }
 }
 
 .syntax--keyword {
-  color: @flow-pink;  // @
+  // color: @flow-pink;  // NOTE: @
 
   &.syntax--control {
-    color: @flow-pink; // import export from default if for
+    color: @flow-pink; // NOTE: import export from default if for
+    // color: @syntax-fg; // TODO: scope to 'default'
   }
 
   &.syntax--operator {
-    color: @tag_gray; // = . /
+    // color: @tag_gray; // = . / TODO: tweaked-branch
+    // color: @syntax-fg; // = . /  TODO: find this elsewhere
+    // color: maroon;
   }
 
   &.syntax--other.syntax--special-method {
-    color: lime;
+    // color: lime;
+    // color: maroon; // QUESTION: define
   }
 
   &.syntax--other.syntax--unit {
-    color: @num-green;
+    // color: @num-green;
+    color: lime;  // QUESTION:
   }
 }
 
-.syntax--storage {
-  color: @blue_2; // let var const function => extends
 
-  &.syntax--type {
+.syntax--storage {
+  color: @blue_2; // NOTE: let var const function => extends
+
+  &.syntax--type { // NOTE: let var const function => extends
     &.syntax--annotation,
     &.syntax--primitive {
-      color: @var-blue;
+      // color: @var-blue;  // QUESTION:
+      color: lime;  // QUESTION:define
     }
   }
 
   &.syntax--modifier {
     &.syntax--package,
     &.syntax--import {
-      color: lime;
+      color: lime; // QUESTION: define
       // color: @syntax-fg;
     }
   }
 }
 
-// NOTE: Constant
+
 .syntax--constant {
-  // color: @yellow_2;
+  color: @orange;  // NOTE: css attribute value
 
   &.syntax--variable {
-    color: @yellow_2;
+    // color: @orange;
+    color: lime;  // QUESTION: define
   }
 
   &.syntax--character.syntax--escape {
-    color: @var-blue;
+    color: @var-blue; // NOTE: escape character
   }
 
   &.syntax--numeric {
-    color: @num-green;
+    color: @num-green;  // NOTE: numbers
   }
+  &.syntax--new {
+    color: @blue_2; // QUESTION:
+  }
+
   &.syntax--boolean {
-    color: @blue_2;
+    color: @blue_2;  // NOTE: boolean
   }
 
   &.syntax--other.syntax--color {
-    color: @var-blue;
+    // color: @var-blue;
+    color: maroon;  // QUESTION: define
   }
 
   &.syntax--other.syntax--symbol {
     color: @blue_2;
-  }
-
-  &.syntax--language.syntax--boolean.syntax--js {
-    color: @syntax-fg;
+    // color: lime;  // QUESTION: define
   }
 }
 
-// NOTE: variable
+
 .syntax--variable {
-  color: @var-blue;
+  color: @var-blue;  // NOTE: Variables, regex interpolation, (uquoted strings?)
 
   &.syntax--interpolation {
-    color: @var-blue;
+    color: @var-blue; // TODO: find additional interpolation definition
   }
 
   &.syntax--parameter {
-    color: @var-blue;
+    color: @var-blue;  // QUESTION: define
   }
-}
 
-// NOTE: String
+  &.syntax--this {
+    color: @blue_2;
+  }
+
+  // &.syntax--other.syntax--property {
+  &.syntax--property {
+    color: @syntax-text-color;
+  }
+
+}
+// syntax--other syntax--property syntax--js
+
 .syntax--string {
-  color: @orange;
+  color: @orange;  // NOTE: strings
 
 
   &.syntax--regexp {
-    color: @regex-red;
+    color: @regex-red; // NOTE: regex
 
-    .syntax--source.syntax--ruby.syntax--embedded {
-      color: @regex-red;
-    }
+    // .syntax--source.syntax--ruby.syntax--embedded {
+    //   color: @regex-red;
+    // }
   }
 
   &.syntax--other.syntax--link {
@@ -122,7 +143,6 @@
   }
 }
 
-// NOTE: punctuation
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
@@ -135,12 +155,13 @@
     &.syntax--separator,
     &.syntax--seperator,
     &.syntax--array {
-      color: @tag_gray;
+      // color: @tag_gray;
+      colod: @syntax-fg;
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @dark-blue;
+      color: @blue_2;
     }
 
     &.syntax--bold {
@@ -154,49 +175,49 @@
 
   &.syntax--section {
     &.syntax--embedded {
-      color: @blue_2;
+      color: @blue_2;  // QUESTION: define
     }
 
     &.syntax--method,
     &.syntax--class,
     &.syntax--inner-class {
-      color: @tag_gray;
+      color: @yellow_2;  //  Class Brackets
     }
   }
 }
 
-// NOTE: Support
+
 .syntax--support {
   &.syntax--class {
-    color: @type-green;
+    color: @type-green;  // TODO: Find out if built-in? (Math)
   }
 
   &.syntax--type {
-    color: @type-green; // console
+    color: @type-green; // NOTE: console
   }
 
   &.syntax--function  {
-    color: @func-yellow; // log
+    color: @func-yellow; // NOTE: log
 
     &.syntax--any-method {
-      color: @tag_gray;
+      color: lime;  // QUESTION: define
     }
   }
 }
 
-// NOTE: Entity
+
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @func-yellow;  // function name
+    color: @func-yellow;  // NOTE: function name
   }
 
   &.syntax--name.syntax--class,
   &.syntax--name.syntax--type.syntax--class {
-    color: @type-green;  // class name
+    color: @type-green;  // NOTE: class name
   }
 
   &.syntax--name.syntax--section {
-    color: @blue_2;
+    color: @blue_2; // QUESTION: define
   }
 
   &.syntax--name.syntax--tag {
@@ -204,32 +225,33 @@
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @var-blue; // css selector
+    color: @var-blue; // NOTE: CSS/HTML Class selector TODO: find scoped css equivalent
 
     &.syntax--id {
-      color: @var-blue;
+      color: @var-blue;  // NOTE: CSS/HTML ID Selector
     }
   }
 }
 
-// NOTE: Meta
+// TODO: Look into Meta scope
 .syntax--meta {
   &.syntax--class {
-    color: @type-green;
+    color: @type-green; // QUESTION: define
 
     &.syntax--body {
-      color: @syntax-fg;
+      // color: @syntax-fg;
+      color: @yellow_2;
     }
   }
 
-  &.syntax--method-call,
+  &.syntax--method-call,  // NOTE: this defines brackets
   &.syntax--method {
-    color: @yellow_2;
+    color: @syntax-fg;
   }
 
   &.syntax--definition {
     &.syntax--variable {
-      color: @var-blue;
+      color: @var-blue;  // QUESTION: define
     }
   }
 
@@ -246,12 +268,16 @@
   }
 
   &.syntax--separator {
-    background-color: #373b41;
-    color: @tag_gray;
+    // background-color: #373b41;
+    // color: @tag_gray;
+    // color: @syntax-fg;
+    color: maroon; // QUESTION: define
   }
 
   &.syntax--tag {
-    color: @tag_gray;
+    // color: @syntax-fg;
+    color: @tag_gray;  // NOTE: brackets
+    // color: maroon; // TODO: Find what's defining these.
   }
 }
 
@@ -260,7 +286,7 @@
 }
 
 .syntax--none {
-  color: @syntax-fg;
+  color: @syntax-text-color;
 }
 
 .syntax--invalid {
@@ -278,6 +304,7 @@
 
 .syntax--markup {
   &.syntax--bold {
+    color: @flow-pink;
     font-weight: bold;
   }
 
@@ -286,23 +313,25 @@
   }
 
   &.syntax--deleted {
-    color: @orange;
+    color: @regex-red;
   }
 
   &.syntax--italic {
+    color: @var-blue;
     font-style: italic;
   }
 
   &.syntax--heading {
-    color: @dark-blue;
+    color: @blue_2;
 
     .syntax--punctuation.syntax--definition.syntax--heading {
-      color: @dark-blue;
+      color: @blue_2;
     }
   }
 
   &.syntax--link {
-    color: @type-green;
+    color: @orange;
+    // color: @syntax-fg; // TODO: markdown specific syntax
   }
 
   &.syntax--inserted {
@@ -314,6 +343,13 @@
   }
 
   &.syntax--raw {
-    color: orange;
+    color: @orange;
   }
+}
+
+.syntax--html {
+  &.syntax--tag {
+    color: @tag_gray;
+  }
+
 }
