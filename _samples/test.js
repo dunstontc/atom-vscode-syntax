@@ -1,3 +1,4 @@
+
 const ex = require('./another-file');
 
 import { SelectListView } from 'atom-select-list';
@@ -27,6 +28,7 @@ let claysObject = {
     boolean:            false,
     string:             'here\'s a string',
     templateLiteral:    `This template is ${idk} literal`,
+
     regexp:             new RegExp( /\.jsx$/ ),
 }
 
