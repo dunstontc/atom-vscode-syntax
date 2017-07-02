@@ -1,8 +1,8 @@
 {
   "name": "dark-plus-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.2.0",
+  "description": "Visual Studio Code's 'Dark+' (default dark) theme for Atom",
   "keywords": [
     "syntax",
     "theme"
@@ -13,6 +13,5 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "@angular/cli": "^1.1.3"
   }
 }
