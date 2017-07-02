@@ -1,8 +1,9 @@
-const roko = require('');
-import { SelectListView, other } from 'atom-select-list';
-import * as something from 'atom-select-list';
-import thing from 'my-other-page.js';
-export default thing = 'empty'; // TODO: find type of default
+
+const ex = require('./another-file');
+
+import { SelectListView } from 'atom-select-list';
+
+export default thing = 'empty';
 
 var funky = function () {
     let sumtin = Math.floor(8 / 1);
@@ -15,8 +16,8 @@ let hurrah = [1, 3, 'seven'];
 
 let example = function () {
     if(true) {
-        for (number of ten) {
-            console.log(number);
+        for (item of hurrah) {
+            console.log(item);
         };
         for (x=0; x<10; x++) {};
     }
@@ -27,7 +28,7 @@ let claysObject = {
     boolean:            false,
     string:             'here\'s a string',
     templateLiteral:    `This template is ${idk} literal`,
-    symbol:             symbolic,
+
     regexp:             new RegExp( /\.jsx$/ ),
 }
 

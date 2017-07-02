@@ -1,14 +1,29 @@
 .syntax--html {
     &.syntax--tag {
-        color: @very-light-gray;
+        color: @light-gray;
     }
-    &.syntax--entity {
-      &.syntax--other.syntax--attribute-name {
-        color: @light-blue;
 
-        .syntax--id {
-          color: @light-blue;
+    &.syntax--punctuation {
+        &.syntax--key-value,
+        &.syntax--separator {
+            color: @very-light-gray;
         }
     }
-  }
+
+    &.syntax--entity {
+        &.syntax--other {
+            &.syntax--attribute-name,
+            &.syntax--id {
+                color: @light-blue;
+            }
+        }
+    }
+
+    &.syntax--embedded.syntax--js {
+        color: @very-light-gray;
+    }
+
+    &.syntax--meta.syntax--tag {
+        color: @very-light-gray;
+    }
 }

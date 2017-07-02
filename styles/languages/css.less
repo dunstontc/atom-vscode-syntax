@@ -10,6 +10,9 @@
             color: @light-blue;
             // text-align: center;
         }
+        &.syntax--function {
+          color: @puke;
+        }
     }
 
     .syntax--keyword {
@@ -63,10 +66,17 @@
       color: @pink;
     }
     &.syntax--at-rule {
-      // color: @pink;
+      color: @pink;
       .syntax--keyword {
         color: @pink;
       }
     }
   }
 }
+
+.syntax--scss {
+  .syntax--punctuation.syntax--definition.syntax--keyword {
+    color: @pink;
+  }
+}
+

@@ -1,0 +1,22 @@
+.syntax--json {
+    &.syntax--constant.syntax--language{
+        color: @dark-blue;
+    }
+    &.syntax--string.syntax--quoted.syntax--double {
+        color: @light-blue;
+
+        .syntax--punctuation {
+            color: @light-blue;
+        }
+    }
+
+    &.syntax--meta.syntax--value {
+        .syntax--string.syntax--quoted.syntax--double {
+            color: @orange;
+
+            .syntax--punctuation {
+                color: @orange;
+            }
+        }
+    }
+}

@@ -1,40 +1,61 @@
 .syntax--markup {
-    &.syntax--bold {
-        color: @purple;
+    &.syntax--list {
+        .syntax--punctuation {
+            color: @dark-blue;
+        }
+    }
+
+    &.syntax--italic {
+        color     : @light-blue;
+        font-style: italic;
+
+        .syntax--punctuation {
+            color: @light-blue;
+        }
+    }
+
+    &.syntax--bold,
+    &.syntax--strong {
+        color      : @dark-blue;
         font-weight: bold;
     }
 
     &.syntax--changed {
-        color: @dark-blue;
+        color: @sefoam-green;
     }
 
     &.syntax--deleted {
         color: @light-red;
     }
 
-    &.syntax--italic {
-        color: @light-blue;
-        font-style: italic;
-    }
-
-    &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-        color: @dark-blue;
+    &.syntax--heading {
+        color: @dark-blue; // TODO: tweaked comment this out
+        .syntax--punctuation {
+            color: @dark-blue;
+        }
     }
 
     &.syntax--inserted {
         color: @puke;
     }
 
-    &.syntax--list {
-        // color: ; TODO: List '-' or '*'
-    }
-
     &.syntax--quote {
-        // color: ;
+        .syntax--punctuation {
+            color: @comment-green;
+        }
     }
 
-    &.syntax--raw.syntax--inline {
-        // color: ;
+    &.syntax--link {
+        .syntax--punctuation {
+            color: @very-light-gray;
+        }
+    }
+
+    &.syntax--raw {
+        color: @orange;
+        .syntax--punctuation {
+            color: @orange;
+        }
     }
 }
 
