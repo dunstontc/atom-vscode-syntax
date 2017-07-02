@@ -6,15 +6,17 @@ Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>
 
 ## Supported Languages:
 
-  - [x] HTML
-  - [ ] CSS
-  - [ ] LESS
-  - [ ] SASS & SCSS
-  - [ ] Markdown
-  - [ ] GFL
-  - [ ] JavaScript
-  - [ ] Babel / JSX
-  - [x] JSON & CSON
-  - [ ] CoffeeScript
-  - [ ] TypeScript
-  - [ ] VUE
+- [x] HTML
+- [x] CSS
+- [x] LESS
+- [x] SASS & SCSS
+- [ ] Stylus
+- [x] Markdown
+- [ ] GFL
+- [x] JavaScript
+- [ ] JavaScript (Babel)
+- [ ] Javascript React (Babel) (JSX)
+- [x] JSON & CSON
+- [x] CoffeeScript
+- [ ] TypeScript
+- [ ] VUE
