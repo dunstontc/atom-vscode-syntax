@@ -76,9 +76,14 @@ atom-text-editor {
             }
 
             &.syntax--arguments {
-              color: @light-blue;
-              .syntax--begin,
-              .syntax--end {
+              // color: @light-blue;
+              .syntax--string {
+                &.syntax--quoted.syntax--single,
+                &.syntax--quoted.syntax--double {
+                  color: @orange;
+                }
+              }
+              .syntax--bracket {
                 color: @very-light-gray;
               }
             }
