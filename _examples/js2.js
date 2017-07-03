@@ -43,9 +43,7 @@ export default {
     console.log(`\n availablePackages: \n ${availablePackages} \n`);
     // console.log(`\n loadedPackages: \n ${loadedPackages} \n`);
     return (
-      this.modalPanel.isVisible() ?
-      this.modalPanel.hide() :
-      this.modalPanel.show()
+      this.modalPanel.isVisible() ? this.modalPanel.hide() : this.modalPanel.show()
     );
   }
 
