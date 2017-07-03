@@ -2,7 +2,7 @@
     &.syntax--definition {
       color: @very-light-gray;
         &.syntax--variable {
-            color: @very-light-gray;
+            // color: @very-light-gray;
             // QUESTION: define
         }
     }
@@ -49,4 +49,16 @@
             // NOTE: brackets
         }
     }
+    &.syntax--method-call {
+    .syntax--entity.syntax--name.syntax--function {
+      color: @light-blue;
+
+    }
+    }
 }
+
+// syntax--entity syntax--name syntax--function syntax--method syntax--js
+  // @light-yellow
+// syntax--meta syntax--method-call syntax--without-arguments syntax--js
+  // @light-blue?
+// syntax--entity syntax--name syntax--function syntax--js
