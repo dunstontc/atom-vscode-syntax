@@ -40,9 +40,8 @@ export default {
   },
 
   toggle() {
-    // console.log('PackagePicker was toggled!');
     console.log(`\n availablePackages: \n ${availablePackages} \n`);
-    console.log(`\n loadedPackages: \n ${loadedPackages} \n`);
+    // console.log(`\n loadedPackages: \n ${loadedPackages} \n`);
     return (
       this.modalPanel.isVisible() ?
       this.modalPanel.hide() :

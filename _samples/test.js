@@ -12,14 +12,12 @@ var funky = function () {
 
 let superFunk = (something) => console.log(something);
 
-let hurrah = [1, 3, 'seven'];
-
 let example = function () {
+    let hurrah = [1, 3, 'seven'];
     if(true) {
         for (item of hurrah) {
             console.log(item);
         };
-        for (x=0; x<10; x++) {};
     }
 }
 
@@ -28,7 +26,6 @@ let claysObject = {
     boolean:            false,
     string:             'here\'s a string',
     templateLiteral:    `This template is ${idk} literal`,
-
     regexp:             new RegExp( /\.jsx$/ ),
 }
 
