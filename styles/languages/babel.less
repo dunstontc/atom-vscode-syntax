@@ -1,29 +1,30 @@
 atom-text-editor {
-    .syntax--keyword.syntax--operator.syntax--js {
-      // color: maroon;
-    }
+    .syntax--jsx,
     .syntax--js.syntax--jsx,
     .syntax--source.syntax--jsx,
-    .syntax--jsx,
     .syntax--jsx.syntax--js {
       color: @very-light-gray;
-        .syntax--operator {
-          color:@dark-blue;
-          &.syntax--accessor,
-          &.syntax--assignment {
-            color: @very-light-gray;
-            // color: yellow;
+
+        .syntax--keyword {
+
+          &.syntax--operator {
+            color:@dark-blue;
+
+            &.syntax--accessor,
+            &.syntax--arithmetic,
+            &.syntax--assignment,
+            &.syntax--ternary {
+              color: @very-light-gray;
+            }
           }
         }
 
         .syntax--control {
-          // &.syntax--module {
           &.syntax--module:nth-child(2) {
               color: @pink; // TODO: This will most likely cause problems. FIXME
             }
 
           }
-        // }
 
         .syntax--entity {
             .syntax--delimiter.syntax--object.syntax--comma,
@@ -34,7 +35,7 @@ atom-text-editor {
         }
         .syntax--meta {
               .syntax--keyword.syntax--operator{
-                color: @very-light-gray; // NOTE: set to override JS settings in Babel
+                // color: @very-light-gray; // NOTE: set to override JS settings in Babel
                 // color: @light-gray;  // TODO: Tweaked
               }
               &.syntax--require {

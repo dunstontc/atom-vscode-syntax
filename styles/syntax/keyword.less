@@ -14,7 +14,10 @@
     }
 
     &.syntax--operator {
-        color: @very-light-gray; // NOTE: =, /, of, new, :, >, <, ++
+        .syntax--punctuation {
+          // color: @very-light-gray; // NOTE: =, /, of, new, :, >, <, ++
+          color: @purple;
+        }
 
         &.syntax--module {
           &.syntax--all {
@@ -25,6 +28,7 @@
         &.syntax--this {
            color: @dark-blue; // TODO: define new in Babel/JSX
         }
+        &.syntax--of,
         &.syntax--assignment {
           color: @very-light-gray;
         }
