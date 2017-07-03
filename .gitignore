@@ -2,8 +2,12 @@
 npm-debug.log
 node_modules
 
-
+_examples
 _reference
+_samples
+
+
+
 _key.md
 
 styles/_template
