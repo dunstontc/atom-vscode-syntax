@@ -1,3 +1,8 @@
+# 1.0.0
+
+- Initial work done
+- Uploaded to Atom Package Registry
+
 # 0.2.0
 
 - Initial development complete.

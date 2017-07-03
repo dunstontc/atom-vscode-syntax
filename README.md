@@ -2,7 +2,8 @@
 
 # dark-plus-syntax theme
 
-Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>
+Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>  
+(Pairs well with Atom One Dark UI)
 
 ## Supported Languages:
 
@@ -14,9 +15,13 @@ Visual Studio Code's `Dark+` (default dark) theme, ported to Atom. <br>
 - [x] Markdown
 - [ ] GFL
 - [x] JavaScript
-- [ ] JavaScript (Babel)
+- [x] JavaScript (Babel)
 - [ ] Javascript React (Babel) (JSX)
 - [x] JSON & CSON
 - [x] CoffeeScript
 - [ ] TypeScript
 - [ ] VUE
+
+## License
+
+The package is Open Source Software released under the [MIT](https://github.com/dunstontc/atom-vscode-syntax/blob/master/LICENSE.md) license.
