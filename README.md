@@ -1,4 +1,3 @@
-![vscode logo](./images/vscode.png)
 
 # dark-plus-syntax
 

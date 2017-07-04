@@ -1,3 +1,7 @@
+# 1.1.1
+
+- removed vscode image from readme
+
 # 1.1.0
 
 - fixed operator keyword highlighting ('new' in Babel/JSX).
