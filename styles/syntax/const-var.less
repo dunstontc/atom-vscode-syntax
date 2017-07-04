@@ -23,8 +23,11 @@
         }
     }
 
-    &.syntax--language.syntax--null {
-        color: @dark-blue;
+    &.syntax--language {
+        &.syntax--null,
+        &.syntax--undefined {
+            color: @dark-blue;
+        }
     }
 }
 
