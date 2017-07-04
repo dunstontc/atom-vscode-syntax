@@ -1,3 +1,10 @@
+# 1.0.1
+
+- fixed operator keyword highlighting ('new' in Babel/JSX).
+- dom variable & methods (in JavaScript) now have correct highlighting.
+- various punctuation fixes.
+- refined highlighting for classes & methods.
+
 # 1.0.0
 
 - Initial work done
@@ -9,7 +16,5 @@
 
 # 0.1.0 - First Release
 
-- ~~Every feature added~~
-- ~~Every bug fixed~~
 - Initial work done
 - Uploaded to GitHub

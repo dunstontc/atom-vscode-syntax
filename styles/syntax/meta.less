@@ -1,42 +1,68 @@
 .syntax--meta {
     &.syntax--definition {
-      color: @very-light-gray;
+        color: @very-light-gray;
+
         &.syntax--variable {
-            color: @very-light-gray;
-            // QUESTION: define
+            // color: @very-light-gray; // QUESTION: define
         }
     }
 
-    &.syntax--class {
-        // color: @sefoam-green;
+    &.syntax--class.syntax--body {
+      &.syntax--function.syntax--method {
+        .syntax--function {
+          // color: @dark-blue;
+        }
+      }
     }
 
     &.syntax--delimiter {
-      color: @very-light-gray;
+        color: @very-light-gray;
     }
+
     &.syntax--function {
-      &.syntax--parameters {
-        color: @light-blue;
-        .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
-          // font-style: italic;
+        &.syntax--parameters {
+            color: @light-blue;
+
+            .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
+                // font-style: italic;
+            }
         }
-      }
-      &.syntax--arguments {
-          color: @light-blue;
-        // font-style: italic;
-      }
+
+        &.syntax--arguments {
+            color: @light-blue;
+            // font-style: italic;
+        }
+        &.syntax--method {
+            &.syntax--entity.syntax--name.syntax--function {
+                color: @light-blue;
+            }
+        }
+        // &.syntax--function,
+        &.syntax--arrow {
+          .syntax--entity.syntax--name.syntax--function {
+            color: @light-yellow;
+          }
+        }
     }
+
     &.syntax--link {
         // color: ;
+    }
+    &.syntax--for {
+      .syntax--keyword.syntax--operator {
+        color: @very-light-gray;
+      }
     }
 
     &.syntax--require {
         color: @light-yellow; // NOTE: 'require' for Babel
     }
+
     &.syntax--selector {
-        color: @very-light-gray;
-        color: @light-blue;
+        // color: @very-light-gray;
+        // color: @light-blue;
     }
+
     &.syntax--separator {
         background-color: @very-light-gray;
     }
@@ -45,8 +71,27 @@
         &.syntax--curly,
         &.syntax--round,
         &.syntax--square {
-            color: @very-light-gray;
-            // NOTE: brackets
+            color: @very-light-gray; // NOTE: brackets
         }
     }
+
+    &.syntax--method-call {
+        .syntax--entity.syntax--name.syntax--function {
+            color: @light-blue;
+        }
+    }
+
+    &.syntax--function-call {
+        // .syntax--entity {
+            color: @light-blue;
+        // }
+    }
+
 }
+// syntax--entity syntax--name syntax--function syntax--method syntax--js
+// @light-yellow
+// syntax--meta syntax--method-call syntax--without-arguments syntax--js
+// @light-blue?
+// syntax--entity syntax--name syntax--function syntax--js
+
+// syntax--meta.syntax--function-call

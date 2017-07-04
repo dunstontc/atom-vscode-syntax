@@ -2,10 +2,11 @@
   "name": "dark-plus-syntax",
   "theme": "syntax",
   "version": "1.0.0",
-  "description": "Visual Studio Code's 'Dark+' (default dark) theme for Atom.",
+  "description": "Visual Studio Code's 'Dark+' (default dark) theme for Atom",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "vscode"
   ],
   "repository": "https://github.com/dunstontc/atom-vscode-syntax",
   "license": "MIT",
