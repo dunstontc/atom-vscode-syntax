@@ -1,4 +1,4 @@
-# 1.0.1
+# 1.1.0
 
 - fixed operator keyword highlighting ('new' in Babel/JSX).
 - dom variable & methods (in JavaScript) now have correct highlighting.
