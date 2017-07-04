@@ -3,7 +3,7 @@
 
 
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, ported to [Atom](https://github.com/atom/atom/). <br>
-(Pairs well with Atom's One [Dark UI](https://atom.io/themes/one-dark-ui)) <br>
+(Pairs well with Atom's [One Dark UI](https://atom.io/themes/one-dark-ui)) <br>
 [(package on atom.io)](https://atom.io/themes/dark-plus-syntax)
 
 #### JavaScript:
