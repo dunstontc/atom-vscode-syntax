@@ -4,6 +4,8 @@
 - dom variable & methods (in JavaScript) now have correct highlighting.
 - various punctuation fixes.
 - refined highlighting for classes & methods.
+- additional tweaks
+- added screenshots
 
 # 1.0.0
 
