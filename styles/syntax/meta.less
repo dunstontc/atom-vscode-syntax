@@ -3,7 +3,7 @@
         color: @very-light-gray;
 
         &.syntax--variable {
-            // color: @very-light-gray; // QUESTION: define
+            // color: rebeccapurple; // QUESTION: define
         }
     }
 
@@ -14,7 +14,11 @@
         }
       }
     }
-
+    &.syntax--arguments {
+      .syntax--keyword.syntax--operator {
+        color: @very-light-gray;
+      }
+    }
     &.syntax--delimiter {
         color: @very-light-gray;
     }
@@ -26,15 +30,16 @@
             .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
                 // font-style: italic;
             }
+
         }
 
         &.syntax--arguments {
-            color: @light-blue;
+            // color: @light-blue;
             // font-style: italic;
         }
         &.syntax--method {
             &.syntax--entity.syntax--name.syntax--function {
-                color: @light-blue;
+                // color: @light-blue;
             }
         }
         // &.syntax--function,
@@ -55,7 +60,7 @@
     }
 
     &.syntax--require {
-        color: @light-yellow; // NOTE: 'require' for Babel
+        color: @light-yellow !important; // NOTE: 'require' for Babel
     }
 
     &.syntax--selector {
@@ -76,15 +81,19 @@
     }
 
     &.syntax--method-call {
-        .syntax--entity.syntax--name.syntax--function {
+        .syntax--entity {
             color: @light-blue;
         }
     }
 
     &.syntax--function-call {
-        // .syntax--entity {
-            color: @light-blue;
-        // }
+
+        .syntax--name,
+        .syntax--entity,
+        .syntax--function {
+          color: @light-blue;
+        }
+
     }
 
 }

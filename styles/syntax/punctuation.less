@@ -7,7 +7,7 @@
         }
 
         &.syntax--parameters {
-            color: @very-light-gray; // TODO: Tweak to @dark-blue
+            color: @very-light-gray;
         }
 
         &.syntax--modules {
@@ -73,6 +73,10 @@
             color: @dark-blue;
         }
 
+        &.syntax--class {
+            color: @dark-yellow;
+        }
+
         &.syntax--scope {
             &.syntax--begin,
             &.syntax--end {
@@ -90,14 +94,14 @@
             &.syntax--method,
             &.syntax--class,
             &.syntax--inner-class {
-              color: @very-light-gray;  //  Class Brackets
+              // color: @very-light-gray;  //  Class Brackets
             }
         }
     }
 
     &.syntax--separator {
         &.syntax--key-value {
-            // color: @very-light-gray;
+            color: @very-light-gray;
         }
     }
 
@@ -105,9 +109,6 @@
         color: @very-light-gray;
     }
 }
-
-// syntax--string syntax--regexp syntax--js
-// syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js
 
 .syntax--string.syntax--regexp {
   .syntax--punctuation.syntax--definition.syntax--string.syntax--end,

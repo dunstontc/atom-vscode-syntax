@@ -2,14 +2,13 @@ atom-text-editor {
     .syntax--source.syntax--js {
         color: @light-blue;  // FIXME: variables aren't correctly targeted.
     }
-
     .syntax--js,
     .syntax--source.syntax--js {
-        // .syntax--keyword.syntax--operator {
+        .syntax--keyword.syntax--operator {
           // color:lime; // NOTE: =, /, <, >, ++,
-        // }
+        }
         .syntax--operator {
-            // color:black;
+            // color:@dark-blue;
         }
 
         &.syntax--entity {
@@ -33,7 +32,7 @@ atom-text-editor {
             &.syntax--instanceof,
             &.syntax--typeof,
             &.syntax--void {
-                // color: maroon; // QUESTION:
+                // color: lime; // QUESTION:
             }
 
             &.syntax--of {
@@ -66,6 +65,11 @@ atom-text-editor {
                 .syntax--keyword {
                     color: @very-light-gray;
                 }
+            }
+            &.syntax--for {
+              .syntax--keyword.syntax--operator {
+                color: @very-light-gray;
+              }
             }
 
             &.syntax--class {
@@ -115,12 +119,12 @@ atom-text-editor {
         .syntax--variable {
             // color: @light-blue;  // NOTE: Variables, regex interpolation, (uquoted strings?)
             .syntax--parameter {
-                color: @light-blue;
+                // color: @light-blue;
                 // QUESTION: define
             }
         }
     .syntax--keyword .syntax--operator .syntax--module .syntax--all{
-       color: @very-light-gray;
+       color: @light-blue;
     }
   }
 }
