@@ -2,10 +2,11 @@
 
 # dark-plus-syntax
 
-<!-- [Visual Studio Code's](https://code.visualstudio.com/) `Dark+` (default dark) theme, ported to Atom. <br> -->
+
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, ported to [Atom](https://github.com/atom/atom/). <br><br>
 (Pairs well with Atom One Dark UI) <br>
 [(package on atom.io)](https://atom.io/themes/dark-plus-syntax)
+
 
 ## Supported Languages:
 
@@ -17,7 +18,7 @@
 - [x] Markdown
 - [ ] GFL
 - [x] JavaScript
-- [ ] JavaScript (Babel)
+- [x] JavaScript (Babel)
 - [ ] Javascript React (Babel) (JSX)
 - [x] JSON & CSON
 - [x] CoffeeScript

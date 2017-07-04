@@ -5,7 +5,6 @@ node_modules
 
 _testing
 
+_testing/_examples/
 
-
-
-styles/_template
+_testing/_samples/
