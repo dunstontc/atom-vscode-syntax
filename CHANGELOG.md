@@ -1,6 +1,6 @@
-# 1.1.1
+# 1.1.2
 
-- removed vscode image from readme
+- 'readme' edits
 
 # 1.1.0
 
