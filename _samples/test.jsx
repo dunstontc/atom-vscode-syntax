@@ -21,7 +21,7 @@ let example = function () {
     }
 }
 
-let claysObject = {
+let myObject = {
     float:              23.23,
     boolean:            false,
     string:             'here\'s a string',

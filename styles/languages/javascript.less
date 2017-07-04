@@ -6,35 +6,39 @@ atom-text-editor {
     .syntax--js,
     .syntax--source.syntax--js {
         // .syntax--keyword.syntax--operator {
-        //   color:lime; // NOTE: =, /, <, >, ++,
+          // color:lime; // NOTE: =, /, <, >, ++,
         // }
-        // color: yellow;
         .syntax--operator {
             // color:black;
         }
 
         &.syntax--entity {
-            // color: @dark-blue; // NOTE: ${}
             &.syntax--bracket.syntax--curly,
             &.syntax--delimiter.syntax--object.syntax--comma,
             &.syntax--punctuation.syntax--begin,
             &.syntax--punctuation.syntax--end {
                 color: @dark-blue; // NOTE: ${}
             }
+            .syntax--json{
+              .syntax--function.syntax--name {
+                  color: @light-yellow;
+              }
+            }
         }
 
         .syntax--keyword {
-            // color: @light-blue;  // NOTE: some control
             &.syntax--delete,
             &.syntax--for,
             &.syntax--in,
             &.syntax--instanceof,
-            &.syntax--of,
             &.syntax--typeof,
             &.syntax--void {
-                // color: @pink; // QUESTION:
+                // color: maroon; // QUESTION:
             }
 
+            &.syntax--of {
+                color: @very-light-gray;
+            }
             &.syntax--new {
                 color: @dark-blue;
             }
@@ -64,12 +68,6 @@ atom-text-editor {
                 }
             }
 
-            // .syntax--for {
-            //     &.syntax--keyword.syntax--operator {
-            //         color: @very-light-gray;
-            //     }
-            // }
-
             &.syntax--class {
                 // NOTE: brackets
                 // color: @sefoam-green;
@@ -77,6 +75,9 @@ atom-text-editor {
 
             &.syntax--arguments {
               // color: @light-blue;
+              .syntax--keyword.syntax--operator {
+                // color: @very-light-gray;
+              }
               .syntax--string {
                 &.syntax--quoted.syntax--single,
                 &.syntax--quoted.syntax--double {
@@ -105,7 +106,7 @@ atom-text-editor {
                     &.syntax--delimiter,
                     &.syntax--punctuation.syntax--begin,
                     &.syntax--punctuation.syntax--end {
-                        color: maroon; // NOTE: ${}
+                        // color: maroon; // NOTE: ${}
                     }
                 }
             }
@@ -122,18 +123,6 @@ atom-text-editor {
        color: @very-light-gray;
     }
   }
-    //
-    //   // &.syntax--other.syntax--property {
-    //   &.syntax--property {
-    //     color: @syntax-text-color;
-    //   }
-    //
-    // }
-    // // syntax--other syntax--property syntax--js
-    // &.syntax--definition {
-    //   &.syntax--variable {
-    //     color: @var-blue;  // QUESTION: define
-    //   }
 }
 
 .syntax--string.syntax--quoted.syntax--template {

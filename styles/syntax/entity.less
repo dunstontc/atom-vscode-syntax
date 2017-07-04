@@ -7,6 +7,9 @@
         &.syntax--type {
             color: @sefoam-green; // NOTE: console, regexp TODO: Add Math here
         }
+        &.syntax--tag {
+            color: @dark-blue;
+        }
     }
 
     &.syntax--other {
@@ -16,12 +19,11 @@
 
         &.syntax--attribute-name {
             &.syntax--pseudo-element {
-                color: maroon;
+                // color: maroon;
             }
 
             &.syntax--attribute {
                 color: @very-light-gray;
-                color: maroon;
             }
         }
     }
@@ -32,11 +34,9 @@
     }
 
     .syntax--name.syntax--section {
-        color: maroon;
+        // color: maroon;
     }
 
-    &.syntax--name.syntax--tag {
-        color: @dark-blue;
-    }
+
 
 }
