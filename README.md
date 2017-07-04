@@ -6,16 +6,19 @@
 (Pairs well with Atom's One [Dark UI](https://atom.io/themes/one-dark-ui)) <br>
 [(package on atom.io)](https://atom.io/themes/dark-plus-syntax)
 
-JavaScript:
+##### JavaScript:
 ![screenshot](./images/js1.png)
 
-HTML:
+##### HTML:
 ![html](./images/html.png)
 
-More Screenshots:
+
+##### More Screenshots:
   - [CoffeeScript](./images/coffee.png)
   - [markdown](./images/markdown.png)
   - [json](./images/json.png)
+
+
 ## Supported Languages:
 
 - [x] HTML
