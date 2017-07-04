@@ -3,6 +3,10 @@
         color: @sefoam-green;
     }
 
+    &.syntax--math,
+    &.syntax--builtin {
+      color: @sefoam-green;
+    }
     &.syntax--function {
         color: @light-yellow; // NOTE: console.log, math.floor
 
@@ -19,10 +23,10 @@
 
     &.syntax--dom {
         &.syntax--function {
-            color: @light-blue !important;
+            color: @light-blue;
         }
         &.syntax--variable {
-          color: @sefoam-green !important;
+          color: @sefoam-green;
         }
     }
 }

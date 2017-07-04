@@ -21,14 +21,18 @@
     color: @syntax-color-comment;
 }
 .syntax--storage {
+  // color: maroon; // NOTE: extends
+  &.syntax--type {
     color: @dark-blue;
+  }
 }
 
 .syntax--invalid.syntax--illegal {
-    background-color: @syntax-text-color;
+    background-color: @light-red;
     color: @syntax-bg;
 }
 
 .syntax--none {
-    color: @very-light-gray;
+    // color: @very-light-gray;
+    color: red;
 }

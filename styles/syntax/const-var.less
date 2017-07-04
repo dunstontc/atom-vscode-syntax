@@ -1,5 +1,5 @@
 .syntax--constant {
-    color: @light-blue;
+    // color: @light-blue;
 
     &.syntax--character.syntax--escape {
         color: @light-blue;
@@ -15,15 +15,20 @@
 
     &.syntax--other {
         &.syntax--color {
-          // color: ;
+        }
+
+        &.syntax--rgb-value {
+
+          color: @orange;
         }
 
         &.syntax--symbol {
-            // color: ;
+            // color: @light-blue;
         }
     }
 
     &.syntax--language {
+      color: @dark-blue;
         &.syntax--null,
         &.syntax--undefined {
             color: @dark-blue;
@@ -43,7 +48,7 @@
     }
 
     &.syntax--language {
-        color: @pink; // NOTE : default, this;
+        // color: @pink; // NOTE : default, this;
     }
 
     &.syntax--object {

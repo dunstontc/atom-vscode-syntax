@@ -3,13 +3,25 @@ atom-text-editor {
     .syntax--js.syntax--jsx,
     .syntax--source.syntax--jsx,
     .syntax--jsx.syntax--js {
+        // color: @very-light-gray;
+      }
+
+    .syntax--jsx,
+    .syntax--js.syntax--jsx,
+    .syntax--source.syntax--jsx,
+    .syntax--jsx.syntax--js {
       color: @very-light-gray;
 
         .syntax--keyword {
-
+          color:@dark-blue;
           &.syntax--operator {
             color:@dark-blue;
 
+            &.syntax--increment,
+            &.syntax--decrement,
+            &.syntax--relational,
+            &.syntax--comparison,
+            &.syntax--of,
             &.syntax--accessor,
             &.syntax--arithmetic,
             &.syntax--assignment,
@@ -20,9 +32,14 @@ atom-text-editor {
         }
 
         .syntax--control {
+          color: @pink;
+
+          &.syntax--module {
+            color: @very-light-gray;
+          }
           &.syntax--module:nth-child(2) {
               color: @pink; // TODO: This will most likely cause problems. FIXME
-            }
+          }
 
           }
 
@@ -34,17 +51,18 @@ atom-text-editor {
             }
         }
         .syntax--meta {
-              .syntax--keyword.syntax--operator{
-                // color: @very-light-gray; // NOTE: set to override JS settings in Babel
-                // color: @light-gray;  // TODO: Tweaked
-              }
-              &.syntax--require {
-                  color: @light-yellow !important;
-              }
+            .syntax--keyword.syntax--operator{
+              // color: @very-light-gray; // NOTE: set to override JS settings in Babel
+              // color: @light-gray;  // TODO: Tweaked
             }
+        }
+        &.syntax--require {
+          color: @light-yellow !important;
+        }
 
         .syntax--readwrite {
             // color: @light-blue; // NOTE: This can define variables in Babel
         }
     }
+
 }

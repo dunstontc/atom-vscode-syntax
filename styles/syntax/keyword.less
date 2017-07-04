@@ -11,9 +11,11 @@
         &.syntax--module {
             color: @very-light-gray; // NOTE: import, export, from, default in JavaScript
         }
+        &.syntax--conditional {}
     }
 
     &.syntax--operator {
+        // color: @very-light-gray;
         .syntax--punctuation {}
 
         &.syntax--module {
@@ -21,16 +23,24 @@
             color: @light-blue; // TODO: this in vanilla
           }
         }
+
+        &.syntax--undefined,
+        &.syntax--null,
         &.syntax--new,
         &.syntax--this {
            color: @dark-blue; // TODO: define new in Babel/JSX
         }
 
+        &.syntax--increment,
+        &.syntax--decrement,
         &.syntax--relational,
         &.syntax--comparison,
         &.syntax--of,
-        &.syntax--assignment {
-            color: @very-light-gray;
+        &.syntax--accessor,
+        &.syntax--arithmetic,
+        &.syntax--assignment,
+        &.syntax--ternary {
+          color: @very-light-gray;
         }
     }
 
