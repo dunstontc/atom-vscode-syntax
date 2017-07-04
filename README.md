@@ -27,7 +27,7 @@
 - [x] SASS & SCSS
 - [ ] Stylus
 - [x] Markdown
-- [ ] GFL
+- [ ] GFM
 - [x] JavaScript
 - [x] JavaScript (Babel)
 - [ ] Javascript React (Babel) (JSX)
