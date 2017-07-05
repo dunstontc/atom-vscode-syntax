@@ -1,14 +1,14 @@
 .syntax--support {
     &.syntax--class {
-        color: @sefoam-green;
+        color: @seafoam-green;
     }
 
     &.syntax--math,
     &.syntax--builtin {
-      color: @sefoam-green;
+      color: @seafoam-green;
     }
     &.syntax--function {
-        color: @light-yellow; // NOTE: console.log, math.floor
+        color: @light-yellow !important; // NOTE: console.log, js > require()
 
         &.syntax--any-method {
             color: @pink;
@@ -17,7 +17,7 @@
 
     &.syntax--type {
         &.syntax--object{
-          color: @sefoam-green;  // NOTE: Console in Babel
+          color: @seafoam-green;  // NOTE: Console in Babel
         }
     }
 
@@ -26,7 +26,7 @@
             color: @light-blue;
         }
         &.syntax--variable {
-          color: @sefoam-green;
+          color: @seafoam-green;
         }
     }
 }

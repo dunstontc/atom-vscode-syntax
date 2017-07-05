@@ -8,10 +8,6 @@
     &.syntax--italic {
         color     : @light-blue;
         font-style: italic;
-
-        .syntax--punctuation {
-            color: @light-blue;
-        }
     }
 
     &.syntax--bold,
@@ -20,8 +16,13 @@
         font-weight: bold;
     }
 
+    &.syntax--strike {
+        color: @light-gray;
+        text-decoration: line-through;
+    }
+
     &.syntax--changed {
-        color: @sefoam-green;
+        color: @seafoam-green;
     }
 
     &.syntax--deleted {
@@ -46,6 +47,9 @@
     }
 
     &.syntax--link {
+        .syntax--destination {
+          // text-decoration: underline;
+        }
         .syntax--punctuation {
             color: @very-light-gray;
         }
@@ -63,6 +67,6 @@
     -webkit-font-smoothing: auto;
 
     &.syntax--heading {
-        color: @sefoam-green;
+        color: @seafoam-green;
     }
 }

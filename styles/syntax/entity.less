@@ -2,11 +2,20 @@
     &.syntax--name {
         &.syntax--function {
             color: @light-yellow;
+
+            &.syntax--constructor {
+              color: @light-blue;
+            }
+        }
+
+        &.syntax--method {
+            color: @light-blue;
         }
 
         &.syntax--type {
-            color: @sefoam-green; // NOTE: console, regexp TODO: Add Math here
+            color: @seafoam-green; // NOTE: console, regexp
         }
+
         &.syntax--tag {
             color: @dark-blue;
         }
@@ -14,12 +23,12 @@
 
     &.syntax--other {
         &.syntax--inherited-class {
-            color: @sefoam-green;
+            color: @seafoam-green;
         }
 
         &.syntax--attribute-name {
             &.syntax--pseudo-element {
-                // color: maroon;
+                // color: ;
             }
 
             &.syntax--attribute {
@@ -30,13 +39,6 @@
 
     &.syntax--name.syntax--class,
     &.syntax--name.syntax--type.syntax--class {
-        color: @sefoam-green;  // NOTE: Babel Classes/Types
+        color: @seafoam-green;  // NOTE: Babel Classes/Types
     }
-
-    .syntax--name.syntax--section {
-        // color: maroon;
-    }
-
-
-
 }

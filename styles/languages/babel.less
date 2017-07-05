@@ -50,6 +50,9 @@ atom-text-editor {
             .syntax--punctuation.syntax--end {
                 color: @dark-blue; // NOTE: ${}
             }
+            &.syntax--other.syntax--attribute-name {
+              color: @light-blue;
+            }
         }
         .syntax--meta {
             .syntax--keyword.syntax--operator{
@@ -65,5 +68,13 @@ atom-text-editor {
             // color: @light-blue; // NOTE: This can define variables in Babel
         }
     }
-
+    // Over-nesting to override `language-babel` default styles.
+    // (copied from atom-panda-syntax)
+    .syntax--source.syntax--js.syntax--jsx {
+        .syntax--jsx {
+            .syntax--entity.syntax--other.syntax--attribute-name {
+                font-style: normal;
+            }
+        }
+    }
 }
