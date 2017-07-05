@@ -15,8 +15,8 @@
 
 ##### More Screenshots:
   - [CoffeeScript](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/coffee.png)
-  - [markdown](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
-  - [json](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
+  - [Markdown](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
+  - [JSON](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
 
 
 ## Supported Languages:
