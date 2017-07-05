@@ -1,10 +1,8 @@
-
 # dark-plus-syntax
-
+[![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
 
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme. <br>
 (Pairs well with Atom's [One Dark UI](https://atom.io/themes/one-dark-ui)) <br>
-[(on atom.io)](https://atom.io/themes/dark-plus-syntax)
 
 #### JavaScript:
 ![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/js1.png)
@@ -18,9 +16,7 @@
   - [Markdown](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
   - [JSON](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
 
-
 ## Supported Languages:
-
 - [ ] Bash
 - [ ] C
 - [ ] C++
@@ -59,9 +55,7 @@
 - [ ] YAML
 
 ## Notes
-
 If you'd rather have vscode's default background & cursor, just add this to your stylesheet:
-
 ```css
 atom-text-editor {
     background-color: #1E1E1E;
@@ -70,6 +64,6 @@ atom-text-editor {
     }
 }
 ```
-## License
 
+## License
 The package is Open Source Software released under the [MIT](https://github.com/dunstontc/atom-vscode-syntax/blob/master/LICENSE.md) license.
