@@ -7,16 +7,16 @@
 [(on atom.io)](https://atom.io/themes/dark-plus-syntax)
 
 #### JavaScript:
-![screenshot](./images/js1.png)
+![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/js1.png)
 
 #### HTML:
-![html](./images/html.png)
+![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/html.png)
 
 
 ##### More Screenshots:
-  - [CoffeeScript](./images/coffee.png)
-  - [markdown](./images/markdown.png)
-  - [json](./images/json.png)
+  - [CoffeeScript](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/coffee.png)
+  - [markdown](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
+  - [json](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
 
 
 ## Supported Languages:
@@ -39,7 +39,8 @@
 ## Notes
 
 If you'd rather have vscode's default background & cursor, just add this to your stylesheet:
-```less
+
+```css
 atom-text-editor {
     background-color: #1E1E1E;
     .cursor {
