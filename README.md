@@ -21,20 +21,40 @@
 
 ## Supported Languages:
 
-- [x] HTML
-- [x] CSS
-- [x] LESS
-- [x] SASS & SCSS
+- [ ] Bash
+- [ ] C
+- [ ] C++
+- [ ] C#
+- [x] __CoffeeScript__
+- [ ] __CSON__
+- [x] __CSS__
+- [ ] CSV
+- [ ] GFM (Github Flavored Markdown)
+- [ ] Go
+- [ ] Handlebars
+- [x] __HTML__
+- [ ] Jade/Pug
+- [ ] Java
+- [x] __JavaScript__
+- [x] __Javascript (Babel)__
+- [x] __Javascript React (Babel, JSX)__
+- [x] __JSON__
+- [ ] LaTeX
+- [x] __LESS__
+- [x] __Markdown__
+- [ ] Objective-C
+- [ ] PHP
+- [ ] Python
+- [ ] Ruby
+- [ ] Rust
+- [x] __SASS & SCSS__
+- [ ] SQL
 - [ ] Stylus
-- [x] Markdown
-- [ ] GFM
-- [x] JavaScript
-- [x] JavaScript (Babel)
-- [ ] Javascript React (Babel) (JSX)
-- [x] JSON & CSON
-- [x] CoffeeScript
+- [ ] SVG
 - [ ] TypeScript
 - [ ] VUE
+- [ ] XML
+- [ ] YAML
 
 ## Notes
 

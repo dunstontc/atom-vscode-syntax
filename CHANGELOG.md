@@ -1,3 +1,7 @@
+
+# 1.2.3
+- `readme` edits: image links, supported languages list
+
 # 1.2.2
 - description & keywords updated in `package.json`
 
