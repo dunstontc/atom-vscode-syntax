@@ -1,5 +1,6 @@
 # 1.2.4
 - added apm version badge
+- improved markdown support
 
 # 1.2.3
 - `readme` edits: image links, supported languages list
