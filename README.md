@@ -26,7 +26,7 @@
 - [ ] C++
 - [ ] C#
 - [x] __CoffeeScript__
-- [ ] __CSON__
+- [X] __CSON__
 - [x] __CSS__
 - [ ] CSV
 - [ ] GFM (Github Flavored Markdown)
@@ -51,6 +51,8 @@
 - [ ] SQL
 - [ ] Stylus
 - [ ] SVG
+- [ ] Text (plain text)
+- [ ] TODO
 - [ ] TypeScript
 - [ ] VUE
 - [ ] XML

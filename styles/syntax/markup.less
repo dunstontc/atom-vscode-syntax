@@ -8,16 +8,17 @@
     &.syntax--italic {
         color     : @light-blue;
         font-style: italic;
-
-        .syntax--punctuation {
-            color: @light-blue;
-        }
     }
 
     &.syntax--bold,
     &.syntax--strong {
         color      : @dark-blue;
         font-weight: bold;
+    }
+
+    &.syntax--strike {
+        color: @light-gray;
+        text-decoration: line-through;
     }
 
     &.syntax--changed {
@@ -46,6 +47,9 @@
     }
 
     &.syntax--link {
+        .syntax--destination {
+          // text-decoration: underline;
+        }
         .syntax--punctuation {
             color: @very-light-gray;
         }
