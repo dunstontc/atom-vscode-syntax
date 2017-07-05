@@ -2,11 +2,9 @@
 npm-debug.log
 node_modules
 
-
-_testing
+_test
 
 testing
 
 _testing/_examples/
-
 _testing/_samples/
