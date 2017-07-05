@@ -69,8 +69,8 @@
             color: @very-light-gray;
         }
 
-        &.syntax--embedded {
-            color: @dark-blue;
+        .syntax--string &.syntax--embedded.syntax--punctuation {
+            // color: @dark-blue;
         }
 
         &.syntax--class {
@@ -88,8 +88,7 @@
         &.syntax--string.syntax--template {
             &.syntax--begin,
             &.syntax--end {
-                // color: @dark-blue; // NOTE: ()s & ''/""/``s
-                color: @very-light-gray; // NOTE: ()s & ''/""/``s
+                // color: @very-light-gray; // NOTE: ()s & ''/""/``s
             }
             &.syntax--method,
             &.syntax--class,
