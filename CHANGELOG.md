@@ -1,3 +1,6 @@
+# 1.2.2
+- description & keywords updated in `package.json`
+
 # 1.2.0
 - made tag/bracket/brace colors consistent
 - changes to improve highlighting for React/jsx
