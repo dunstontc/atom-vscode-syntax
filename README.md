@@ -66,5 +66,6 @@ atom-text-editor {
 }
 ```
 
+
 ## License
 The package is Open Source Software released under the [MIT](https://github.com/dunstontc/atom-vscode-syntax/blob/master/LICENSE.md) license.
