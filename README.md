@@ -23,7 +23,7 @@
 - [ ] C++
 - [ ] C#
 - [x] __CoffeeScript__
-- [X] __CSON__
+- [x] __CSON__
 - [x] __CSS__
 - [ ] CSV
 - [ ] GFM (Github Flavored Markdown)
