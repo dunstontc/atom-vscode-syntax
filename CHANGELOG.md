@@ -1,3 +1,7 @@
+# ~2.0.0
+- Added logo to `readme`
+- Added options to use 
+
 # 1.2.4
 - added apm version badge
 - improved markdown support
