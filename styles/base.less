@@ -9,7 +9,7 @@
 }
 
 .syntax--invalid.syntax--illegal {
-    background-color: @light-red;
+    background-color: @theme-color--error;
     color           : @syntax-bg;
 }
 
@@ -18,10 +18,10 @@
 }
 
 .syntax--string {
-    color: @orange;
+    color: @theme-color--string;
 
     &.syntax--unquoted {
-        color: @orange;
+        color: @theme-color--string;
     }
 
     &.syntax--regexp {
@@ -42,7 +42,7 @@
 }
 
 .syntax--variable {
-    color: @light-blue;
+    color: @syntax-color;
 
     &.syntax--interpolation {
         color: @light-blue;
@@ -62,7 +62,7 @@
 }
 
 .syntax--constant {
-    color: @light-blue;
+    color: @syntax-color-variable;
 
     &.syntax--character.syntax--escape {
         color: @light-blue;
@@ -245,9 +245,7 @@
     &.syntax--definition {
         color: @very-light-gray;
 
-        &.syntax--variable {
-            // color: rebeccapurple; // QUESTION: define
-        }
+        // &.syntax--variable {color: ;}
     }
 
     &.syntax--class.syntax--body {
@@ -350,6 +348,7 @@
 // @light-blue?
 // syntax--entity syntax--name syntax--function syntax--js
 // syntax--meta.syntax--function-call
+
 .syntax--punctuation {
     &.syntax--definition {
         &.syntax--comment {
