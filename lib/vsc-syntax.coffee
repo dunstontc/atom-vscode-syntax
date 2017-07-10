@@ -24,7 +24,7 @@ class vscSyntax
     return if @isActiveTheme scheme unless @isPreviewConfirmed
     try
       # Write the requested theme to the `syntax-variables` file.
-      fs.writeFileSync @getColorsPath(), @getcolorsContent(scheme)
+      fs.writeFileSync @getThemePath(), @getThemeContent(scheme)
       activePackages = atom.packages.getActivePackages()
       if activePackages.length is 0 or @isPreview
         # Reload own stylesheets to apply the requested theme.
@@ -40,12 +40,12 @@ class vscSyntax
   isActiveTheme: (scheme) ->
     scheme is @activeScheme
 
-  getColorsPath: ->
-    path.join __dirname, "..", "styles", "colors.less"
+  getThemePath: ->
+    path.join __dirname, "..", "styles", "theme.less"
 
-  getcolorsContent: (scheme) ->
+  getThemeContent: (scheme) ->
     """
-    @vsc-syntax: './colors-#{@getNormalizedName(scheme)}';
+    @vsc-syntax: './themes/#{@getNormalizedName(scheme)}';
 
     @import '@{vsc-syntax}';
 
