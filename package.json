@@ -2,7 +2,7 @@
   "name": "dark-plus-syntax",
   "theme": "syntax",
   "version": "1.2.4",
-  "main": "./lib/vsv-syntax.coffee",
+  "main": "./lib/vsc-syntax.coffee",
   "description": "Visual Studio Code's 'Dark+' (default dark) theme",
   "keywords": [
     "atom",

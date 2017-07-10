@@ -26,8 +26,8 @@ let myObject = {
     string:             'here\'s a string',
     templateLiteral:    `This template is ${idk} literal`,
     regexp:             new RegExp( /\.jsx$/ ),
-    notDefined:         undefined;
-    null:               null;
+    notDefined:         undefined,
+    null:               null,
 }
 
 class Polygon {
