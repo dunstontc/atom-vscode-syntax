@@ -3,9 +3,9 @@
 - Expanded theme options:
   - Dark Default
   - Dark Custom
-  - Light Default
-  - Light Custom
-  - High Contrast 
+  <!-- - Light Default -->
+  <!-- - Light Custom -->
+  <!-- - High Contrast  -->
 
 # 1.2.4
 - added apm version badge
