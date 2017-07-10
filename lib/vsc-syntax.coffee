@@ -4,7 +4,7 @@ path = require 'path'
 
 class vscSyntax
 
-  config: require('./vsc-settings').config
+  config: require('./vsc-syntax-settings').config
 
   activate: ->
     @disposables = new CompositeDisposable

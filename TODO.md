@@ -1,25 +1,29 @@
 # General
+  - [ ] move from space-pen to etch based list
   - [ ] all .coffee files in `./lib` need to be converted to js
   - [ ] add theme specific selection colors
+  - [ ] High Contrast theme
+  - [ ] Light Default theme
 
 
 
 # Themes
   - [ ] Dark Default
   - [ ] Dark (custom)
+  - [ ] High Contrast
   - [ ] Light Default
   - [ ] _Light (custom)_
-  - [ ] High Contrast
   - [ ] _High Contrast (custom)_
 
 
-# Sample Files & Language Support:
+# Languages:
 - [ ] Bash
 - [ ] C
 - [ ] C++
 - [ ] C#
 - [x] __CoffeeScript__
 - [x] __CSON__
+- [x] CSS
 - [ ] CSV
 - [ ] GFM (Github Flavored Markdown)
 - [ ] Go
@@ -49,6 +53,3 @@
 - [ ] VUE
 - [ ] XML
 - [ ] YAML
-
-# Full Support:
-- [x] __CSS__

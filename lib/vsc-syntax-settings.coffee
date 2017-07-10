@@ -5,10 +5,10 @@ settings =
       default: 'dark-default'
       enum: [
         "dark-default"
-        "light-default"
-        "high-contrast"
+        # "light-default"
+        # "high-contrast"
         "dark-custom"
-        "light-custom"
-        "high-contrast-custom"
+        # "light-custom"
+        # "high-contrast-custom"
       ]
 module.exports = settings

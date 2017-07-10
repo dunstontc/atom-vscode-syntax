@@ -2,6 +2,7 @@
   "name": "dark-plus-syntax",
   "theme": "syntax",
   "version": "1.2.4",
+  "main": "./lib/vsv-syntax.coffee",
   "description": "Visual Studio Code's 'Dark+' (default dark) theme",
   "keywords": [
     "atom",
@@ -14,5 +15,7 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0"
+  }
 }
