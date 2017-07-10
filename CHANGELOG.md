@@ -1,6 +1,11 @@
 # ~2.0.0
 - Added logo to `readme`
-- Added options to use 
+- Expanded theme options:
+  - Dark Default
+  - Dark Custom
+  - Light Default
+  - Light Custom
+  - High Contrast 
 
 # 1.2.4
 - added apm version badge
