@@ -1,23 +1,23 @@
 /* SYNTAX VARIABLES */
 
-@import './colors';
+@import (reference) './theme.less';
 
 // Base colors -----------------------------------
-@syntax-fg: @very-light-gray;
-@syntax-bg: @dark-gray;
-@syntax-gutter: darken(@syntax-fg, 26%);
-@syntax-guide:  fade(@syntax-fg, 15%);
-@syntax-accent: @bright-blue;
-// @syntax-fg: @theme--fg;
-// @syntax-bg: @theme--bg;
+@syntax-fg: @theme--fg;
+@syntax-bg: @theme--bg;
 // @syntax-gutter: @theme--gutter;
 // @syntax-guide:  @theme--guide;
-// @syntax-accent: @theme--accent;
+@syntax-accent: @theme--accent;
+// @syntax-fg: @very-light-gray;
+// @syntax-bg: @dark-gray;
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+// @syntax-accent: @bright-blue;
 
 // General colors -----------------------------------
 @syntax-text-color:            @syntax-fg;
-@syntax-cursor-color:          @syntax-fg;
-// @syntax-cursor-color:          @theme--cursor-color;
+// @syntax-cursor-color:          @syntax-fg;
+@syntax-cursor-color:          @theme--cursor-color;
 @syntax-selection-color:       lighten(@syntax-background-color, 15%);
 @syntax-selection-flash-color: @syntax-accent;
 @syntax-background-color:      @syntax-bg;
@@ -44,31 +44,31 @@
 @syntax-color-removed:  hsl(0,    70%, 60%);
 
 // For language entity colors -----------------------------------
-@syntax-color-variable:   @light-blue;
-@syntax-color-constant:   @puke;
-@syntax-color-property:   @syntax-fg;
-@syntax-color-value:      @orange;
-@syntax-color-function:   @dark-blue;
-@syntax-color-method:     @light-yellow;
-@syntax-color-class:      @seafoam-green;
-@syntax-color-keyword:    @pink;
-@syntax-color-tag:        @dark-blue;
-@syntax-color-attribute:  @light-blue;
-@syntax-color-import:     @pink;
-@syntax-color-snippet:    @comment-green; // Comments?
-// @syntax-color-variable:   @theme-color--variable;
-// @syntax-color-constant:   @theme-color--constant;
-// @syntax-color-property:   @theme-color--property;
-// @syntax-color-value:      @theme-color--value;
-// @syntax-color-function:   @theme-color--function;
-// @syntax-color-method:     @theme-color--method;
-// @syntax-color-class:      @theme-color--class;
-// @syntax-color-keyword:    @theme-color--keyword;
-// @syntax-color-tag:        @theme-color--tag;
-// @syntax-color-attribute:  @theme-color--attribute;
-// @syntax-color-import:     @theme-color--import;
-// @syntax-color-snippet:    @theme-color--snippet;
-@syntax-color-comment:    @comment-green;
+// @syntax-color-variable:   @light-blue;
+// @syntax-color-constant:   @puke;
+// @syntax-color-property:   @syntax-fg;
+// @syntax-color-value:      @orange;
+// @syntax-color-function:   @dark-blue;
+// @syntax-color-method:     @light-yellow;
+// @syntax-color-class:      @seafoam-green;
+// @syntax-color-keyword:    @pink;
+// @syntax-color-tag:        @dark-blue;
+// @syntax-color-attribute:  @light-blue;
+// @syntax-color-import:     @pink;
+// @syntax-color-snippet:    @comment-green; // Comments?
+@syntax-color-variable:   @theme-color--variable;
+@syntax-color-constant:   @theme-color--constant;
+@syntax-color-property:   @theme-color--property;
+@syntax-color-value:      @theme-color--value;
+@syntax-color-function:   @theme-color--function;
+@syntax-color-method:     @theme-color--method;
+@syntax-color-class:      @theme-color--class;
+@syntax-color-keyword:    @theme-color--keyword;
+@syntax-color-tag:        @theme-color--tag;
+@syntax-color-attribute:  @theme-color--attribute;
+@syntax-color-import:     @theme-color--import;
+@syntax-color-snippet:    @theme-color--snippet;
+@syntax-color-comment:    @theme-color--comment;
 
 // Custom Syntax Variables (Don't use in packages) -----------------------------------
 @syntax-cursor-line:   lighten(@syntax-background-color, 5%); // needs to be semi-transparent to show serach results
