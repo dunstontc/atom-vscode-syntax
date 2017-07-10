@@ -1,6 +1,5 @@
 # H1
-## H2
-#### H4
+### H3
 ###### H6
 
 ___
@@ -17,12 +16,11 @@ ___
 
 __bold__
 _italic_
-~~strikethrough~~
+~~strike~~
 [link](https://www.example.com)
 ![image](https://www.example.com/images/image.png)
 
 > blockquote
-> 
 > quoted.
 
 ```html

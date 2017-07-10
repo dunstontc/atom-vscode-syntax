@@ -1,5 +1,6 @@
 # General
   - [ ] all .coffee files in `./lib` need to be converted to js
+  - [ ] add theme specific selection colors
 
 
 
@@ -19,7 +20,6 @@
 - [ ] C#
 - [x] __CoffeeScript__
 - [x] __CSON__
-- [x] __CSS__
 - [ ] CSV
 - [ ] GFM (Github Flavored Markdown)
 - [ ] Go
@@ -49,3 +49,6 @@
 - [ ] VUE
 - [ ] XML
 - [ ] YAML
+
+# Full Support:
+- [x] __CSS__
