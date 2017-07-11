@@ -1,6 +1,6 @@
 name: "dark-plus-syntax"
 theme: "syntax"
-version: "1.2.3"
+version: "x.x.x"
 description: "Visual Studio Code's 'Dark+' (default dark) theme"
 keywords: [
 	"atom"

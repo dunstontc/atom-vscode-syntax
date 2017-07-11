@@ -1,6 +1,7 @@
 const ex = require('./another-file');
 
 import { SelectListView } from 'atom-select-list';
+import * as alias from 'atom';
 
 export default thing = 'empty';
 
