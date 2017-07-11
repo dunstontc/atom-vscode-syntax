@@ -3,12 +3,13 @@
         color: @seafoam-green;
     }
 
-    &.syntax--math,
-    &.syntax--builtin {
-      color: @seafoam-green;
+    &.syntax--builtin,
+    &.syntax--math {
+        color: @seafoam-green;
     }
+
     &.syntax--function {
-        color: @light-yellow; // NOTE: console.log, js > require()
+        color: @light-yellow !important;
 
         &.syntax--any-method {
             color: @pink;
@@ -16,8 +17,8 @@
     }
 
     &.syntax--type {
-        &.syntax--object{
-          color: @seafoam-green;  // NOTE: Console in Babel
+        &.syntax--object {
+            color: @seafoam-green;  // NOTE: Console in Babel
         }
     }
 
@@ -25,8 +26,9 @@
         &.syntax--function {
             color: @light-blue;
         }
+
         &.syntax--variable {
-          color: @seafoam-green;
+            color: @seafoam-green;
         }
     }
 }

@@ -13,7 +13,6 @@
 
 
 .syntax--comment {
-    // color: @syntax-comment-color;
     color: @syntax-color-comment;
 }
 .syntax--storage {
@@ -23,52 +22,11 @@
 }
 
 .syntax--invalid.syntax--illegal {
-    background-color: @light-red;
+    background-color: @theme-color--error;
     color: @syntax-bg;
 }
 
 .syntax--none {
-    // color: @very-light-gray;
-    color: red;
+    background-color: @syntax-fg;
+    color           : @syntax-bg;
 }
-
-
-// @import "./colors";
-// @import "./syntax-variables";
-//
-// @import "./syntax/keyword";
-// @import "./syntax/const-var";
-// @import "./syntax/string";
-// @import "./syntax/punctuation";
-// @import "./syntax/support";
-// @import "./syntax/entity";
-// @import "./syntax/meta";
-// @import "./syntax/markup";
-//
-// .syntax--comment {
-//     color: @theme-color--comment;
-// }
-//
-// .syntax--storage {
-//     // color: ; // NOTE: extends
-//     &.syntax--type {
-//         color: @dark-blue;
-//     }
-// }
-//
-// .syntax--invalid.syntax--illegal {
-//     background-color: @theme-color--error;
-//     color           : @syntax-bg;
-// }
-//
-// .syntax--none {
-//     background-color: @syntax-fg;
-//     color           : @syntax-bg;
-// }
-//
-// atom-text-editor {
-//     .line.cursor-line {
-//         // background-color: @syntax-cursor-line;
-//         .theme--cursor-line()
-//     }
-// }

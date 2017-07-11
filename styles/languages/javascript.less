@@ -5,11 +5,9 @@ atom-text-editor {
     .syntax--js,
     .syntax--source.syntax--js {
         .syntax--keyword.syntax--operator {
-          // color:lime; // NOTE: =, /, <, >, ++,
+          // color: ; // NOTE: =, /, <, >, ++,
         }
-        .syntax--operator {
-            // color:@dark-blue;
-        }
+        .syntax--operator {}
 
         &.syntax--entity {
             &.syntax--bracket.syntax--curly,
@@ -32,7 +30,7 @@ atom-text-editor {
             &.syntax--instanceof,
             &.syntax--typeof,
             &.syntax--void {
-                // color: lime; // QUESTION:
+                // color: ;
             }
 
             &.syntax--of {
@@ -45,11 +43,16 @@ atom-text-editor {
 
         .syntax--variable {
             &.syntax--language {
-                color: @dark-blue; // NOTE: this $$$:
+                // color: @light-blue; // NOTE: this $$$:
+                &.syntax--import-all {
+                  color: @light-blue;
+                }
             }
 
-            &.syntax--property {
-                color: @very-light-gray; // NOTE: Property in JavaScript
+            &.syntax--other {
+              &.syntax--property {
+                  // color: @very-light-gray; // NOTE: Property in JavaScript
+              }
             }
 
             &.syntax--default {

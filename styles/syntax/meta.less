@@ -2,23 +2,21 @@
     &.syntax--definition {
         color: @very-light-gray;
 
-        &.syntax--variable {
-            // color: rebeccapurple; // QUESTION: define
-        }
+        // &.syntax--variable {color: ;}
     }
 
     &.syntax--class.syntax--body {
-      &.syntax--function.syntax--method {
-        .syntax--function {
-          // color: @dark-blue;
+        &.syntax--function.syntax--method {
+            .syntax--function {
+                // color: @dark-blue;
+            }
         }
-      }
     }
 
     &.syntax--arguments {
-      .syntax--keyword.syntax--operator {
-        color: @very-light-gray;
-      }
+        .syntax--keyword.syntax--operator {
+            color: @very-light-gray;
+        }
     }
 
     &.syntax--delimiter {
@@ -27,21 +25,22 @@
 
     &.syntax--function {
         &.syntax--method {
-          color: @light-blue;
+            color: @light-blue;
         }
+
         &.syntax--parameters {
             color: @light-blue;
 
             .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
                 // font-style: italic;
             }
-
         }
 
         &.syntax--arguments {
             // color: @light-blue;
             // font-style: italic;
         }
+
         &.syntax--method {
             &.syntax--entity.syntax--name.syntax--function {
                 // color: @light-blue;
@@ -49,9 +48,9 @@
         }
         // &.syntax--function,
         &.syntax--arrow {
-          .syntax--entity.syntax--name.syntax--function {
-            color: @light-yellow;
-          }
+            .syntax--entity.syntax--name.syntax--function {
+                color: @light-yellow;
+            }
         }
     }
 
@@ -60,9 +59,9 @@
     }
 
     &.syntax--for {
-      .syntax--keyword.syntax--operator {
-        color: @very-light-gray;
-      }
+        .syntax--keyword.syntax--operator {
+            color: @very-light-gray;
+        }
     }
 
     &.syntax--selector {
@@ -89,15 +88,13 @@
     }
 
     &.syntax--function-call {
-
-        .syntax--name,
         .syntax--entity,
-        .syntax--function {
-          color: @light-blue;
+        .syntax--function,
+        .syntax--name {
+            color: @light-blue;
         }
-
     }
-    
+
     &.syntax--require {
         color: @light-yellow !important; // NOTE: 'require' for Babel
     }

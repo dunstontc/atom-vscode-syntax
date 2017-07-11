@@ -38,7 +38,11 @@
 }
 
 .theme--selection() {
-    background-color: @syntax-selection-color;
+    // background-color: @syntax-selection-color;
+    opacity: .95;
+    // background-color: rgb(29, 60, 104);
+    background-color: darken(@light-blue, 54%);
+    border-radius: 1.5px;
 }
 
 
@@ -51,7 +55,6 @@
 @theme-color--property:   @syntax-fg;
 @theme-color--value:      @orange;
 @theme-color--function:   @dark-blue;
-@theme-color--name:       @dark-blue;
 @theme-color--method:     @light-yellow;
 @theme-color--class:      @seafoam-green;
 @theme-color--keyword:    @pink;
@@ -60,12 +63,14 @@
 @theme-color--import:     @pink;
 @theme-color--snippet:    @comment-green;
 
+@theme-color--brace:      @very-light-gray;
 @theme-color--comment:    @comment-green;
 @theme-color--error:      @light-red;
-@theme-color--brace:      @very-light-gray;
-@theme-color--string:     @orange;
+@theme-color--name:       @light-yellow;
 @theme-color--regex:      @light-red;
 @theme-color--storage:    @dark-blue;
+@theme-color--string:     @orange;
+
 
 /* ========================================================================== */
 
@@ -102,6 +107,7 @@
  *   entity.name.function
  *   support.function (console.log)
  *   support.function.node.js (require)
+ *   ~~meta.function.js
  */
 @light-yellow:  #DCDCAA;
 /**
