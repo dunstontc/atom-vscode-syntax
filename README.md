@@ -18,42 +18,46 @@
   - [JSON](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
 
 ## Supported Languages:
-- [ ] Bash
-- [ ] C
-- [ ] C++
-- [ ] C#
 - [x] __CoffeeScript__
 - [x] __CSON__
 - [x] __CSS__
-- [ ] CSV
-- [ ] GFM (Github Flavored Markdown)
-- [ ] Go
-- [ ] Handlebars
 - [x] __HTML__
-- [ ] Jade/Pug
-- [ ] Java
 - [x] __JavaScript__
 - [x] __Javascript (Babel)__
 - [x] __Javascript React (Babel, JSX)__
 - [x] __JSON__
-- [ ] LaTeX
 - [x] __LESS__
 - [x] __Markdown__
+- [x] __SASS & SCSS__
+
+
+## Coming _Soon_:
+- [ ] Bash
+- [ ] C
+- [ ] C++
+- [ ] C#
+- [ ] CSV
+- [ ] GFM (Github Flavored Markdown)
+- [ ] Go
+- [ ] Handlebars
+- [ ] Jade/Pug
+- [ ] Java
+- [ ] LaTeX
+- [ ] SQL
+- [ ] Stylus
+- [ ] SVG
+- [ ] Text (plain text)
 - [ ] Objective-C
 - [ ] PHP
 - [ ] Python
 - [ ] Ruby
 - [ ] Rust
-- [x] __SASS & SCSS__
-- [ ] SQL
-- [ ] Stylus
-- [ ] SVG
-- [ ] Text (plain text)
-- [ ] TODO
 - [ ] TypeScript
 - [ ] VUE
 - [ ] XML
 - [ ] YAML
+- [ ] TODO
+
 
 ## Notes
 If you'd rather have vscode's default background & cursor, just add this to your stylesheet:
