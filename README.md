@@ -39,7 +39,7 @@ Selecting a color scheme:
 - __Markdown__
 - __SASS & SCSS__
 - __SVG__
-<!-- - __XML__ (plist, SVG) -->
+- __XML__ (plist, SVG)
 
 
 ## TODO:
@@ -57,17 +57,15 @@ Selecting a color scheme:
   - CSV
   - GFM (Github Flavored Markdown)
   - Go
-  <!-- - Handlebars -->
-  <!-- - Jade/Pug -->
+  - Handlebars
+  - Jade/Pug
   - Java
   - Objective-C
   - PHP
-  - plist
   - Python
   - Ruby
   - Rust
   - SQL
-  <!-- - Stylus -->
   - Text (plain text)
   - TypeScript
   - TypeScript React (TSX)

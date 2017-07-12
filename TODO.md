@@ -58,7 +58,8 @@
 
 # Language-Babel:
 - [ ] __super__:
-- [ ] __require__: support.function, support.function.node.js, support.type.object.module
+- [ ] UMD export keywords
+    - __require__: support.function, support.function.node.js, support.type.object.module
 - [ ] __constructor__: ~variable.language.constructor (entity.name.function.constructor)
 - [ ] String.__function__: string.support-function  _(entity.name.tag)(string.quasi)_
 - [ ] Math.__function__: builtin/support.function.math

@@ -4,14 +4,12 @@
 - Added theme options:
   - Dark Default
   - Dark Custom
-  <!-- - Light Default -->
-  <!-- - Light Custom -->
-  <!-- - High Contrast  -->
 - Customized UI colors per theme
 - Improved highlighting for:
   - Javascript (vanilla, es6, & jsx)
   - CoffeeScript
-<!-- - Refactored using syntax-variables instead of color variables -->
+  - HTML (embeded languages)
+  - VUE
 - Updated `readme`:
   - Added logo
   - Added Usage section
@@ -19,6 +17,7 @@
   - Added Credit & Thanks section
   - Updated screenshots
   - Updated supported languages
+- Removed package-lock.json
 
 
 ## 1.2.4
