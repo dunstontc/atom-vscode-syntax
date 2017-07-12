@@ -1,23 +1,45 @@
-# 1.2.4
+# Changelog
+
+## 2.0.0
+- Added theme options:
+  - Dark Default
+  - Dark Custom
+- Customized UI colors per theme
+- Improved highlighting for:
+  - Javascript (vanilla, es6, & jsx)
+  - CoffeeScript
+  - HTML (embeded languages)
+  - VUE
+- Updated `readme`:
+  - Added logo
+  - Added Usage section
+  - Added TODO section
+  - Added Credit & Thanks section
+  - Updated screenshots
+  - Updated supported languages
+- Removed package-lock.json
+
+
+## 1.2.4
 - added apm version badge
 - improved markdown support
 
-# 1.2.3
+## 1.2.3
 - `readme` edits: image links, supported languages list
 
-# 1.2.2
+## 1.2.2
 - description & keywords updated in `package.json`
 
-# 1.2.0
+## 1.2.0
 - made tag/bracket/brace colors consistent
 - changes to improve highlighting for React/jsx
 - slight refactoring
 - `readme` edits
 
-# 1.1.4
+## 1.1.4
 - `readme` edits
 
-# 1.1.0
+## 1.1.0
 - fixed operator keyword highlighting ('new' in Babel/JSX).
 - DOM variable & methods (in JavaScript) now have correct highlighting.
 - various punctuation fixes.
@@ -25,13 +47,14 @@
 - additional tweaks
 - added screenshots
 
-# 1.0.0
+## 1.0.0 - First Release
 - Initial work done
 - Uploaded to Atom Package Registry
 
-# 0.2.0
+<!--
+## 0.2.0
 - Initial development complete.
 
-# 0.1.0 - First Release
-- Initial work done
+## 0.1.0
 - Uploaded to GitHub
+-->
