@@ -12,10 +12,13 @@ atom-text-editor {
 
         .syntax--component,
         .syntax--keyword {
-            color: @dark-blue;
+            // color: @dark-blue;
+            // &.syntax--module {
+            //     color: @seafoam-green !important; // NOTE: Babel
+            // }
 
             &.syntax--operator {
-                &.syntax--accessor,
+                // &.syntax--accessor,
                 &.syntax--arithmetic,
                 &.syntax--assignment,
                 &.syntax--comparison,
@@ -26,6 +29,10 @@ atom-text-editor {
                 &.syntax--relational,
                 &.syntax--ternary {
                     color: @very-light-gray;
+                }
+
+                &.syntax--module {
+                    color: @seafoam-green;
                 }
             }
         }
@@ -52,8 +59,9 @@ atom-text-editor {
             &.syntax--other.syntax--attribute-name {
                 color: @light-blue;
             }
+
             &.syntax--name.syntax--function.syntax--method {
-              color: @light-blue;
+                color: @light-blue;
             }
         }
 
@@ -62,14 +70,16 @@ atom-text-editor {
                 // color: @very-light-gray; // NOTE: set to override JS settings in Babel
                 // color: @light-gray;  // TODO: Tweaked
             }
+
             .syntax--extends {
                 .syntax--entity.syntax--name.syntax--class {
                     color: @light-blue;
                 }
             }
+
             &.syntax--function.syntax--method {
                 .syntax--entity.syntax--name.syntax--function.syntax--method {
-                  color: @light-yellow;
+                    color: @light-yellow;
                 }
             }
         }
@@ -83,7 +93,7 @@ atom-text-editor {
         }
     }
     // Over-nesting to override `language-babel` default styles.
-    // (copied from atom-panda-syntax)
+    // (via atom-panda-syntax)
     .syntax--source.syntax--js.syntax--jsx {
         .syntax--jsx {
             .syntax--entity.syntax--other.syntax--attribute-name {
@@ -93,15 +103,21 @@ atom-text-editor {
     }
 }
 
-
 .syntax--source.syntax--js.syntax--jsx {
-  .syntax--meta.syntax--class.syntax--body {
-    .syntax--meta.syntax--function.syntax--method {
-      .syntax--meta.syntax--function-call {
-        .syntax--entity.syntax--name.syntax--function {
-          color: @dark-blue;  // HACK: super();
+    .syntax--meta.syntax--class.syntax--body {
+        .syntax--meta.syntax--function.syntax--method {
+            .syntax--meta.syntax--function-call {
+                .syntax--entity.syntax--name.syntax--function {
+                    color: @dark-blue;  // HACK: super();
+                }
+            }
         }
-      }
     }
-  }
+}
+
+.syntax--support.syntax--type.syntax--object.syntax--module {
+    .syntax--keyword.syntax--operator.syntax--accessor {
+        color: @seafoam-green;  // FIXME:  exports.
+    }
+
 }
