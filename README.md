@@ -1,6 +1,7 @@
 ![atom-vscode](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/atom-vscode-banner.png)
-<!-- # dark-plus-syntax -->
+
 <br/>
+
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
 
 
