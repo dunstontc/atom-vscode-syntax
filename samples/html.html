@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="./css/master.less" />
-    <script src="./js/script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./sytles.css" />
+    <script src="./script.js"></script>
     <style media="screen">
         @media print {
-          p { color: red !important; }
+            p { color: blue !important; }
         }
     </style>
     <title> HTML </title>
@@ -20,13 +20,7 @@
 
     <!-- Oooh comments -->
 
-    <script>
-        let myBtn = document.getElementById('myBtn');
-
-        myBtn.addEventListener('click', () => {
-          alert("Hello World!");
-        });
-    </script>
+    <script> myBtn.onclick = (event) => alert('Hello world'); </script>
 </body>
 
 </html>

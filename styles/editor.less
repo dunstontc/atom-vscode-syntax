@@ -22,8 +22,9 @@ atom-text-editor {
     }
 
     .bracket-matcher .region {
-        border-bottom: 1px solid @syntax-cursor-color;
         box-sizing   : border-box;
+        // background-color: @syntax-selection-color;
+        .theme--bracket-match();
     }
 
     .invisible-character {

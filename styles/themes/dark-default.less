@@ -24,57 +24,11 @@
 
 @theme--fg: @very-light-gray;
 @theme--bg: @very-dark-gray;
-// @theme--gutter: darken(@syntax-fg, 26%);
-// @theme--guide:  fade(@syntax-fg, 15%);
+@theme--gutter: darken(@syntax-fg, 26%);
+@theme--guide:  fade(@syntax-fg, 15%);
 @theme--accent: @bright-blue;
 @theme--cursor-color: @very-light-gray;
 
-.theme--cursor-line() {
-    // margin-top: -2px;
-    // border-top: 2px solid @syntax-cursor-line;
-    margin-bottom: -2px;
-    border-bottom: 2px solid #333842;
-    // outline: 2px solid @syntax-cursor-line;
-}
-
-.theme--selection() {
-    // background-color: @syntax-selection-color;
-    opacity: .91;
-    // background-color: rgb(29, 60, 104);
-    background-color: darken(@light-blue, 54%);
-    // border-radius: 1.5px;
-    &:first-child {
-      border-radius: 3px 3px 0px 0px;
-    }
-    &:last-child {
-      border-radius: 0px 0px 3px 3px;
-    }
-    &:only-child {
-      border-radius: 3px 3px 3px 3px;
-    }
-}
-
-
-.package-card {
-  background-color: rgb(42,41,41) !important;
-}
-
-.config-menu {
-  a:hover{
-    background-color: rgb(46,45,45) !important;
-    // background-color: red !important;
-  }
-  .active a {
-  background-color: rgb(56,55,55) !important;
-  }
-}
-
-select.form-control {
-    background-color: rgb(46,45,45) !important;
-    &:hover {
-  background-color: rgb(56,55,55) !important;
-    }
-}
 
 @theme-color--fg:         @light-gray;
 @theme-color--bg:         @dark-gray;
@@ -101,105 +55,53 @@ select.form-control {
 @theme-color--storage:    @dark-blue;
 @theme-color--string:     @orange;
 
-
 /* ========================================================================== */
 
-/**
- * #808080
- *
- */
-@light-gray:        #808080;
-/**
- * #D4D4D4
- *   keyword.operator.js
- *   keyword.operator.module
- *   meta.for.js
- */
-@very-light-gray:   #D4D4D4;
-/**
- * #D16969
- *
- */
-@light-red:     #D16969;
-/**
- * #F44747
- *   regexp
- */
-@dark-red:      #F44747;
-/**
- * #CE9178
- *   constant.other.object.key
- *   string.quoted
- */
-@orange:        #CE9178;
-/**
- * #DCDCAA
- *   entity.name.function
- *   support.function (console.log)
- *   support.function.node.js (require)
- *   ~~meta.function.js
- */
-@light-yellow:  #DCDCAA;
-/**
- * #D7BA7D
- *
- */
-@dark-yellow:   #D7BA7D;
-/**
- * #B5CEA8
- *
- */
-@puke:          #B5CEA8;
-/**
- * #608B4E
- *
- */
-@comment-green: #608B4E;
-/**
- * #4EC9B0
- *
- */
-@seafoam-green: #4EC9B0;
-/**
- * #9CDCFE
- *   support.class.builtin
- *   support.type.object.dom
- *   entity.name.class
- *   meta.class
- */
-@light-blue:    #9CDCFE;
-/**
- * #569CD6
- *   variable.function
- *   variable.other.readwrite
- *   meta.function-call
- */
-@dark-blue:     #569CD6;
-/**
- * #007ACC
- *   storage.type
- *      &.class
- *      &.extends
- *      &.function
- *   constant.language.boolean
- *   constant.language.undefined
- *   constant.language.null
- *   variable.language.super
- *   variable.language.this
- */
-@bright-blue:   #007ACC;
-/**
- * #646695
- *
- */
-@purple:        #646695;
-/**
- * #C586C0
- *   keyword
- *     &.control
- *     &.trycatch
- *     &.loop
- *     &.flow
- *     &.conditional
- */
-@pink:          #C586C0;
+.theme--cursor-line() {
+    // margin-top: -2px;
+    // border-top: 2px solid @syntax-cursor-line;
+    margin-bottom: -2px;
+    border-bottom: 2px solid #333842;
+    // outline: 2px solid @syntax-cursor-line;
+}
+
+.theme--selection() {
+    opacity: .91;
+    // background-color: rgb(29, 60, 104);
+    background-color: darken(@light-blue, 54%);
+    // border-radius: 1.5px;
+    &:first-child {
+      border-radius: 3px 3px 0px 0px;
+    }
+    &:last-child {
+      border-radius: 0px 0px 3px 3px;
+    }
+    &:only-child {
+      border-radius: 3px 3px 3px 3px;
+    }
+}
+
+.theme--bracket-match() {
+  border-bottom: 1px solid transparent;
+  background-color: @syntax-selection-color;
+}
+
+.package-card {
+  background-color: rgb(42,41,41) !important;
+}
+
+.config-menu {
+  a:hover{
+    background-color: rgb(46,45,45) !important;
+  }
+  .active a {
+  background-color: rgb(51,50,50) !important;
+  }
+}
+
+select.form-control {
+  background-color: rgb(42,41,41) !important;
+    &:hover {
+  background-color: rgb(56,55,55) !important;
+    }
+}

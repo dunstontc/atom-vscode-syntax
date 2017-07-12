@@ -1,6 +1,10 @@
-// .syntax--less,
-// .syntax--scss,
-.syntax--css {
+.syntax--css,
+.syntax--less,
+.syntax--scss {
+    .syntax--selector {
+        color: @dark-yellow;
+    }
+
     .syntax--support {
         &.syntax--constant {
             color: @orange; // NOTE: CSS Enum
@@ -10,8 +14,9 @@
             color: @light-blue;
             // text-align: center;
         }
+
         &.syntax--function {
-          color: @puke;
+            color: @puke;
         }
     }
 
@@ -25,8 +30,9 @@
         &.syntax--numeric {
             color: @puke;
         }
-        &.syntax--punctuation,
-        &.syntax--color {
+
+        &.syntax--color,
+        &.syntax--punctuation {
             color: @orange;
         }
     }
@@ -39,44 +45,53 @@
         &.syntax--id {
             // color: @dark-yellow;
         }
+
         &.syntax--other.syntax--attribute-name {
-            color: @dark-yellow;
+            // color: @dark-yellow;
         }
     }
 
     .syntax--punctuation {
-      // color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
-      &.syntax--definition {
-        &.syntax--keyword{
-          color: @orange;
-        }
-        &.syntax--entity {
-          color: @dark-yellow;
+        // color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
+        &.syntax--definition {
+            &.syntax--keyword {
+                color: @orange;
+            }
 
+            &.syntax--entity {
+                color: @dark-yellow;
+            }
         }
-      }
     }
-
 }
+
 .syntax--keyword {
-  &.syntax--scss,
-  &.syntax--less,
-  &.syntax--css{
-    &.syntax--import {
-      color: @pink;
+    &.syntax--css,
+    &.syntax--less,
+    &.syntax--sass,
+    &.syntax--scss {
+        &.syntax--import {
+            color: @pink;
+        }
+
+        &.syntax--at-rule {
+            color: @pink;
+
+            .syntax--keyword {
+                color: @pink;
+            }
+        }
     }
-    &.syntax--at-rule {
-      color: @pink;
-      .syntax--keyword {
-        color: @pink;
-      }
-    }
-  }
 }
 
 .syntax--scss {
-  .syntax--punctuation.syntax--definition.syntax--keyword {
-    color: @pink;
-  }
+    .syntax--punctuation.syntax--definition.syntax--keyword {
+        color: @pink;
+    }
 }
 
+.syntax--less {
+    .syntax--attribute-name {
+        color: @dark-yellow;
+    }
+}
