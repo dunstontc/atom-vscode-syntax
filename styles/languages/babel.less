@@ -92,3 +92,16 @@ atom-text-editor {
         }
     }
 }
+
+
+.syntax--source.syntax--js.syntax--jsx {
+  .syntax--meta.syntax--class.syntax--body {
+    .syntax--meta.syntax--function.syntax--method {
+      .syntax--meta.syntax--function-call {
+        .syntax--entity.syntax--name.syntax--function {
+          color: @dark-blue;  // HACK: super();
+        }
+      }
+    }
+  }
+}

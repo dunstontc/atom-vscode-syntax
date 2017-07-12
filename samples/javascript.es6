@@ -1,12 +1,14 @@
 const ex = require('./another-file');
 
+exports.thisThing = thisThing();
+
 import { SelectListView } from 'atom-select-list';
 import * as alias from 'atom';
 
 export default thing = 'empty';
 
-var funky = function () {
-    let sumtin = Math.floor(8 / 1); //TODO: support.function.math
+export let funky = function () {
+    let sumtin = Math.floor(8 / 1);
     console.log('funky');
 }
 
@@ -33,15 +35,15 @@ let myObject = {
 }
 
 class Polygon {
-  constructor(height, width) { // TODO: babel-needs (entity.name.function.constructor.js)
+  constructor(height, width) {
     this.name = 'Polygon';
     this.height = height;
     this.width = width;
   }
 }
 
-class Square extends Polygon { // TODO:  (meta.class.extends || storage.type.extends) + entity.name.class
-  constructor(length) {  // TODO: ~variable.language.constructor
+class Square extends Polygon {
+  constructor(length) {
     super(length, length);
     this.name = 'Square';
   }
@@ -51,7 +53,7 @@ let fourCorners = new Square(4);
 let four = fourCorners.height;
 
 
-let myBtn = document.getElementById('myBtn'); // TODO: dom -> {dom-function: support.function.dom}
+let myBtn = document.getElementById('myBtn');
 
 myBtn.addEventListener('click', () => {
   alert("Hello World!");
@@ -66,7 +68,7 @@ function $initHighlight(block, cls) {
   } catch (e) {
     /* handle exception */
   }
-  for (var i = 0 / 2;  i < classes.length; i++) { // TODO: target (.length)
+  for (var i = 0 / 2;  i < classes.length; i++) {
     if (checkCondition(classes[i]) === undefined)
       console.log('undefined');
   }

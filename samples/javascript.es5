@@ -1,5 +1,7 @@
 const ex = require('./another-file');
 
+exports.thisThing = thisThing();
+
 import { SelectListView } from 'atom-select-list';
 import * as alias from 'atom';
 

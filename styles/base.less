@@ -59,7 +59,14 @@
     }
 
     &.syntax--language {
+      color: @dark-blue;
+
+      &.syntax--this,
+      // &.syntax--arguments,
+      &.syntax--prototype,
+      &.syntax--super {
         color: @dark-blue;
+      }
     }
 
     &.syntax--object {
