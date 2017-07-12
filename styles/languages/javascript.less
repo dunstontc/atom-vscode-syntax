@@ -1,15 +1,11 @@
 atom-text-editor {
     .syntax--source.syntax--js {
-        color: @light-blue;  // FIXME: variables aren't correctly targeted.
+        color: @light-blue;  // FIXME/HACK: variables aren't correctly targeted.
     }
     .syntax--js,
     .syntax--source.syntax--js {
-        .syntax--keyword.syntax--operator {
-          // color:lime; // NOTE: =, /, <, >, ++,
-        }
-        .syntax--operator {
-            // color:@dark-blue;
-        }
+        .syntax--keyword.syntax--operator {}
+        .syntax--operator {}
 
         &.syntax--entity {
             &.syntax--bracket.syntax--curly,
@@ -32,11 +28,14 @@ atom-text-editor {
             &.syntax--instanceof,
             &.syntax--typeof,
             &.syntax--void {
-                // color: lime; // QUESTION:
+                // color: ;
             }
 
             &.syntax--of {
                 color: @very-light-gray;
+            }
+            &.syntax--operator.syntax--module.syntax--all {
+               color: @dark-blue;
             }
             &.syntax--new {
                 color: @dark-blue;
@@ -45,11 +44,15 @@ atom-text-editor {
 
         .syntax--variable {
             &.syntax--language {
-                color: @dark-blue; // NOTE: this $$$:
+                &.syntax--import-all {
+                  color: @dark-blue; // NOTE: vanilla_only
+                }
             }
 
-            &.syntax--property {
-                color: @very-light-gray; // NOTE: Property in JavaScript
+            &.syntax--other {
+              &.syntax--property {
+                  // color: @very-light-gray; // NOTE: Property in JavaScript
+              }
             }
 
             &.syntax--default {
@@ -58,8 +61,6 @@ atom-text-editor {
         }
 
         .syntax--meta {
-            // Note: JavaScript & Babel operator scoping. META EXAMPLE
-
             &.syntax--export,
             &.syntax--import {
                 .syntax--keyword {
@@ -73,8 +74,7 @@ atom-text-editor {
             }
 
             &.syntax--class {
-                // NOTE: brackets
-                // color: @seafoam-green;
+                // color: @seafoam-green; // NOTE: class brackets
             }
 
             &.syntax--arguments {
@@ -85,7 +85,7 @@ atom-text-editor {
               .syntax--string {
                 &.syntax--quoted.syntax--single,
                 &.syntax--quoted.syntax--double {
-                  color: @orange;
+                  color: @theme-color--string;
                 }
               }
               .syntax--bracket {
@@ -95,7 +95,6 @@ atom-text-editor {
         }
 
         &.syntax--punctuation {
-            // color: ; // NOTE: ${} # . &
             &.syntax--definition {
                 &.syntax--bracket.syntax--curly {
                     color: @very-light-gray;
@@ -104,7 +103,7 @@ atom-text-editor {
                 &.syntax--brace {
                     &.syntax--round,
                     &.syntax--square {
-                        color: @very-light-gray;
+                        color: @theme-color--brace;
                     }
 
                     &.syntax--delimiter,
@@ -119,13 +118,9 @@ atom-text-editor {
         .syntax--variable {
             // color: @light-blue;  // NOTE: Variables, regex interpolation, (uquoted strings?)
             .syntax--parameter {
-                // color: @light-blue;
-                // QUESTION: define
+                // color: @light-blue;  // QUESTION: define
             }
         }
-    .syntax--keyword .syntax--operator .syntax--module .syntax--all{
-       color: @light-blue;
-    }
   }
 }
 
