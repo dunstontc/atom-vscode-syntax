@@ -1,11 +1,21 @@
-# ~2.0.0
-- Added logo to `readme`
-- Expanded theme options:
+# 2.0.0
+- Updated `readme`:
+  - Added logo
+  - Added Usage section
+  - Added Thanks section
+  - Updated screenshots
+  - Updated supported languages
+- Added theme options:
   - Dark Default
   - Dark Custom
   <!-- - Light Default -->
   <!-- - Light Custom -->
   <!-- - High Contrast  -->
+- Customized UI colors for Dark Default
+- Refined highlighting for:
+  - Javascript (vanilla, es6, & jsx)
+  - CoffeeScript
+- Refactored files to use syntax-variables instead of color variables
 
 # 1.2.4
 - added apm version badge

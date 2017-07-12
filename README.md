@@ -2,32 +2,32 @@
 <!-- # dark-plus-syntax -->
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
 
+
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme. <br>
-(Pairs well with Atom's [One Dark UI](https://atom.io/themes/one-dark-ui)) <br>
+
 
 #### JavaScript:
 ![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/js1.png)
 
+
 #### HTML:
 ![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/html.png)
 
+## Usage:
 
-##### More Screenshots:
-  - [CoffeeScript](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/coffee.png)
-  - [Markdown](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
-  - [JSON](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
+
 
 ## Supported Languages:
-- [x] __CoffeeScript__
+- [x] [__CoffeeScript__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/coffee.png)
 - [x] __CSON__
 - [x] __CSS__
 - [x] __HTML__
 - [x] __JavaScript__
 - [x] __Javascript (Babel)__
 - [x] __Javascript React (Babel, JSX)__
-- [x] __JSON__
+- [x] [__JSON__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
 - [x] __LESS__
-- [x] __Markdown__
+- [x] [__Markdown__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
 - [x] __SASS & SCSS__
 
 
@@ -58,17 +58,11 @@
 - [ ] YAML
 - [ ] TODO
 
-
-## Notes
-If you'd rather have vscode's default background & cursor, just add this to your stylesheet:
-```css
-atom-text-editor {
-    background-color: #1E1E1E;
-    .cursor {
-        border-left: 2px solid #D4D4D4;
-    }
-}
-```
+## Thanks
+- [Microsoft/vscode](https://github.com/Microsoft/vscode)
+- [Alchiadus/base16-syntax](https://github.com/Alchiadus/base16-syntax)
+- [siamak/atom-panda-syntax](https://github.com/siamak/atom-panda-syntax)
+- [highlight.js](https://highlightjs.org/)
 
 
 ## License

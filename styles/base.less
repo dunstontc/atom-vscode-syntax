@@ -23,7 +23,7 @@
     color: @theme-color--string;
 
     &.syntax--unquoted {
-        color: @theme-color--string;
+        // color: @theme-color--string;
     }
 
     &.syntax--regexp {
@@ -67,17 +67,20 @@
     }
 
     &.syntax--other {
-      &.syntax--property {
-        color: @very-light-gray;
-      }
+        &.syntax--property {
+            color: @very-light-gray;
+        }
     }
 }
 
 .syntax--constant {
     color: @syntax-color-variable;
 
-    &.syntax--character.syntax--escape {
-        color: @light-blue;
+    &.syntax--character {
+        // &.syntaz--entity,
+        &.syntax--escape {
+            color: @light-blue;
+        }
     }
 
     &.syntax--numeric {
@@ -90,6 +93,12 @@
 
     &.syntax--other {
         &.syntax--color {}
+        // &.syntax--object {
+        //   &.syntax--key,
+        //   &.syntax--key .syntax--string {
+        //     color: @light-blue; // TODO: identifier for keys
+        //   }
+        // }
 
         &.syntax--rgb-value {
             color: @orange;
@@ -124,17 +133,22 @@
     &.syntax--function {
         color: @light-yellow;
 
+        &.syntax--mutator {
+            color: @light-blue;
+        }
+
         &.syntax--any-method {
             color: @pink;
         }
+        &.syntax--console {}
     }
 
     &.syntax--type {
         &.syntax--object {
-            &.syntax--dom,
             &.syntax--console,
+            &.syntax--dom,
             &.syntax--process {
-              color: @seafoam-green; // NOTE: Babel
+                color: @seafoam-green; // NOTE: Babel
             }
         }
     }
@@ -143,10 +157,12 @@
         &.syntax--function {
             color: @light-blue;
         }
+
         &.syntax--variable {
             color: @seafoam-green;
+
             &.syntax--property {
-              color: @very-light-gray;
+                color: @very-light-gray;
             }
         }
     }
@@ -179,6 +195,7 @@
             }
         }
 
+        &.syntax--spread,
         &.syntax--new,
         &.syntax--null,
         &.syntax--this,
@@ -265,7 +282,6 @@
 }
 
 .syntax--meta {
-
     &.syntax--definition,
     &.syntax--separator {
         color: @very-light-gray;
@@ -351,8 +367,9 @@
     &.syntax--function-call {
         .syntax--entity.syntax--function.syntax--name {
             color: @light-blue;
+
             &.syntax--without-arguments {
-              color: @dark-blue;
+                color: @dark-blue;
             }
         }
     }
@@ -439,8 +456,7 @@
         }
 
         &.syntax--class {
-            color: @seafoam-green; // FIXME
-            // color: @dark-yellow;
+            // color: @seafoam-green; // TODO: class-body
         }
 
         &.syntax--scope {
@@ -569,6 +585,6 @@
 
 .syntax--meta.syntax--method-call {
     .syntax--entity.syntax--name.syntax--function {
-      // text-decoration: underline;
+        // text-decoration: underline;
     }
 }

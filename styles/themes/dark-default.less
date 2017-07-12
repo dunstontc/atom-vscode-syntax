@@ -39,12 +39,22 @@
 
 .theme--selection() {
     // background-color: @syntax-selection-color;
-    opacity: .95;
+    opacity: .91;
     // background-color: rgb(29, 60, 104);
     background-color: darken(@light-blue, 54%);
-    border-radius: 1.5px;
+    // border-radius: 1.5px;
+    &:first-child {
+      border-radius: 3px 3px 0px 0px;
+    }
+    &:last-child {
+      border-radius: 0px 0px 3px 3px;
+    }
 }
 
+.form-control,
+.package-card {
+  background-color: rgb(42,41,41) !important;
+}
 
 @theme-color--fg:         @light-gray;
 @theme-color--bg:         @dark-gray;

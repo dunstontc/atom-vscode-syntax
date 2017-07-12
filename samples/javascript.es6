@@ -6,7 +6,7 @@ import * as alias from 'atom';
 export default thing = 'empty';
 
 var funky = function () {
-    let sumtin = Math.floor(8 / 1);
+    let sumtin = Math.floor(8 / 1); //TODO: support.function.math
     console.log('funky');
 }
 
@@ -33,15 +33,15 @@ let myObject = {
 }
 
 class Polygon {
-  constructor(height, width) {
+  constructor(height, width) { // TODO: babel-needs (entity.name.function.constructor.js)
     this.name = 'Polygon';
     this.height = height;
     this.width = width;
   }
 }
 
-class Square extends Polygon {
-  constructor(length) {
+class Square extends Polygon { // TODO:  (meta.class.extends || storage.type.extends) + entity.name.class
+  constructor(length) {  // TODO: ~variable.language.constructor
     super(length, length);
     this.name = 'Square';
   }
@@ -51,7 +51,7 @@ let fourCorners = new Square(4);
 let four = fourCorners.height;
 
 
-let myBtn = document.getElementById('myBtn');
+let myBtn = document.getElementById('myBtn'); // TODO: dom -> {dom-function: support.function.dom}
 
 myBtn.addEventListener('click', () => {
   alert("Hello World!");
@@ -66,7 +66,7 @@ function $initHighlight(block, cls) {
   } catch (e) {
     /* handle exception */
   }
-  for (var i = 0 / 2;  i < classes.length; i++) {
+  for (var i = 0 / 2;  i < classes.length; i++) { // TODO: target (.length)
     if (checkCondition(classes[i]) === undefined)
       console.log('undefined');
   }

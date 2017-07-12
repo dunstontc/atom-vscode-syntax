@@ -6,8 +6,10 @@
   "description": "Visual Studio Code's 'Dark+' (default dark) theme",
   "keywords": [
     "atom",
+    "dark",
     "syntax",
     "theme",
+    "visual studio code",
     "vscode"
   ],
   "repository": "https://github.com/dunstontc/atom-vscode-syntax",
