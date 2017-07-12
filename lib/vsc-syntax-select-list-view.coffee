@@ -1,4 +1,4 @@
-{SelectListView} = require 'atom-space-pen-views'
+{ SelectListView } = require 'atom-space-pen-views'
 
 class VSCSyntaxSelectListView extends SelectListView
 
@@ -46,17 +46,6 @@ class VSCSyntaxSelectListView extends SelectListView
     @selectItemView @list.find '.active'
     @focusFilterEditor()
     @attached = true
-
-  # getThemes: ->
-  #   schemes = atom.config.getSchema("#{@base16.packageName}.scheme").enum
-  #   if atom.config.get "#{@base16.packageName}.matchUserInterfaceTheme"
-  #     styles = [atom.config.defaultSettings["#{@base16.packageName}"].style]
-  #   else
-  #     styles = atom.config.getSchema("#{@base16.packageName}.style").enum
-  #   themes = []
-  #   schemes.forEach (scheme) -> styles.forEach (style) ->
-  #     themes.push scheme: scheme, style: style, name: "#{scheme} (#{style})"
-  #   themes
 
   getThemes: ->
     schemes = atom.config.getSchema("#{@vsc.packageName}.scheme").enum

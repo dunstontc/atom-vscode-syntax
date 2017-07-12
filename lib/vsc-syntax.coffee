@@ -1,6 +1,6 @@
 fs = require 'fs'
 path = require 'path'
-{CompositeDisposable} = require 'atom'
+{ CompositeDisposable } = require 'atom'
 
 class vscSyntax
 

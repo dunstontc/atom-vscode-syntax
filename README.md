@@ -15,9 +15,11 @@
 
 
 ## Usage:
-`Dark Default` is selected ~~by default~~. To select a different option:
+`Dark Default` is selected ~~by default~~. To select a different color scheme:
 - Click the cog to the right of _Syntax Theme_ in your settings view
+- ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-1.png)
 - Use the select list in the _dark-plus-syntax_ package
+- ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-3.png)
 
 
 ## Supported Languages:
