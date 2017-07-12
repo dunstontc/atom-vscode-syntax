@@ -9,11 +9,11 @@
 ## Samples:
 
 ##### JavaScript:
-![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/js1.png)
+![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-default.png)
 
 
 ##### HTML:
-![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/html.png)
+![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-custom.png)
 
 
 ## Usage:
