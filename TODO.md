@@ -1,10 +1,11 @@
 # General
   - [ ] move from space-pen to etch based list
   - [ ] all .coffee files in `./lib` need to be converted to js
-  - [ ] add theme specific selection colors
+  - [x] ~~add theme specific selection colors~~
   - [ ] High Contrast theme
   - [ ] Light Default theme
   - [ ] target `.length` property for custom (support.variable.property)
+  - [x] ~~default ui variables~~
 
 
 

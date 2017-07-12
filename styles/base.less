@@ -59,14 +59,13 @@
     }
 
     &.syntax--language {
-      color: @dark-blue;
-
-      &.syntax--this,
-      // &.syntax--arguments,
-      &.syntax--prototype,
-      &.syntax--super {
         color: @dark-blue;
-      }
+        &.syntax--this,
+        // &.syntax--arguments,
+        &.syntax--prototype,
+        &.syntax--super {
+            color: @dark-blue;
+        }
     }
 
     &.syntax--object {
@@ -106,7 +105,6 @@
         //     color: @light-blue; // TODO: identifier for keys
         //   }
         // }
-
         &.syntax--rgb-value {
             color: @orange;
         }
@@ -147,6 +145,7 @@
         &.syntax--any-method {
             color: @pink;
         }
+
         &.syntax--console {}
     }
 
@@ -202,9 +201,9 @@
             }
         }
 
-        &.syntax--spread,
         &.syntax--new,
         &.syntax--null,
+        &.syntax--spread,
         &.syntax--this,
         &.syntax--undefined {
             color: @dark-blue; // TODO: define new in Babel/JSX
@@ -507,20 +506,13 @@
 }
 
 .syntax--markup {
-    &.syntax--list {
-        .syntax--punctuation {
-            color: @dark-blue;
-        }
-    }
-
     &.syntax--italic {
-        color     : @light-blue;
+        // color     : @light-blue;
         font-style: italic;
     }
 
-    &.syntax--bold,
-    &.syntax--strong {
-        color      : @dark-blue;
+    &.syntax--bold {
+        // color      : @dark-blue;
         font-weight: bold;
     }
 
@@ -574,13 +566,6 @@
     }
 }
 
-.syntax--source.syntax--gfm .syntax--markup {
-    -webkit-font-smoothing: auto;
-
-    &.syntax--heading {
-        color: @seafoam-green;
-    }
-}
 ///* ========================================================================== */
 // FIXME
 

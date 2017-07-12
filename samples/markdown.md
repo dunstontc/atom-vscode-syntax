@@ -1,10 +1,17 @@
 # H1
-### H3
 ###### H6
 
-___
----
-***
+__bold__
+
+_italic_
+
+~~strike~~
+
+[link](https://www.example.com)
+
+![image](https://www.example.com/images/image.png)
+
+> blockquote
 
 1. uno
 2. dos
@@ -13,15 +20,6 @@ ___
 - One
 * Two
 + Three
-
-__bold__
-_italic_
-~~strike~~
-[link](https://www.example.com)
-![image](https://www.example.com/images/image.png)
-
-> blockquote
-> quoted.
 
 ```html
 <span> spanned </span>
@@ -32,3 +30,7 @@ _italic_
 | col 3 is      | right-aligned |  $1600 |
 | col 2 is      | centered      |    $12 |
 | zebra stripes | are neat      |     $1 |
+
+___
+---
+***

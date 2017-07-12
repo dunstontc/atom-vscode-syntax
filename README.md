@@ -14,7 +14,7 @@
 ![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/html.png)
 
 ## Usage:
-
+`Dark Default`
 
 
 ## Supported Languages:
