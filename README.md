@@ -5,7 +5,7 @@
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
 
 
-[Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style).<br/>
+[Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
 
 
 ## Samples:
@@ -76,7 +76,6 @@ Selecting a color scheme:
   - Code enabling theme options
 - [siamak/atom-panda-syntax](https://github.com/siamak/atom-panda-syntax)
   - Styles for overriding styles
-<!-- - [highlight.js](https://highlightjs.org/) -->
 
 
 ## License
