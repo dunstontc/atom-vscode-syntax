@@ -1,4 +1,4 @@
-![atom-vscode](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/atom-vscode-banner.png)
+![atom-vscode](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/atom-vscode-banner.png)
 
 <br/>
 
@@ -11,20 +11,20 @@
 ## Samples:
 
 #### dark default:
-![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-default.png)
+![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-default.png)
 
 
 #### dark custom:
-![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-custom.png)
+![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-custom.png)
 
 
 ## Usage:
 <!-- `Dark Default` is selected ~~by default~~. <br/> -->
 Selecting a color scheme:
 - Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
-    ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-1.png) <br/><br/>
+    ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-1.png) <br/><br/>
 - Use the select list in the _dark-plus-syntax_ package <br/><br/>
-    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-two.png)
+    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-two.png)
 
 
 ## Supported Languages:
