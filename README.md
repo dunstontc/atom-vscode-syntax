@@ -51,16 +51,12 @@ Selecting a color scheme:
 
 - Additional Language Support:
   - Bash
-  - C
-  - C++
   - C#
   - CSV
   - GFM (Github Flavored Markdown)
   - Go
   - Handlebars
   - Jade/Pug
-  - Java
-  - Objective-C
   - PHP
   - Python
   - Ruby
