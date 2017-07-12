@@ -60,6 +60,7 @@
 
     &.syntax--language {
         color: @dark-blue;
+        &.syntax--import-all,
         &.syntax--this,
         // &.syntax--arguments,
         &.syntax--prototype,
@@ -83,7 +84,7 @@
     color: @syntax-color-variable;
 
     &.syntax--character {
-        // &.syntaz--entity,
+        // &.syntax--entity,
         &.syntax--escape {
             color: @light-blue;
         }
@@ -151,6 +152,7 @@
 
     &.syntax--type {
         &.syntax--object {
+            &.syntax--module,
             &.syntax--console,
             &.syntax--dom,
             &.syntax--process {
