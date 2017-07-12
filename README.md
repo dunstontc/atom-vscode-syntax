@@ -1,5 +1,6 @@
 ![atom-vscode](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/atom-vscode-banner.png)
 <!-- # dark-plus-syntax -->
+<br/>
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
 
 
@@ -8,11 +9,11 @@
 
 ## Samples:
 
-##### dark default:
+#### dark default:
 ![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-default.png)
 
 
-##### dark custom:
+#### dark custom:
 ![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-custom.png)
 
 
