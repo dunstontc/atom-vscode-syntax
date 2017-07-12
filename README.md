@@ -33,7 +33,6 @@ Selecting a color scheme:
 - __CSS__
 - __HTML__
 - __JavaScript__
-<!-- - __Javascript (Babel)__ -->
 - __JavaScript React (Babel, JSX)__
 - __JSON__
 - __LESS__
