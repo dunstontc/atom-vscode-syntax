@@ -3,23 +3,26 @@
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
 
 
-[Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark-flavored_ version (if that's your thing).<br>
+[Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style).<br/>
 
 
-#### JavaScript:
+## Samples:
+
+##### JavaScript:
 ![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/js1.png)
 
 
-#### HTML:
+##### HTML:
 ![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/html.png)
 
 
 ## Usage:
-`Dark Default` is selected ~~by default~~. To select a different color scheme:
-- Click the cog to the right of _Syntax Theme_ in your settings view
-- ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-1.png)
-- Use the select list in the _dark-plus-syntax_ package
-- ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-3.png)
+<!-- `Dark Default` is selected ~~by default~~. <br/> -->
+Selecting a color scheme:
+- Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
+    ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-1.png) <br/><br/>
+- Use the select list in the _dark-plus-syntax_ package <br/><br/>
+    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-3.png)
 
 
 ## Supported Languages:
@@ -29,12 +32,13 @@
 - __HTML__
 - __JavaScript__
 - __Javascript (Babel)__
-- __Javascript React (Babel, JSX)__
+- __JavaScript React (Babel, JSX)__
 - [__JSON__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
 - __LESS__
 - [__Markdown__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
 - __SASS & SCSS__
 - __SVG__
+- __XML__ (plist, SVG)
 
 
 ## TODO:
