@@ -1,7 +1,5 @@
 .syntax--punctuation {
-
     &.syntax--definition {
-
         &.syntax--comment {
             color: @comment-green;
         }
@@ -15,12 +13,13 @@
 
             &.syntax--begin,
             &.syntax--end {
-                color: @very-light-gray // FIXME: redundant? other things in 'syntax--module'?
+                // FIXME: redundant? other things in 'syntax--module'?
+                color: @very-light-gray
             }
         }
 
         &.syntax--tag {
-          color: @light-gray;
+            color: @light-gray;
         }
 
         &.syntax--keyword {
@@ -38,14 +37,14 @@
             }
         }
 
-        &.syntax--method-parameters,
+        &.syntax--array,
         &.syntax--function-parameters,
+        &.syntax--method-parameters,
         &.syntax--parameters,
         &.syntax--separator,
-        &.syntax--seperator,
-        &.syntax--array {
-          // color: @tag_gray;
-          colod: @very-light-gray;
+        &.syntax--seperator {
+            // color: @tag_gray;
+            colod: @very-light-gray;
         }
 
         &.syntax--heading,
@@ -92,10 +91,11 @@
             &.syntax--end {
                 // color: @very-light-gray; // NOTE: ()s & ''/""/``s
             }
-            &.syntax--method,
+
             &.syntax--class,
-            &.syntax--inner-class {
-              // color: @very-light-gray;  //  Class Brackets
+            &.syntax--inner-class,
+            &.syntax--method {
+                // color: @very-light-gray;  //  Class Brackets
             }
         }
     }
@@ -112,9 +112,8 @@
 }
 
 .syntax--string.syntax--regexp {
-  .syntax--punctuation.syntax--definition.syntax--string.syntax--end,
-  .syntax--punctuation.syntax--definition.syntax--string.syntax--begin {
-    color: @light-red;
-  }
-
+    .syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+    .syntax--punctuation.syntax--definition.syntax--string.syntax--end {
+        color: @light-red;
+    }
 }

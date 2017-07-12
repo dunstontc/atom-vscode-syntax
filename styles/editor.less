@@ -5,13 +5,8 @@ atom-text-editor {
     color           : @syntax-text-color;
 
     .line.cursor-line {
-        background-color: @syntax-cursor-line;
-        // box-sizing: border-box;
-        // margin-top: -2px;
-        // margin-bottom: -2px;
-        // border-top: 2px solid @syntax-cursor-line;
-        // border-bottom: 2px solid @syntax-cursor-line;
-        // outline: 2px solid @syntax-cursor-line;
+        .theme--cursor-line();
+        // background-color: @syntax-cursor-line;
     }
     .invisible {
         color: @syntax-text-color;
@@ -22,12 +17,14 @@ atom-text-editor {
     }
 
     .selection .region {
-        background-color: @syntax-selection-color;
+        .theme--selection();
+        // background-color: @syntax-selection-color;
     }
 
     .bracket-matcher .region {
-        border-bottom: 1px solid @syntax-cursor-color;
         box-sizing   : border-box;
+        // background-color: @syntax-selection-color;
+        .theme--bracket-match();
     }
 
     .invisible-character {

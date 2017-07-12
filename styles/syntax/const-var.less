@@ -1,5 +1,5 @@
 .syntax--constant {
-    color: @light-blue;
+    color: @syntax-color-variable;
 
     &.syntax--character.syntax--escape {
         color: @light-blue;
@@ -14,12 +14,10 @@
     }
 
     &.syntax--other {
-        &.syntax--color {
-        }
+        &.syntax--color {}
 
         &.syntax--rgb-value {
-
-          color: @orange;
+            color: @orange;
         }
 
         &.syntax--symbol {
@@ -28,7 +26,8 @@
     }
 
     &.syntax--language {
-      color: @dark-blue;
+        color: @dark-blue;
+
         &.syntax--null,
         &.syntax--undefined {
             color: @dark-blue;
@@ -37,10 +36,10 @@
 }
 
 .syntax--variable {
-    color: @light-blue;
+    color: @syntax-color-variable;
 
     &.syntax--interpolation {
-        color: @light-blue;
+        color: @syntax-color-variable;
     }
 
     &.syntax--parameter.syntax--function {

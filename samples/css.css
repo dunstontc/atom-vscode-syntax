@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('./fonts/myfont.woff') format('woff'),
+}
+
+:root {
+    --main-color: #06c;
+    --accent-color: #006;
+}
+
+.test {
+    color: white;
+    background-color: #00deaf;
+    border-color: var(--accent-color);
+}
+
+#testing {
+    font-size: 1em;
+    flex-direction: column-reverse wrap;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.image {
+    background-image: url('https://code.visualstudio.com/images/favicon.ico');
+}

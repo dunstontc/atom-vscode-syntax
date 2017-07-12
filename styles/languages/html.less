@@ -11,6 +11,13 @@
     }
 
     &.syntax--entity {
+        &.syntax--character.syntax--constant {
+            .syntax--punctuation.syntax--definition.syntax--entity {
+                color: @light-blue;
+                color: @light-gray;
+            }
+        }
+
         &.syntax--other {
             &.syntax--attribute-name,
             &.syntax--id {

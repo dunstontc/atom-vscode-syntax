@@ -1,7 +1,8 @@
 .syntax--json {
-    &.syntax--constant.syntax--language{
+    &.syntax--constant.syntax--language {
         color: @dark-blue;
     }
+
     &.syntax--string.syntax--quoted.syntax--double {
         color: @light-blue;
 
@@ -19,4 +20,53 @@
             }
         }
     }
+    // &.syntax--meta.syntax--key {
+    //     .syntax--string.syntax--quoted.syntax--double {
+    //         color: @light-blue;
+    //
+    //         .syntax--punctuation {
+    //             color: @light-blue;
+    //         }
+    //     }
+    // }
 }
+
+
+// .syntax--dictonary, .syntax--structure {
+//     .syntax--dictonary, .syntax--structure {
+//         .syntax--dictonary, .syntax--structure {
+//             &.syntax--key {
+//                 .syntax--string.syntax--quoted.syntax--double {
+//                     color: darken(@light-blue, 20%); .syntax--punctuation {color: darken(@light-blue, 20%);}
+//                 }
+//             }
+//             .syntax--dictonary, .syntax--structure {
+//                 .syntax--dictonary, .syntax--structure {
+//                     .syntax--key {
+//                         .syntax--string.syntax--quoted.syntax--double {
+//                             color: darken(@light-blue, 40%); .syntax--punctuation {color: darken(@light-blue, 40%);}
+//                         }
+//                     }
+//                     .syntax--dictonary, .syntax--structure {
+//                         .syntax--dictonary, .syntax--structure {
+//                             .syntax--key {
+//                                 .syntax--string.syntax--quoted.syntax--double {
+//                                     color: darken(@light-blue, 60%); .syntax--punctuation {color: darken(@light-blue, 60%);}
+//                                 }
+//                             }
+//                             .syntax--dictonary, .syntax--structure {
+//                                 .syntax--dictonary, .syntax--structure {
+//                                     .syntax--key {
+//                                         .syntax--string.syntax--quoted.syntax--double {
+//                                             color: darken(@light-blue, 80%); .syntax--punctuation {color: darken(@light-blue, 80%);}
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
