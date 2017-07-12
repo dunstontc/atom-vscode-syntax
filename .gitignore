@@ -1,10 +1,10 @@
 .DS_Store
 npm-debug.log
 node_modules
-
+testing
+styles/theme.less
 _test
 
-testing
 
 _testing/_examples/
 _testing/_samples/
