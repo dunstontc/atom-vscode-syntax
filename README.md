@@ -8,11 +8,11 @@
 
 ## Samples:
 
-##### JavaScript:
+##### dark default:
 ![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-default.png)
 
 
-##### HTML:
+##### dark custom:
 ![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-custom.png)
 
 
@@ -26,19 +26,22 @@ Selecting a color scheme:
 
 
 ## Supported Languages:
-- [__CoffeeScript__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/coffee.png)
+<!-- - [__CoffeeScript__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/coffee.png) -->
+- __CoffeeScript__
 - __CSON__
 - __CSS__
 - __HTML__
 - __JavaScript__
 - __Javascript (Babel)__
 - __JavaScript React (Babel, JSX)__
-- [__JSON__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png)
+<!-- - [__JSON__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png) -->
+- __JSON__
 - __LESS__
-- [__Markdown__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png)
+<!-- - [__Markdown__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png) -->
+- __Markdown__
 - __SASS & SCSS__
 - __SVG__
-- __XML__ (plist, SVG)
+<!-- - __XML__ (plist, SVG) -->
 
 
 ## TODO:
