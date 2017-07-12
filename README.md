@@ -9,11 +9,11 @@
 ## Samples:
 
 ##### dark default:
-![screenshot](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-default.png)
+![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-default.png)
 
 
 ##### dark custom:
-![html](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-custom.png)
+![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/html-custom.png)
 
 
 ## Usage:
@@ -22,22 +22,19 @@ Selecting a color scheme:
 - Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
     ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-1.png) <br/><br/>
 - Use the select list in the _dark-plus-syntax_ package <br/><br/>
-    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-3.png)
+    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-2.png)
 
 
 ## Supported Languages:
-<!-- - [__CoffeeScript__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/coffee.png) -->
 - __CoffeeScript__
 - __CSON__
 - __CSS__
 - __HTML__
 - __JavaScript__
-- __Javascript (Babel)__
+<!-- - __Javascript (Babel)__ -->
 - __JavaScript React (Babel, JSX)__
-<!-- - [__JSON__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/json.png) -->
 - __JSON__
 - __LESS__
-<!-- - [__Markdown__](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/master/images/markdown.png) -->
 - __Markdown__
 - __SASS & SCSS__
 - __SVG__
