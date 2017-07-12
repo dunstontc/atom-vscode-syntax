@@ -23,7 +23,7 @@ Selecting a color scheme:
 - Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
     ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-1.png) <br/><br/>
 - Use the select list in the _dark-plus-syntax_ package <br/><br/>
-    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-2.png)
+    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/refactor/images/usage-two.png)
 
 
 ## Supported Languages:
