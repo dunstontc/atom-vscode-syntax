@@ -15,9 +15,9 @@
 - JavaScript
 - JavaScript React (Babel, JSX)
 - JSON
-- LESS
+- Less
 - Markdown
-- SASS & SCSS
+- Sass & SCSS
 - SVG
 - TypeScript
 - XML
