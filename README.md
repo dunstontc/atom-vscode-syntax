@@ -22,9 +22,10 @@
 - TypeScript
 - XML
 
-<br/><br/>
+<br/>
 
 ![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-default.png)
+
 
 ![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-custom.png)
 
