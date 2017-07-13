@@ -1,8 +1,9 @@
 ![atom-vscode](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/atom-vscode-banner.png)
 
 <br/>
+
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
-<!-- <span style="text-align:center;">[![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)</span> -->
+
 
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
 
