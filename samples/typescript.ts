@@ -1,58 +1,60 @@
 class Greeter {
+    
     constructor(public greeting: string) { }
+    
     greet() {
-        return "<h1>" + this.greeting + "</h1>";
+        return `<h1> ${this.greeting} </h1>`;
     }
 };
 
-var greeter = new Greeter("Hello, world!");
+let greetah = new Greeter("Hello, world!");
 
-document.body.innerHTML = greeter.greet();
+document.body.innerHTML = greetah.greet();
 
 
 /* ========================================================================== */
 
 
-class Student {
-  fullName: string;
-  constructor(public firstName, public middleInitial, public lastName) {
-    this.fullName = firstName + " " + middleInitial + " " + lastName;
-  }
-}
+// class Student {
+//   fullName: string;
+//   constructor(public firstName, public middleInitial, public lastName) {
+//     this.fullName = firstName + " " + middleInitial + " " + lastName;
+//   }
+// }
 
-interface Person {
-  firstName: string;
-  lastName: string;
-}
+// interface Person {
+//   firstName: string;
+//   lastName: string;
+// }
 
-function greeter(person: Person) {
-  return "Hello, " + person.firstName + " " + person.lastName;
-}
+// function greeter(person: Person) {
+//   return "Hello, " + person.firstName + " " + person.lastName;
+// }
 
-var user = new Student("Jane", "M.", "User");
+// var user = new Student("Jane", "M.", "User");
 
-document.body.innerHTML = greeter(user);
+// document.body.innerHTML = greeter(user);
 
 
 /* ========================================================================== */
 
 
 class MyClass {
-  public static myValue: string;
-  constructor(init: string) {
-    this.myValue = init;
-  }
+    public static myValue: string;
+    constructor(init: string) {
+        this.myValue = init;
+    }
 }
 
-import fs = require("fs");
-module MyModule {
-  export interface MyInterface extends Other {
-    myProperty: any;
-  }
-}
+// import fs = require("fs");
+// module MyModule {
+//     export interface MyInterface extends Other {
+//         myProperty: any;
+//     }
+// }
 
-declare magicNumber number;
-myArray.forEach(() => { }); // fat arrow syntax
+let magicNumber: number;
+
 
 
 /* ========================================================================== */

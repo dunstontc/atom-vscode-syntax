@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+- added TypeScript support
+- `readme` edits
+
 ## 2.0.0
 - Added theme options:
   - Dark Default

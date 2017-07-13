@@ -25,13 +25,13 @@ let example = function() {
 }
 
 let myObject = {
-    float: 23.23,
-    boolean: false,
-    string: 'here\'s a string',
-    templateLiteral: `This template is ${idk} literal`,
-    regexp: new RegExp(/\.jsx$/),
-    notDefined: undefined,
-    null: null
+    float:              23.23,
+    boolean:            false,
+    string:             'here\'s a string',
+    templateLiteral:    `This template is ${idk} literal`,
+    regexp:             new RegExp(/\.jsx$/),
+    notDefined:         undefined,
+    null:               null
 }
 
 class Polygon {
