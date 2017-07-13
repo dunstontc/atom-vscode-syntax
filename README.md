@@ -7,25 +7,6 @@
 
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
 
-
-## Samples:
-
-#### dark default:
-![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-default.png)
-
-
-#### dark custom:
-![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-custom.png)
-
-
-## Usage:
-Selecting a color scheme:
-- Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
-    ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-1.png) <br/><br/>
-- Use the select list in the _dark-plus-syntax_ package <br/><br/>
-    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-two.png)
-
-
 ## Supported Languages:
 - CoffeeScript
 - CSON
@@ -39,34 +20,22 @@ Selecting a color scheme:
 - SASS & SCSS
 - SVG
 - TypeScript
-- XML (plist, SVG)
+- XML
+
+<br/><br/>
+
+![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-default.png)
+
+![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-custom.png)
 
 
-## TODO:
+## Usage:
+Selecting a color scheme:
+- Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
+    ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-1.png) <br/><br/>
+- Use the select list in the _dark-plus-syntax_ package <br/><br/>
+    ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-two.png)
 
-- Additional Theme Options:
-  - `High Contrast`
-  - `Light+` (default light)
-
-
-- Additional Language Support:
-  - Bash
-  - C#
-  - CSV
-  - GFM (Github Flavored Markdown)
-  - Go
-  - Handlebars
-  - Jade/Pug
-  - PHP
-  - Python
-  - Ruby
-  - Rust
-  - SQL
-  - Text (plain text)
-  - TypeScript React (TSX)
-  - VUE
-  - XML
-  - YAML
 
 ## Issues
 Please [submit an issue](https://github.com/dunstontc/atom-vscode-syntax/issues) if the theme has trouble functioning or if it's causing any kind of problem.
