@@ -7,19 +7,29 @@
 
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
 
+## Supported Languages:
+- CoffeeScript
+- CSON
+- CSS
+- HTML
+- JavaScript
+- JavaScript React (Babel, JSX)
+- JSON
+- Less
+- Markdown
+- Sass & SCSS
+- SVG
+- TypeScript
+- XML
 
-## Samples:
+<br/><br/>
 
-#### dark default:
 ![dark default](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-default.png)
 
-
-#### dark custom:
 ![dark custom](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/html-custom.png)
 
 
 ## Usage:
-<!-- `Dark Default` is selected ~~by default~~. <br/> -->
 Selecting a color scheme:
 - Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
     ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-1.png) <br/><br/>
@@ -27,50 +37,12 @@ Selecting a color scheme:
     ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-two.png)
 
 
-## Supported Languages:
-- __CoffeeScript__
-- __CSON__
-- __CSS__
-- __HTML__
-- __JavaScript__
-- __JavaScript React (Babel, JSX)__
-- __JSON__
-- __LESS__
-- __Markdown__
-- __SASS & SCSS__
-- __SVG__
-- __XML__ (plist, SVG)
-
-
-## TODO:
-
-- Additional Theme Options:
-  - `High Contrast`
-  - `Light+` (default light)
-
-
-- Additional Language Support:
-  - Bash
-  - C#
-  - CSV
-  - GFM (Github Flavored Markdown)
-  - Go
-  - Handlebars
-  - Jade/Pug
-  - PHP
-  - Python
-  - Ruby
-  - Rust
-  - SQL
-  - Text (plain text)
-  - TypeScript
-  - TypeScript React (TSX)
-  - VUE
-  - XML
-  - YAML
+## Issues
+Please [submit an issue](https://github.com/dunstontc/atom-vscode-syntax/issues) if the theme has trouble functioning or if it's causing any kind of problem.
 
 
 ## Credit & Thanks
+- [atom/atom](https://github.com/atom/atom)
 - [Microsoft/vscode](https://github.com/Microsoft/vscode)
 - [Alchiadus/base16-syntax](https://github.com/Alchiadus/base16-syntax)
   - Code enabling theme options

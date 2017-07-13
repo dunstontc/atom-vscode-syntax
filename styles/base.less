@@ -268,7 +268,7 @@
 
     &.syntax--other {
         &.syntax--inherited-class {
-            // color: @seafoam-green;
+            color: @theme-color--class;
         }
 
         &.syntax--attribute-name {
@@ -284,16 +284,14 @@
 
     &.syntax--name.syntax--class,
     &.syntax--name.syntax--type.syntax--class {
-        color: @seafoam-green;
-        // NOTE: Babel Classes/Types
+        color: @theme-color--class; // NOTE: Babel Classes/Types
     }
 }
 
 .syntax--meta {
     &.syntax--definition,
     &.syntax--separator {
-        color: @very-light-gray;
-        // &.syntax--variable {color: ;}
+        color: @very-light-gray; // &.syntax--variable {color: ;}
     }
 
     &.syntax--class.syntax--body {

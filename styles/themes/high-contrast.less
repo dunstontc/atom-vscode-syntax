@@ -22,20 +22,15 @@
 
 
 // Theme colors -----------------------------------
-@theme--fg: @very-light-gray;
-@theme--bg: @very-dark-gray;
+
 @theme--gutter: darken(@syntax-fg, 26%);
 @theme--guide:  fade(@syntax-fg, 15%);
 @theme--accent: @bright-blue;
 @theme--cursor-color: @very-light-gray;
 
-.theme--cursor-line() {
-    margin-bottom: -2px;
-    border-bottom: 2px solid #333842;
-}
+@theme-color--fg:         @very-light-gray;
+@theme-color--bg:         @very-dark-gray;
 
-@theme-color--fg:         @light-gray;
-@theme-color--bg:         @dark-gray;
 @theme-color--accent:     @bright-blue;
 @theme-color--error:      @light-red;
 @theme-color--variable:   @light-blue;
@@ -52,3 +47,8 @@
 @theme-color--import:     @pink;
 @theme-color--snippet:    @comment-green;
 @theme-color--comment:    @comment-green;
+
+.theme--cursor-line() {
+    margin-bottom: -2px;
+    border-bottom: 2px solid #333842;
+}
