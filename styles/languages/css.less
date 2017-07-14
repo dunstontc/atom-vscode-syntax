@@ -1,36 +1,23 @@
 .syntax--css,
 .syntax--less,
+.syntax--sass,
 .syntax--scss {
-    .syntax--selector {
-        color: @dark-yellow;
-    }
+
+    .syntax--selector { color: @dark-yellow; }
 
     .syntax--support {
-        &.syntax--constant {
-            color: @orange; // NOTE: CSS Enum
-        }
-
-        &.syntax--property-name {
-            color: @light-blue;
-            // text-align: center;
-        }
-
-        &.syntax--function {
-            color: @puke;
-        }
+        &.syntax--constant { color: @orange; }
+        &.syntax--property-name { color: @light-blue; }
+        &.syntax--function { color: @puke; }
     }
 
     .syntax--keyword {
-        &.syntax--unit {
-            color: @puke;
-        }
+        &.syntax--unit { color: @puke; }
+        &.syntax--control.syntax--operator { color: @pink; }
     }
 
     .syntax--constant {
-        &.syntax--numeric {
-            color: @puke;
-        }
-
+        &.syntax--numeric { color: @puke; }
         &.syntax--color,
         &.syntax--punctuation {
             color: @orange;
@@ -42,44 +29,36 @@
             color: @dark-blue; // NOTE: html element names
         }
 
-        &.syntax--id {
-            // color: @dark-yellow;
-        }
-
         &.syntax--other.syntax--attribute-name {
-            // color: @dark-yellow;
+            color: @dark-yellow; // FIXME: look into this
+            &.syntax--id { color: @dark-yellow; }
         }
     }
 
     .syntax--punctuation {
-        // color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
+        color: @very-light-gray; // TODO: tweaked, quotes seperate from tags NOTE: style tag brackets in html
         &.syntax--definition {
-            &.syntax--keyword {
-                color: @orange;
-            }
-
-            &.syntax--entity {
-                color: @dark-yellow;
-            }
+            &.syntax--keyword { color: @orange; }
+            &.syntax--entity { color: @dark-yellow; }
+            &.syntax--interpolation { color: @dark-blue; }
         }
+
+        &.syntax--separator.syntax--delimiter,
+        &.syntax--section.syntax--function { color: @very-light-gray; }
     }
 }
 
 .syntax--keyword {
+
     &.syntax--css,
     &.syntax--less,
     &.syntax--sass,
     &.syntax--scss {
-        &.syntax--import {
-            color: @pink;
-        }
 
+        &.syntax--import,
         &.syntax--at-rule {
             color: @pink;
-
-            .syntax--keyword {
-                color: @pink;
-            }
+            .syntax--keyword {color: @pink;}
         }
     }
 }
@@ -89,9 +68,9 @@
         color: @pink;
     }
 }
-
-.syntax--less {
-    .syntax--attribute-name {
-        color: @dark-yellow;
-    }
-}
+//
+// .syntax--less {
+//     .syntax--attribute-name {
+//         color: @dark-yellow;
+//     }
+// }

@@ -20,6 +20,7 @@
 - Sass & SCSS
 - SVG
 - TypeScript
+- Vue
 - XML
 
 <br/>

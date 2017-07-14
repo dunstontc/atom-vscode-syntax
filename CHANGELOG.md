@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0
+- Improved `.scss` file highlighting
+- Improved `.vue` file highlighting
+- Added Vue to supported languages
+- Matched VSCode selection color (main theme color)
+
 ## 2.1.0
 - added TypeScript support
 - `readme` edits
