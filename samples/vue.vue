@@ -9,12 +9,16 @@
 <script>
 export default {
     data() {
-        return
-            time: new Date();
+        return {
+            time: new Date(),
+            msg: 'Welcome to Your Vue.js App'
+        }
     }
 }
 </script>
 
 <style lang="css">
-h1 {text-align: center;}
+    h1 {
+        text-align: center;
+    }
 </style>

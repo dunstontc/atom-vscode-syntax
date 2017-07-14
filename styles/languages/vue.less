@@ -1,7 +1,15 @@
 .syntax--vue * {
-  .syntax--source.syntax--js.syntax--embedded.syntax--html {
-    .syntax--keyword.syntax--operator {
-      color: @dark-blue;
+    .syntax--js {
+        &.syntax--keyword.syntax--operator {
+            color: @dark-blue;
+        }
+
+        &.syntax--object.syntax--key {
+            color: @light-blue;
+            .syntax--string.syntax--unquoted { color: @light-blue; }
+        }
+        &.syntax--entity.syntax--name.syntax--function {
+            color: @light-yellow;
+        }
     }
-  }
 }

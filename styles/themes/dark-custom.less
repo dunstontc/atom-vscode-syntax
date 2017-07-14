@@ -5,11 +5,11 @@
 @dark-gray:       #282c34;
 @very-dark-gray:  #1E1E1E;
 
-@light-red:       #D16969;
 @dark-red:        #F44747;
+@light-red:       #D16969;
 @orange:          #CE9178;
-@light-yellow:    #DCDCAA;
 @dark-yellow:     #D7BA7D;
+@light-yellow:    #DCDCAA;
 @puke:            #B5CEA8;
 @comment-green:   #608B4E;
 @seafoam-green:   #4EC9B0;
@@ -21,15 +21,16 @@
 
 // Theme Colors
 
-@theme--gutter:         darken(@syntax-fg, 26%);
-@theme--guide:          fade(@syntax-fg, 15%);
-@theme--accent:         @bright-blue;
-@theme--cursor-color:   @bright-blue;
+@theme--gutter:             darken(@syntax-fg, 26%);
+@theme--guide:              fade(@syntax-fg, 15%);
+@theme--accent:             @bright-blue;
+@theme--cursor-color:       @bright-blue;
 
 @theme-color--fg:           @very-light-gray;
 @theme-color--bg:           @dark-gray;
-
 @theme-color--accent:       @bright-blue;
+@theme-color--selection:    @background-color: rgb(38, 78, 123);
+
 @theme-color--variable:     @light-blue;
 @theme-color--constant:     @puke;
 @theme-color--property:     @syntax-fg;
@@ -60,12 +61,12 @@
 }
 
 .theme--selection() {
-    opacity         : 0.45;
-    background-color: lighten(@theme-color--bg, 15%);
-
+    // opacity         : 0.45;
+    // background-color: lighten(@theme-color--class, 15%);
+    background-color: rgb(38, 78, 123);
     &:first-child {border-radius: 3px 3px 0 0;}
-    &:last-child {border-radius: 0 0 3px 3px;}
-    &:only-child {border-radius: 3px 3px 3px 3px;}
+    &:last-child  {border-radius: 0 0 3px 3px;}
+    &:only-child  {border-radius: 3px 3px 3px 3px;}
 }
 
 .theme--bracket-match() {
@@ -86,3 +87,19 @@
 .syntax--punctuation.syntax--section.syntax--class { color: @seafoam-green; }
 
 .syntax--keyword.syntax--operator.syntax--rest.syntax--ts { color: @dark-blue; }
+
+
+////    braces in styles
+// .syntax--css,
+// .syntax--less,
+// .syntax--sass,
+// .syntax--scss {
+//     .syntax--punctuation {
+//         &.syntax--terminator,
+//         &.syntax--section { color: @light-gray;}
+//
+//     }
+// }
+
+////    braces in scripts
+// .syntax--meta.syntax--brace.syntax--curly { color: @light-gray; }

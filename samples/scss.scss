@@ -8,13 +8,12 @@ $nada: null;
 html, body {
     padding: 0px;
     margin: 0px;
-    $ghostwhite: ghostwhite !global;
-    background-color: $ghostwhite !important;
+    background-color: $secondary-color !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    background-color: $ghostwhite;
+    background-color: $secondary-color;
 }
 
 .very-classy {
@@ -26,9 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @mixin firefox-message($selector) {
-  body.firefox #{$selector}:before {
-    content: "Hi, Firefox users!";
-  }
+    body.firefox #{$selector}:before {
+        content: "Hi, Firefox users!";
+    }
 }
 
 @include firefox-message(".header");
@@ -38,60 +37,60 @@ h1, h2, h3, h4, h5, h6 {
 $unknown: unique-id();
 
 @mixin large-text {
-  font: {
-    family: Arial;
-    size: 20px;
-    weight: bold;
-  }
-  color: #000000;
+    font: {
+        family: Arial;
+        size: 20px;
+        weight: bold;
+    }
+    color: #000000;
 }
 
 .page-title {
-  @include large-text;
-  padding: 4px;
-  margin-top: 10px;
+    @include large-text;
+    padding: 4px;
+    margin-top: 10px;
 }
 
 $name: foo;
 $attr: border;
 p.#{$name} {
-  #{$attr}-color: blue;
+    #{$attr}-color: blue;
 }
 
 p {
-  $font-size: 12px;
-  $line-height: 30px;
-  font: #{$font-size}/#{$line-height};
+    $font-size: 12px;
+    $line-height: 30px;
+    font: #{$font-size}/#{$line-height};
 }
 
 .error {
-  border: 1px #0f0;
-  background-color: #fdd;
+    border: 1px #0f0;
+    background-color: #fdd;
 }
 .seriousError {
-  @extend .error
-  border-width: 3px;
+    @extend .error;
+    border-width: 3px;
 }
 
 $type: monster;
 p {
-  @if $type == ocean {
-    color: blue;
-  } @else if $type == matador {
-    color: red;
-  } @else if $type == monster {
-    color: green;
-  } @else {
-    color: black;
-  }
+    @if $type == ocean {
+        color: blue;
+    } @else if $type == matador {
+        color: red;
+    } @else if $type == monster {
+        color: green;
+    } @else {
+        color: black;
+    }
 }
 
 @for $i from 1 through 3 {
-  .item-#{$i} { width: 2em * $i; }
+    .item-#{$i} { width: 2em * $i; }
 }
 
 $i: 6;
 @while $i > 0 {
-  .item-#{$i} { width: 2em * $i; }
-  $i: $i - 2;
+    .item-#{$i} { width: 2em * $i; }
+    $i: $i - 2;
 }

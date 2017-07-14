@@ -5,6 +5,12 @@
   src: url('./fonts/myfont.woff') format('woff'),
 }
 
+html,
+body {
+    margin : 0px;
+    padding: 0px;
+}
+
 :root {
     --main-color: #06c;
     --accent-color: #006;
