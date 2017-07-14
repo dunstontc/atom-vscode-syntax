@@ -2,8 +2,9 @@
     &.syntax--text {}
 
     &.syntax--list {
-        .syntax--punctuation {
-            // color: @dark-blue;
+        .syntax--punctuation {color: @bright-blue;}
+        &.syntax--ordered {
+            // .syntax--punctuation {color: @dark-blue;}
         }
     }
 
@@ -11,26 +12,25 @@
         color     : @dark-blue;
         font-style: bold;
 
-        .syntax--punctuation {
-            color: @dark-blue;
-        }
+        .syntax--punctuation {color: @dark-blue;}
     }
 
     &.syntax--italic {
         color     : @light-blue;
         font-style: italic;
 
-        .syntax--punctuation {
-            color: @light-blue;
-        }
+        .syntax--punctuation {color: @light-blue;}
     }
 
-    &.syntax--hr {
-        color: @dark-blue;
-    }
+    &.syntax--hr {color: @dark-blue;}
 
-    .syntax--table.syntax--storage {
-        color: @dark-blue;
+    &.syntax--table.syntax--storage {color: @dark-blue;}
+
+    &.syntax--link .syntax--punctuation { color: @very-light-gray; }
+
+
+    .syntax--punctuation.syntax--definition.syntax--tag {
+            color: @light-gray;
     }
 
     &.syntax--language {
@@ -42,7 +42,5 @@
 .syntax--source.syntax--gfm .syntax--markup {
     -webkit-font-smoothing: auto;
 
-    &.syntax--heading {
-        color: @seafoam-green;
-    }
+    &.syntax--heading {color: @seafoam-green;}
 }
