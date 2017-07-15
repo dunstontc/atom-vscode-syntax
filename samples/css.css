@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('./fonts/myfont.woff') format('woff'),
+    font-family: 'MyWebFont';
+    src: url('./fonts/myfont.woff') format('woff'),
 }
 
 html,
