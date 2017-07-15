@@ -1,47 +1,52 @@
 .syntax--md {
     &.syntax--text {}
-
     &.syntax--list {
         .syntax--punctuation {
-            // color: @dark-blue;
+            color: @bright-blue;
+        }
+        &.syntax--ordered {
+            // .syntax--punctuation {color: @dark-blue;}
         }
     }
-
     &.syntax--bold {
-        color     : @dark-blue;
+        color: @dark-blue;
         font-style: bold;
-
         .syntax--punctuation {
             color: @dark-blue;
         }
     }
-
     &.syntax--italic {
-        color     : @light-blue;
+        color: @light-blue;
         font-style: italic;
-
         .syntax--punctuation {
             color: @light-blue;
         }
     }
-
     &.syntax--hr {
         color: @dark-blue;
     }
-
-    .syntax--table.syntax--storage {
+    &.syntax--table.syntax--storage {
         color: @dark-blue;
     }
-
-    &.syntax--language {
-        // color: @seafoam-green; //TODO: tweaked -> seafoam
+    &.syntax--link .syntax--punctuation {
         color: @very-light-gray;
     }
+    .syntax--punctuation.syntax--definition.syntax--tag {
+        color: @light-gray;
+    }
+    &.syntax--language {
+        // color: @seafoam-green; //TODO: tweaked -> seafoam
+        color: @bright-blue;
+        // color: @very-light-gray;
+    }
+    &.syntax--code.syntax--raw {
+        .syntax--punctuation {
+            color: @orange;
+        }
+    }
 }
-
 .syntax--source.syntax--gfm .syntax--markup {
     -webkit-font-smoothing: auto;
-
     &.syntax--heading {
         color: @seafoam-green;
     }
