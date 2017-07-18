@@ -1,0 +1,36 @@
+.syntax--c,
+.syntax--cpp {
+    &.syntax--keyword {
+        &.syntax--control {
+            color: @pink;
+        }
+    }
+    &.syntax--entity {
+        &.syntax--name.syntax--function {
+            color: @light-yellow;
+        }
+    }
+    // &.syntax--meta {
+    //     &.syntax--block {
+    //         .syntax--function-call {
+    //             color: @light-yellow;
+    //         }
+    //     }
+    // }
+    .syntax--meta.syntax--function-call {
+        .syntax--entity.syntax--name.syntax--function {
+            color: @light-yellow;
+        }
+    }
+}
+.syntax--c {
+    &.syntax--meta.syntax--block {}
+    &.syntax--keyword {
+        &.syntax--operator {
+            &.syntax--bitwise,
+            &.syntax--shift {
+                // color: @light-gray;
+            }
+        }
+    }
+}

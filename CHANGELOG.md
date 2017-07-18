@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.3.0
+- Changed some JavaScript highlighting to closer match VSCode's native js syntax
+- Began work on support for C, C++, & SQL
+- Improved highlighting for Markdown
+
 ## 2.2.0
 - Improved `.scss` file highlighting
 - Improved `.vue` file highlighting
@@ -7,7 +12,7 @@
 - Matched VSCode selection color (main theme color)
 
 ## 2.1.0
-- added TypeScript support
+- Added TypeScript support
 - `readme` edits
 
 ## 2.0.0

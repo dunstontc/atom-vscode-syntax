@@ -1,0 +1,46 @@
+.syntax--sql {
+    .syntax--constant.syntax--other {
+        &.syntax--table-name,
+        &.syntax--database-name {
+            color: @very-light-gray;
+        }
+    }
+    &.syntax--keyword {
+        &.syntax--other {
+            &.syntax--DML,
+            &.syntax--II,
+            &.syntax--create {
+                color: @dark-blue;
+            }
+            &.syntax--LUW,
+            &.syntax--case {
+                color: @pink;
+            }
+            &.syntax--authorization {
+                color: @seafoam-green;
+            }
+        }
+        &.syntax--operator {
+            &.syntax--star {
+                // color: ;
+            }
+        }
+    }
+    &.syntax--meta {
+        &.syntax--create {
+            color: @dark-blue;
+        }
+    }
+    &.syntax--storage {
+        &.syntax--modifier,
+        &.syntax--type {
+            color: @dark-blue;
+        }
+    }
+    &.syntax--support.syntax--function {
+        color: @light-yellow;
+    }
+    &.syntax--entity.syntax--name.syntax--function {
+        color: @light-yellow;
+    }
+}
