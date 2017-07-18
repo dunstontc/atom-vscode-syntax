@@ -1,16 +1,19 @@
 atom-text-editor {
-    .syntax--js.syntax--jsx,
-    .syntax--jsx,
-    .syntax--source.syntax--jsx {
-        // color: @very-light-gray;
-    }
+    // .syntax--js.syntax--jsx,
+    // .syntax--jsx,
+    // .syntax--source.syntax--jsx {
+    //     // color: @very-light-gray;
+    // }
 
     .syntax--js.syntax--jsx,
     .syntax--jsx,
     .syntax--source.syntax--jsx {
         color: @very-light-gray;
 
-        .syntax--component,
+        .syntax--component {
+            color: @seafoam-green;
+        }
+
         .syntax--keyword {
             &.syntax--operator {
                 color: @dark-blue;
@@ -21,7 +24,7 @@ atom-text-editor {
                 &.syntax--decrement,
                 &.syntax--increment,
                 &.syntax--logical,
-                &.syntax--of,
+                // &.syntax--of,
                 &.syntax--relational,
                 &.syntax--ternary {
                     color: @very-light-gray;
@@ -52,6 +55,7 @@ atom-text-editor {
                 color: @light-blue;
             }
 
+            &.syntax--name.syntax--function,
             &.syntax--name.syntax--function.syntax--method {
                 color: @light-yellow;
             }
@@ -65,7 +69,7 @@ atom-text-editor {
 
             .syntax--extends {
                 .syntax--entity.syntax--name.syntax--class {
-                    color: @light-blue;
+                    // color: @light-blue;
                 }
             }
 
@@ -75,6 +79,18 @@ atom-text-editor {
                 }
             }
 
+            &.syntax--for {
+                .syntax--keyword.syntax--operator {
+                    color: @dark-blue;  // TODO: Tweaked
+
+                    &.syntax--accessor,
+                    &.syntax--assignment,
+                    &.syntax--relational,
+                    &.syntax--arithmetic {
+                        color: @very-light-gray;
+                    }
+                }
+            }
         }
 
         &.syntax--require {

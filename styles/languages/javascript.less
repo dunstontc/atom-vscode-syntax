@@ -14,7 +14,7 @@ atom-text-editor {
             &.syntax--punctuation.syntax--end {
                 color: @dark-blue; // NOTE: ${}
             }
-            .syntax--json{
+            .syntax--json {
               .syntax--function.syntax--name {
                   color: @light-yellow;
               }
@@ -32,9 +32,11 @@ atom-text-editor {
             }
 
             &.syntax--of {
-                color: @very-light-gray;
+                // color: @very-light-gray;
+                color: @dark-blue;
             }
-            &.syntax--operator.syntax--module.syntax--all {
+            &.syntax--operator.syntax--module.syntax--all,
+            &.syntax--operator.syntax--ternary {
                color: @dark-blue;
             }
             &.syntax--new {
@@ -51,25 +53,37 @@ atom-text-editor {
 
             &.syntax--other {
               &.syntax--property {
-                  // color: @very-light-gray; // NOTE: Property in JavaScript
+                  //   color: @very-light-gray; // NOTE: Property in JavaScript
+                  color: @light-blue; // NOTE: Property in JavaScript
+              }
+              &.syntax--dollar {
+                //   color: ;
               }
             }
 
             &.syntax--default {
                 color: @pink;
             }
+            &.syntax--support.syntax--property {
+                // color: @light-blue;
+                // color: @light-yellow;
+            }
+        }
+        .syntax--constant.syntax--other.syntax--object.syntax--key * {
+            color: @light-blue;
         }
 
         .syntax--meta {
             &.syntax--export,
             &.syntax--import {
                 .syntax--keyword {
-                    color: @very-light-gray;
+                    // color: @very-light-gray;
+                    color: @pink;
                 }
             }
             &.syntax--for {
               .syntax--keyword.syntax--operator {
-                color: @very-light-gray;
+                // color: @very-light-gray;
               }
             }
 
@@ -129,4 +143,14 @@ atom-text-editor {
   .syntax--end {
     color: @dark-blue;
   }
+}
+
+.syntax--meta.syntax--class.syntax--body {
+    .syntax--meta.syntax--function.syntax--method {
+        .syntax--entity.syntax--name.syntax--function.syntax--method {
+            // color: @light-blue;
+        }
+
+    }
+
 }

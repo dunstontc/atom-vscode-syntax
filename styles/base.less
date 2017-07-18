@@ -126,8 +126,12 @@
 }
 
 .syntax--support {
-    &.syntax--class,
+    // &.syntax--variable,
     &.syntax--variable {
+        color: @seafoam-green;
+        &.syntax--property.syntax--dom {            color: @light-blue;        }
+    }
+    &.syntax--class {
         color: @seafoam-green;
     }
 
@@ -154,23 +158,24 @@
         &.syntax--object {
             &.syntax--module,
             &.syntax--console,
-            &.syntax--dom,
-            &.syntax--process {
+            &.syntax--dom {
+            // &.syntax--process {
                 color: @seafoam-green; // NOTE: Babel
+            }
+            &.syntax--process {
+                color: @light-blue;
             }
         }
     }
 
     &.syntax--dom {
         &.syntax--function {
-            color: @light-blue;
+            // color: @light-blue;
         }
-
         &.syntax--variable {
-            color: @seafoam-green;
-
+            // color: @seafoam-green;
             &.syntax--property {
-                color: @very-light-gray;
+                // color: @very-light-gray;
             }
         }
     }
@@ -372,10 +377,10 @@
 
     &.syntax--function-call {
         .syntax--entity.syntax--function.syntax--name {
-            color: @light-blue;
+            // color: @light-blue;
 
             &.syntax--without-arguments {
-                color: @dark-blue;
+                // color: @dark-blue;
             }
         }
     }
