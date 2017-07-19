@@ -1,7 +1,8 @@
 # Changelog
 
-## 2.3.1
+## 2.3.3
 - Fixed highlighting for function names in vanilla js
+- Changed color of assignment operators (`:`)
 
 ## 2.3.0
 - Changed some JavaScript highlighting to closer match VSCode's native js syntax
