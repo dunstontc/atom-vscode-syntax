@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.3.1
+- Fixed highlighting for function names in vanilla js
+
 ## 2.3.0
 - Changed some JavaScript highlighting to closer match VSCode's native js syntax
 - Began work on support for C, C++, & SQL
