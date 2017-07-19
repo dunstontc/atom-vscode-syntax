@@ -1,7 +1,7 @@
 {
   "name": "dark-plus-syntax",
   "theme": "syntax",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "main": "./lib/vsc-syntax.coffee",
   "description": "Visual Studio Code's 'Dark+' (default dark) theme",
   "keywords": [
