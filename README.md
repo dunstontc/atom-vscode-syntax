@@ -17,6 +17,7 @@
 - JSON
 - Less
 - Markdown
+- _Ruby_
 - Sass & SCSS
 - SVG
 - TypeScript

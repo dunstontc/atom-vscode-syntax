@@ -18,7 +18,7 @@
 
         &.syntax--language {
             &.syntax--self {
-                color: @light-gray;
+                color: @dark-blue;
             }
         }
 
@@ -27,6 +27,7 @@
 
     .syntax--keyword {
         &.syntax--operator {
+            &.syntax--logical,
             &.syntax--augmented,
             &.syntax--arithmetic,
             &.syntax--assignment {
@@ -55,19 +56,24 @@
         }
 
         &.syntax--separator {
-            &.syntax--inheritance,
-            &.syntax--method,
             &.syntax--object,
             &.syntax--other,
             &.syntax--variable {
                 color: @theme-color--fg;
+            }
+
+            &.syntax--inheritance {
+                color: @theme-color--class;
+            }
+            &.syntax--method {
+                color: @light-yellow;
             }
         }
 
         &.syntax--section {
             &.syntax--array.syntax--begin,
             &.syntax--array.syntax--end {
-                color: @dark-blue;
+                color: @very-light-gray;
             }
 
             &.syntax--function {color: @very-light-gray;}

@@ -1,7 +1,14 @@
 # Changelog
 
+## 2.x.x
+- Adding support for:
+    - C, C++
+    - Ruby
+    - Rust
+    - TOML
+
 ## 2.2.1
-- Fixed highlighting issue with punctuation in markdown 
+- Fixed highlighting issue with punctuation in markdown
 - Fixed error causing ui element colors not to correspond with active theme
 
 ## 2.2.0
