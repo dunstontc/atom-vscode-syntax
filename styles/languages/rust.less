@@ -9,10 +9,15 @@
     .syntax--entity.syntax--name.syntax--lifetime {
         color: @dark-blue !important;
     }
-    .syntax--keyword.syntax--other {
-        color: @dark-blue;
+    .syntax--keyword {
 
-        &.syntax--fn {color: @dark-blue;}
+        &.syntax--operator.syntax--misc,
+        &.syntax--other {
+            color: @dark-blue;
+            &.syntax--fn { color: @dark-blue; }
+        }
+
+        &.syntax--control { color: @pink; }
     }
 
     .syntax--meta.syntax--attribute.syntax--rust {
