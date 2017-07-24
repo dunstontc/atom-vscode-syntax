@@ -10,8 +10,8 @@
 
 
 # Themes
-  - [ ] Dark Default
-  - [ ] Dark (custom)
+  - [x] ~~Dark Default~~
+  - [x] ~~Dark (custom)~~
   - [ ] High Contrast
   - [ ] Light Default
   - [ ] _Light (custom)_
@@ -43,14 +43,16 @@
 - [ ] Objective-C
 - [ ] PHP
 - [ ] Python
-- [ ] Ruby
+- [ ] Ruby*
 - [ ] Rust
-- [x] __SASS & SCSS__
+- [ ] SASS
+- [x] __SCSS__
 - [ ] SQL
 - [ ] Stylus
 - [ ] SVG
 - [ ] Text (plain text)
 - [ ] TODO
+- [ ] TOML
 - [ ] TypeScript
 - [ ] VUE
 - [ ] XML

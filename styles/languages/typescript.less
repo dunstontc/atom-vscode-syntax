@@ -29,7 +29,10 @@
 
         &.syntax--object-literal.syntax--key  { color: @theme-color--variable; }
         &.syntax--expression.syntax--template { color: @theme-color--storage; }
-        &.syntax--import .syntax--string { text-decoration: none !important; }
+        &.syntax--import,
+        &.syntax--import-equals.syntax--external {
+            .syntax--string { text-decoration: none !important; }
+        }
     }
 
     .syntax--keyword.syntax--operator.syntax--expression.syntax--of { color: @dark-blue; }

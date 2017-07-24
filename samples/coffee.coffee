@@ -14,7 +14,9 @@ getFibonacciNumbers = (length) ->
 
 class Hello extends World
     constructor: (name) ->
-        @label = "Hello #{name}!"
+        @label = """
+            Hello #{name}!
+        """
 
     log: ->
         console.log(@label)

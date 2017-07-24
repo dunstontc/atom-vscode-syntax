@@ -6,6 +6,7 @@
     - Ruby
     - Rust
     - TOML
+    - YAML
 
 ## 2.2.1
 - Fixed highlighting issue with punctuation in markdown
