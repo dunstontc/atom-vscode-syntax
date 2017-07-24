@@ -1,10 +1,8 @@
 .DS_Store
+.idea
 npm-debug.log
 node_modules
 images
-_test
+
 styles/theme.less
 testing
-
-_testing/_examples/
-_testing/_samples/
