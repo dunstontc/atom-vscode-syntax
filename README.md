@@ -3,25 +3,30 @@
 <br/>
 
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
+[![GitHub issues](https://img.shields.io/github/issues/dunstontc/atom-vscode-syntax.svg)](https://github.com/dunstontc/atom-vscode-syntax/issues)
+[![apm](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/dunstontc/atom-vscode-syntax/blob/master/LICENSE.md)
+
 
 
 [Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
 
 ## Supported Languages:
-- CoffeeScript
-- CSON
+- C/C++
+- CoffeeScript / CSON
 - CSS
 - HTML
-- JavaScript
+- JavaScript / JSON
 - JavaScript React (Babel, JSX)
-- JSON
 - Less
 - Markdown
-- Sass & SCSS
+- SCSS
+- SQL
 - SVG
+- TOML
 - TypeScript
 - Vue
 - XML
+- YAML
 
 <br/>
 

@@ -1,0 +1,45 @@
+.syntax--yaml {
+    .syntax--comment {
+        color: @theme-color--comment; // NOTE: Unscoped
+        &.syntax--line {
+            &.syntax--number-sign {}
+        }
+    }
+    .syntax--string.syntax--quoted {
+        .syntax--entity.syntax--name.syntax--tag {
+            color: @orange;
+        }
+    }
+    .syntax--constant {
+        &.syntax--other.syntax--date {
+            color: @very-light-gray;
+        }
+        &.syntax--language.syntax--null {
+            color: @dark-blue;
+        } // NOTE: Unscoped
+    }
+    .syntax--variable.syntax--other.syntax--alias {
+        color: @light-blue; // NOTE: Unscoped
+    }
+    .syntax--keyword.syntax--control.syntax--flow {
+        color: @pink; // NOTE: Unscoped
+        &.syntax--alias {}
+    }
+    .syntax--entity.syntax--name.syntax--type.syntax--anchor {
+        color: @seafoam-green;
+    }
+    .syntax--meta {
+        .syntax--property {
+            color: @seafoam-green;
+        }
+    }
+    .syntax--punctuation.syntax--definition {
+        &.syntax--anchor,
+        &.syntax--alias {
+            color: @pink; // NOTE: Unscoped
+        }
+        &syntax--separator.syntax--key-value {
+            color: @very-light-gray;
+        }
+    }
+}

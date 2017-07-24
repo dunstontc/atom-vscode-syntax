@@ -1,0 +1,94 @@
+.syntax--ruby {
+    // color: @light-blue;
+    .syntax--comment {
+        color: @theme-color--comment;
+    }
+    .syntax--string {
+        color: @theme-color--string;
+        &.syntax--unquoted {
+            color: @theme-color--string;
+        }
+    }
+    .syntax--constant {
+        &.syntax--other.syntax--symbol {
+            color: @dark-blue;
+        }
+    }
+    .syntax--variable {
+        color: ;
+        &.syntax--parameter.syntax--function {}
+        &.syntax--language {
+            &.syntax--self {
+                color: @dark-blue;
+            }
+        }
+        &.syntax--other {
+            &.syntax--block {}
+        }
+    }
+    .syntax--keyword {
+        &.syntax--operator {
+            &.syntax--logical,
+            &.syntax--augmented,
+            &.syntax--arithmetic,
+            &.syntax--assignment {
+                color: @theme-color--fg;
+            }
+        }
+        &.syntax--control {
+            &.syntax--module {
+                color: @pink;
+            }
+        }
+        &.syntax--other {
+            &.syntax--special-method {
+                color: @dark-blue;
+            }
+        }
+    }
+    .syntax--punctuation {
+        &.syntax--definition {
+            &.syntax--parameters {
+                color: @theme-color--fg;
+            }
+            &.syntax--constant {
+                color: @theme-color--storage;
+            }
+        }
+        &.syntax--separator {
+            &.syntax--object,
+            &.syntax--other,
+            &.syntax--variable {
+                color: @theme-color--fg;
+            }
+            &.syntax--inheritance {
+                color: @theme-color--class;
+            }
+            &.syntax--method {
+                color: @light-yellow;
+            }
+        }
+        &.syntax--section {
+            &.syntax--array.syntax--begin,
+            &.syntax--array.syntax--end {
+                color: @very-light-gray;
+            }
+            &.syntax--function {
+                color: @very-light-gray;
+            }
+        }
+    }
+    .syntax--support {
+        &.syntax--function {
+            color: @light-yellow;
+        }
+        &.syntax--kernel {
+            color: @light-yellow;
+        }
+    }
+}
+.syntax--ruby {
+    .syntax--punctuation.syntax--separator.syntax--method {
+        // color: white;
+    }
+}

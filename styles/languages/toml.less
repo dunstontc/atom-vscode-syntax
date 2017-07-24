@@ -1,0 +1,16 @@
+.syntax--toml {
+    .syntax--entity.syntax--name.syntax--section.syntax--table {
+        color: @dark-blue;
+        &.syntax--punctuation.syntax--begin,
+        &.syntax--punctuation.syntax--end {
+            // color: @light-blue;
+        }
+        &.syntax--array {
+            color: @dark-blue;
+            .syntax--punctuation.syntax--begin,
+            .syntax--punctuation.syntax--end {
+                color: @very-light-gray;
+            }
+        }
+    }
+}

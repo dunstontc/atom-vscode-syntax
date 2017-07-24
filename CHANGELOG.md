@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.4.0
+- Working on support for:
+    - C, C++
+    - Ruby
+    - Rust
+    - TOML
+    - YAML
+- Faded begin/end punctuation for multi-line strings in CoffeeScript
+- Small Markdown fix
+- Removed syntax folder
+- Updated `changelog` & `readme`
+
 ## 2.3.3
 - Fixed highlighting for function names in vanilla js
 - Changed color of assignment operators (`:`)
@@ -8,6 +20,10 @@
 - Changed some JavaScript highlighting to closer match VSCode's native js syntax
 - Began work on support for C, C++, & SQL
 - Improved highlighting for Markdown
+
+## 2.2.1
+- Fixed highlighting issue with punctuation in markdown
+- Fixed error causing ui element colors not to correspond with active theme
 
 ## 2.2.0
 - Improved `.scss` file highlighting

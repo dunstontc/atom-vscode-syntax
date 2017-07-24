@@ -1,3 +1,18 @@
+.syntax--c {
+    &.syntax--meta.syntax--block {}
+    &.syntax--meta.syntax--function {}
+    &.syntax--keyword {
+        &.syntax--operator {
+            &.syntax--bitwise,
+            &.syntax--shift {
+                // color: @light-gray;
+            }
+        }
+    }
+    &.syntax--support.syntax--type.syntax--sys-types {
+        color: @seafoam-green;
+    }
+}
 .syntax--c,
 .syntax--cpp {
     &.syntax--keyword {
@@ -20,17 +35,6 @@
     .syntax--meta.syntax--function-call {
         .syntax--entity.syntax--name.syntax--function {
             color: @light-yellow;
-        }
-    }
-}
-.syntax--c {
-    &.syntax--meta.syntax--block {}
-    &.syntax--keyword {
-        &.syntax--operator {
-            &.syntax--bitwise,
-            &.syntax--shift {
-                // color: @light-gray;
-            }
         }
     }
 }

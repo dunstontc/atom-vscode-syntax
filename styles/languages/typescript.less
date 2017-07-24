@@ -1,56 +1,61 @@
 .syntax--ts,
 .syntax--tsx {
-
     .syntax--support {
-
         &.syntax--variable.syntax--property {
             color: @theme-color--variable;
         }
-
         &.syntax--type {
             &.syntax--primitive {
                 color: @seafoam-green;
             }
         }
     }
-
     .syntax--meta {
-
         &.syntax--definition {
-
             &.syntax--function {
                 color: @theme-color--method;
             }
-
             &.syntax--property {
                 color: @theme-color--variable;
             }
         }
-
-        &.syntax--object-literal.syntax--key  { color: @theme-color--variable; }
-        &.syntax--expression.syntax--template { color: @theme-color--storage; }
-        &.syntax--import .syntax--string { text-decoration: none !important; }
+        &.syntax--object-literal.syntax--key {
+            color: @theme-color--variable;
+        }
+        &.syntax--expression.syntax--template {
+            color: @theme-color--storage;
+        }
+        &.syntax--import,
+        &.syntax--import-equals.syntax--external {
+            .syntax--string {
+                text-decoration: none !important;
+            }
+        }
     }
-
-    .syntax--keyword.syntax--operator.syntax--expression.syntax--of { color: @dark-blue; }
-    .syntax--keyword.syntax--operator.syntax--expression.syntax--typeof { color: @dark-blue; }
-
+    .syntax--keyword.syntax--operator.syntax--expression.syntax--of {
+        color: @dark-blue;
+    }
+    .syntax--keyword.syntax--operator.syntax--expression.syntax--typeof {
+        color: @dark-blue;
+    }
     .syntax--entity {
-        &.syntax--name.syntax--function { color: @light-yellow; }
-        &.syntax--inherited-class { color: @theme-color--class; }
+        &.syntax--name.syntax--function {
+            color: @light-yellow;
+        }
+        &.syntax--inherited-class {
+            color: @theme-color--class;
+        }
     }
-
     .syntax--variable {
-        color:@theme-color--variable;
-
+        color: @theme-color--variable;
         &.syntax--other.syntax--property,
         &.syntax--other.syntax--readwrite {
             color: @theme-color--variable;
         }
-
-        &.syntax--language.syntax--this{ color: @dark-blue; }
+        &.syntax--language.syntax--this {
+            color: @dark-blue;
+        }
     }
-
     .syntax--meta.syntax--field.syntax--declaration {
         .syntax--name.syntax--function {
             color: @light-yellow !important;
