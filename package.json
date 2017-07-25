@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "2.4.0",
   "main": "./lib/vsc-syntax.coffee",
-  "description": "Visual Studio Code's 'Dark+' (default dark) theme",
+  "description": "VS Code's 'Dark+' (default dark) theme",
   "keywords": [
     "atom",
     "dark",

@@ -8,7 +8,7 @@
 
 
 
-[Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
+[VS Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
 
 ## Supported Languages:
 - C/C++
@@ -19,6 +19,7 @@
 - JavaScript React (Babel, JSX)
 - Less
 - Markdown
+- Ruby
 - SCSS
 - SQL
 - SVG
