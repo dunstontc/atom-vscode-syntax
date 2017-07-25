@@ -8,6 +8,7 @@ settings =
         # "light-default"
         # "high-contrast"
         "dark-custom"
+        "dark-super-custom"
         # "light-custom"
         # "high-contrast-custom"
       ]
