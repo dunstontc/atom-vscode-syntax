@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.4.2
+- Fixed the fix from 2.4.1
+
 ## 2.4.1
 - Fixed issue with self-closing tags in html
 
