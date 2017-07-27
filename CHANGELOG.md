@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.4.1
+- Fixed issue with self-closing tags in html
+
 ## 2.4.0
 - Working on support for:
     - C, C++
