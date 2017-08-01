@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.5.0
+- Added support for `.editorconfig` files
+
 ## 2.4.4
 - Fixed the fix from 2.4.1, accompanied by some publishing issues
 
