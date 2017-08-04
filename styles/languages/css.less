@@ -8,7 +8,7 @@
     .syntax--support {
         &.syntax--constant { color: @orange; }
         &.syntax--property-name { color: @light-blue; }
-        &.syntax--function { color: @puke; }
+        &.syntax--function { color: @light-yellow; }
     }
 
     .syntax--keyword {
@@ -22,6 +22,9 @@
         &.syntax--punctuation {
             color: @orange;
         }
+    }
+    .syntax--variable.syntax--parameter {
+        // color: ;
     }
 
     .syntax--entity {
