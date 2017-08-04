@@ -67,17 +67,17 @@
 
 .theme--selection() {
     // opacity         : 0.45;
-    background-color: lighten(@theme-color--class, 15%);
-    // background-color: rgb(38, 78, 123);
-    &:first-child {border-radius: 3px 3px 0 0;}
-    &:last-child  {border-radius: 0 0 3px 3px;}
-    &:only-child  {border-radius: 3px 3px 3px 3px;}
+    // background-color: lighten(@theme-color--class, 15%);
+    background-color: rgb(38, 78, 123);
+    &:first-child { border-radius: 3px 3px 0 0; }
+    &:last-child  { border-radius: 0 0 3px 3px; }
+    &:only-child  { border-radius: 3px 3px 3px 3px; }
 }
 
 .theme--bracket-match() {
-    // border-bottom: 1px dotted @syntax-cursor-color;
+    border-bottom: 1px dotted @syntax-cursor-color;
     // box-sizing   : border-box;
-    color: @very-light-gray;
+    // color: @very-light-gray;
 }
 
 // .syntax--source.syntax--js.syntax--jsx {
@@ -101,9 +101,32 @@
 .syntax--sass,
 .syntax--scss {
     .syntax--punctuation {
+        &.syntax--separator.syntax--list.syntax--comma,
         &.syntax--terminator,
         &.syntax--section { color: @light-gray;}
     }
 }
-// braces in scripts
-.syntax--meta.syntax--brace.syntax--curly { color: @light-gray; }
+
+.syntax--punctuation.syntax--separator.syntax--key-value {
+    color: @light-blue;
+}
+
+.syntax--punctuation.syntax--terminator.syntax--statement {
+    color: @light-gray; //!important; 
+}
+
+.syntax--json {
+    .syntax--punctuation {
+        &.syntax--separator.syntax--array,
+        &.syntax--separator.syntax--key-value,
+        &.syntax--dictionary.syntax--pair {
+            color: @light-gray; //!important; 
+        }
+        &.syntax--definition {
+            &.syntax--dictionary,
+                &.syntax--array {
+                    color: @light-gray; //!important; 
+                }
+        }   
+    }
+}

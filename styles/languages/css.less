@@ -46,6 +46,14 @@
         &.syntax--separator.syntax--delimiter,
         &.syntax--section.syntax--function { color: @very-light-gray; }
     }
+    .syntax--punctuation {
+        &.syntax--separator.syntax--separator.syntax--key-value {
+            color: @light-blue;
+        }
+        &.syntax--separator.syntax--list.syntax--comma,
+        &.syntax--terminator,
+        &.syntax--section { color: @light-gray;}
+    }
 }
 
 .syntax--keyword {
@@ -68,6 +76,7 @@
         color: @pink;
     }
 }
+
 //
 // .syntax--less {
 //     .syntax--attribute-name {

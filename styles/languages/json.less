@@ -36,8 +36,21 @@
         }
     }
 }
-
-
+.syntax--json {
+    .syntax--punctuation {
+        &.syntax--separator.syntax--array,
+        &.syntax--separator.syntax--key-value,
+        &.syntax--dictionary.syntax--pair {
+            color: @light-gray; //!important; 
+        }
+        &.syntax--definition {
+            &.syntax--dictionary,
+                &.syntax--array {
+                    color: @light-gray; //!important; 
+                }
+        }   
+    }
+}
 // .syntax--dictonary, .syntax--structure {
 //     .syntax--dictonary, .syntax--structure {
 //         .syntax--dictonary, .syntax--structure {
