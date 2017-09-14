@@ -1,7 +1,9 @@
 .DS_Store
+Icon?
+.vscode
 .idea
 npm-debug.log
-node_modules
+node_modules/**
 images
 
 styles/theme.less
