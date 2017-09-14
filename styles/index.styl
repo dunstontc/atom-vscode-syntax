@@ -1,0 +1,41 @@
+@require '../node_modules/vuetify/src/stylus/settings/_colors'
+ 
+$theme := {
+  primary  : $indigo.lighten-1
+  accent   : $teal.accent-3
+  secondary: $grey.darken-4
+  info     : $indigo.lighten-1
+  warning  : $amber.darken-2
+  error    : $red.accent-4
+  success  : $green.lighten-2
+}
+
+.media 
+  height: 100%
+  margin: 0px
+
+a
+  text-decoration: none
+  
+.svg-container 
+  margin    : 5px 10px 5px 10px
+  width     : 150px
+  background: transparent
+
+@media (max-width:576px) {
+  .svg-container {
+    width: 50px;
+  } 
+}
+
+.logos-container
+  display        : flex;
+  flex-flow      : row wrap;
+  align-items    : center;
+  justify-content: space-around;
+  margin         : 20px;
+  a
+    width : 100%;
+    height: 100%;
+
+@require '../node_modules/vuetify/src/stylus/main'

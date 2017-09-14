@@ -1,23 +1,23 @@
 {
-  "name": "dark-plus-syntax",
-  "theme": "syntax",
-  "version": "2.5.0",
-  "main": "./lib/vsc-syntax.coffee",
-  "description": "VS Code's 'Dark+' (default dark) theme",
+  "name": "dark-plus-syntax--gh-pages",
+  "version": "1.0.0",
+  "description": "GitHub Pages",
   "keywords": [
     "atom",
     "dark",
     "syntax",
     "theme",
     "visual studio code",
-    "vscode"
+    "vscode",
+    "gh-pages",
+    "GitHub Pages"
   ],
-  "repository": "https://github.com/dunstontc/atom-vscode-syntax",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
+  "repository": "https://github.com/dunstontc/atom-vscode-syntax/tree/gh-pages",
   "dependencies": {
-    "atom-space-pen-views": "^2.2.0"
+    "vue": "^2.4.2",
+    "vuetify": "^0.14.11"
+  },
+  "scripts": {
+    "stylus": "stylus ./styles/index.styl -o ./styles/vuetify.custom.css"    
   }
 }
