@@ -80,9 +80,12 @@
     }
 }
 
-//
-// .syntax--less {
-//     .syntax--attribute-name {
-//         color: @dark-yellow;
-//     }
-// }
+
+.syntax--less {
+    &.syntax--punctuation.syntax--definition.syntax--variable {
+        color: @light-blue;
+    }
+    &.syntax--keyword.syntax--operator.syntax--less {
+      color: @dark-blue;
+    }
+}

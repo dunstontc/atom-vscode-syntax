@@ -52,7 +52,7 @@ Please [submit an issue](https://github.com/dunstontc/atom-vscode-syntax/issues)
   - Code enabling theme options
 - [siamak/atom-panda-syntax](https://github.com/siamak/atom-panda-syntax)
   - Styles for overriding styles
-- __Samples__:
+- **Samples**:
   - [Wikibook SQL Exercises](https://en.wikibooks.org/wiki/SQL_Exercises)
 
 

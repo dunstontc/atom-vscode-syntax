@@ -41,51 +41,34 @@
         &.syntax--separator.syntax--array,
         &.syntax--separator.syntax--key-value,
         &.syntax--dictionary.syntax--pair {
-            color: @light-gray; //!important; 
+            color: @light-gray; //!important;
         }
         &.syntax--definition {
             &.syntax--dictionary,
                 &.syntax--array {
-                    color: @light-gray; //!important; 
+                    color: @light-gray; //!important;
                 }
-        }   
+        }
     }
 }
-// .syntax--dictonary, .syntax--structure {
-//     .syntax--dictonary, .syntax--structure {
-//         .syntax--dictonary, .syntax--structure {
-//             &.syntax--key {
-//                 .syntax--string.syntax--quoted.syntax--double {
-//                     color: darken(@light-blue, 20%); .syntax--punctuation {color: darken(@light-blue, 20%);}
-//                 }
-//             }
-//             .syntax--dictonary, .syntax--structure {
-//                 .syntax--dictonary, .syntax--structure {
-//                     .syntax--key {
-//                         .syntax--string.syntax--quoted.syntax--double {
-//                             color: darken(@light-blue, 40%); .syntax--punctuation {color: darken(@light-blue, 40%);}
-//                         }
-//                     }
-//                     .syntax--dictonary, .syntax--structure {
-//                         .syntax--dictonary, .syntax--structure {
-//                             .syntax--key {
-//                                 .syntax--string.syntax--quoted.syntax--double {
-//                                     color: darken(@light-blue, 60%); .syntax--punctuation {color: darken(@light-blue, 60%);}
-//                                 }
-//                             }
-//                             .syntax--dictonary, .syntax--structure {
-//                                 .syntax--dictonary, .syntax--structure {
-//                                     .syntax--key {
-//                                         .syntax--string.syntax--quoted.syntax--double {
-//                                             color: darken(@light-blue, 80%); .syntax--punctuation {color: darken(@light-blue, 80%);}
-//                                         }
-//                                     }
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+
+.syntax--json5 {
+  .syntax--punctuation,
+  .syntax--comment.syntax--single,
+  .syntax--comment.syntax--block {
+    color: @theme-color--comment;
+  }
+  .syntax--punctuation.syntax--definition.syntax--string,
+  // .syntax--punctuation.syntax--separator.syntax--dictionary.syntax--key-value,
+  .syntax--string.syntax--quoted {
+    color: @light-blue;
+  // .syntax--meta.syntax--structure.syntax--dictonary {}
+  }
+
+  &.syntax--value {
+    .syntax--punctuation.syntax--definition.syntax--string,
+    .syntax--string {
+      color: @orange !important;
+    }
+  }
+}

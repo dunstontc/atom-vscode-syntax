@@ -43,10 +43,6 @@
         color: @dark-blue;
     }
 
-    &.syntax--link .syntax--punctuation {
-        color: @very-light-gray;
-    }
-
     .syntax--punctuation.syntax--definition.syntax--tag {
         color: @light-gray;
     }
@@ -62,12 +58,22 @@
             color: @orange;
         }
     }
-    .syntax--link {}
-    .syntax--destination.syntax--link {
-      color: @light-gray;
+    
+    &.syntax--link .syntax--punctuation {
+        color: @very-light-gray;
     }
-    .syntax--uri.syntax--underline.syntax--link {}
+    
+    .syntax--image.syntax--link.syntax--string,
+    .syntax--text.syntax--link.syntax--string {
+        color: @light-blue;
+    }
+    
+    .syntax--uri.syntax--underline.syntax--link,
+    .syntax--destination.syntax--link {
+      color: @orange;
+    }
 }
+
 
 .syntax--source.syntax--gfm .syntax--markup {
     -webkit-font-smoothing: auto;
