@@ -18,7 +18,7 @@ _italic_
 3. tres
 
 - One Fish
-* Two Zish
+* Two Zsh
 + Red Fish
 - Blue Zish
 
