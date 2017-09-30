@@ -1,12 +1,37 @@
 # Changelog
 
-## 2.x.x
-- Adding support for:
+## 2.6.0
+- Added `.editorconfig` file
+
+## 2.5.0
+- Added support for `.editorconfig` files
+
+## 2.4.4
+- Fixed the fix from 2.4.1, accompanied by some publishing issues
+
+## 2.4.1
+- Fixed issue with self-closing tags in html
+
+## 2.4.0
+- Working on support for:
     - C, C++
     - Ruby
     - Rust
     - TOML
     - YAML
+- Faded begin/end punctuation for multi-line strings in CoffeeScript
+- Small Markdown fix
+- Removed syntax folder
+- Updated `changelog` & `readme`
+
+## 2.3.3
+- Fixed highlighting for function names in vanilla js
+- Changed color of assignment operators (`:`)
+
+## 2.3.0
+- Changed some JavaScript highlighting to closer match VSCode's native js syntax
+- Began work on support for C, C++, & SQL
+- Improved highlighting for Markdown
 
 ## 2.2.1
 - Fixed highlighting issue with punctuation in markdown
@@ -19,7 +44,7 @@
 - Matched VSCode selection color (main theme color)
 
 ## 2.1.0
-- added TypeScript support
+- Added TypeScript support
 - `readme` edits
 
 ## 2.0.0
