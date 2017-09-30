@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.6.0
+- Added `.editorconfig` file
+
 ## 2.5.0
 - Added support for `.editorconfig` files
 
