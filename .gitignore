@@ -6,5 +6,5 @@ images
 
 
 # https://stackoverflow.com/questions/3319479/can-i-git-commit-a-file-and-ignore-its-content-changes
-styles/theme.less
+# styles/theme.less
 testing
