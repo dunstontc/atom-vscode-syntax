@@ -60,7 +60,7 @@
         <br>
         <v-container fluid>
 <!-- ================================================================= -->
-          <v-layout row align-center justify-center>
+          <!-- <v-layout row align-center justify-center>
             <v-flex xs12 sm12 m12 lg12 xl12>
               <v-parallax class="elevation-1" :src="imgSrc">
                 <v-layout column align-center justify-center>
@@ -68,7 +68,7 @@
                 </v-layout>
               </v-parallax>
             </v-flex>
-          </v-layout>
+          </v-layout> -->
 <!-- ======================================================================= -->
           <v-layout row align-center justify-center>
             <v-flex xs12 sm12 md10 class="mt-5">
@@ -118,8 +118,9 @@
               </v-card>
             </v-flex>
           </v-layout>
+        </v-container> 
 <!-- ======================================================================= -->    
-      <v-footer class="pa-3 mt-5 ml-0 mr-0 mb-0 primary secondary--text">
+      <v-footer class="pa-3 primary secondary--text">
         <a href="https://vuetifyjs.com/" class="mt-1 secondary--text" target="_blank" alt="Vuetify" title="Vuetify">
           created with &nbsp;
         </a>
@@ -141,16 +142,6 @@
         <!-- <div> &copy; {{ new Date().getFullYear() }} </div> -->
       </v-footer>
 <!-- ======================================================================= -->      
-      <v-snackbar
-        timeout="2000"
-        top
-        vertical
-        class="primary mt-2"
-        v-model="snackbar">
-        <div>
-          <v-btn flat class="secondary--text" @click.native="snackbar = false"> Welcome Home <3 </v-btn>
-        </div>
-      </v-snackbar>
     </v-app>
   </div>
 
@@ -168,9 +159,7 @@
       data: {
         title   : ' ',
         drawer  : false,
-        snackbar: false,
-        logos   : logoArray,
-        imgSrc  : 'https://raw.githubusercontent.com/dunstontc/assets/master/images/Above-Ho-Chi-Minh-City-Vietnam.jpg',        
+        logos   : logoArray,     
         accounts: [
           { icon: 'mdi-linkedin-box',    title: 'LinkedIn', url: "https://www.linkedin.com/in/clay-dunston/" },          
           { icon: 'mdi-github-circle',   title: 'GitHub',   url: "https://github.com/dunstontc" },          
@@ -190,21 +179,10 @@
         projects: [
           {
             title      : 'VS Code Syntax for Atom',
-            link       : 'https://atom.io/themes/dark-plus-syntax',
+            link       : 'https://dunstontc.github.io/atom-vscode-syntax/',
             description: "VS Code's 'Dark+' (default dark) theme on Atom"
           }
         ],
-        contactName   : '',
-        contactEmail  : '',
-        contactSubject: '',
-        contactMessage: '',
-        rules         : {
-          required: (value) => !!value || 'Required.',
-          email: (value) => {
-            const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-            return pattern.test(value) || 'Invalid e-mail.'
-          }
-        }
       }
     })
   </script>
