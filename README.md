@@ -5,16 +5,17 @@
 [![apm](https://img.shields.io/apm/v/dark-plus-syntax.svg)](https://atom.io/themes/dark-plus-syntax)
 
 
-[Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a _one-dark flavored_ version (if that's more your style)<br/>
+[Visual Studio Code's](https://github.com/Microsoft/vscode/) `Dark+` (default dark) theme, along with a *one-dark flavored* version (if that's more your style)<br/>
 
 ## Supported Languages:
 - C & C++
 - CoffeeScript
 - CSON
 - CSS
+- Go
 - HTML
 - JavaScript
-- JavaScript React (Babel, JSX)
+- JavaScript React (JSX)
 - JSON
 - Less
 - Markdown
@@ -35,9 +36,9 @@
 
 ## Usage:
 Selecting a color scheme:
-- Click the cog to the right of _Syntax Theme_ in your settings view <br/><br/>
+- Click the cog to the right of *Syntax Theme* in your settings view <br/><br/>
     ![settings-view](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-1.png) <br/><br/>
-- Use the select list in the _dark-plus-syntax_ package <br/><br/>
+- Use the select list in the *dark-plus-syntax* package <br/><br/>
     ![dark-plus-settings](https://raw.githubusercontent.com/dunstontc/atom-vscode-syntax/dev/images/usage-two.png)
 
 

@@ -1,0 +1,61 @@
+.syntax--go {
+    .syntax--keyword {
+        &.syntax--const,
+        &.syntax--function,
+        &.syntax--import,
+        &.syntax--package,
+        &.syntax--map,
+        &.syntax--struct,
+        &.syntax--type,
+        &.syntax--var,
+        &.syntax--operator.syntax--address {
+            color: @dark-blue;
+        }
+}
+
+    .syntax--keyword {
+        &.syntax--operator {
+            &.syntax--arithmetic,
+            &.syntax--assignment,
+            &.syntax--channel,
+            &.syntax--comparison,
+            &.syntax--ellipsis,
+            &.syntax--increment,
+            &.syntax--logical {
+                color: @pink;
+            }
+        }
+    }
+    .syntax--punctuation.syntax--terminator,
+    .syntax--punctuation.syntax--other.syntax--colon,
+    .syntax--punctuation.syntax--other.syntax--period {
+        color: @pink;
+    }
+
+    .syntax--storage.syntax--type.syntax--boolean,
+    .syntax--storage.syntax--type.syntax--byte,
+    .syntax--storage.syntax--type.syntax--numeric,
+    .syntax--storage.syntax--type.syntax--string {
+        color: @seafoam-green;
+        font-style: italic;
+    }
+
+    .syntax--storage.syntax--type.syntax--error {
+        color: @dark-blue;
+        font-style: italic;
+    }
+
+    .syntax--constant.syntax--character.syntax--escape,
+    .syntax--constant.syntax--other.syntax--rune, {
+         color: @dark-yellow;
+         font-style: italic;
+     }
+
+    .syntax--constant.syntax--other.syntax--placeholder {
+         color: @dark-blue;
+    }
+
+    .syntax--entity.syntax--name.syntax--package {
+         color: @light-blue;
+    }
+}

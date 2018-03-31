@@ -28,6 +28,9 @@
     }
 
     .syntax--entity {
+        &.syntax--other.syntax--attribute-name.syntax--parent-selector .syntax--punctuation.syntax--definition.syntax--entity {
+            color: @pink;
+        }
         &.syntax--tag {
             color: @dark-blue; // NOTE: html element names
         }
@@ -51,7 +54,7 @@
     }
     .syntax--punctuation {
         &.syntax--separator.syntax--separator.syntax--key-value {
-            color: @light-blue;
+            color: @syntax-fg;
         }
         &.syntax--separator.syntax--list.syntax--comma,
         &.syntax--terminator,

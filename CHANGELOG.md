@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0-alpha.1
+- Added Go support.
+- Modified markdown highlighting.
+
 ## 2.6.0
 - Added `.editorconfig` file
 - Added support for `.vim` files
@@ -69,31 +73,31 @@
 
 
 ## 1.2.4
-- added apm version badge
+- Added apm version badge
 - improved markdown support
 
 ## 1.2.3
 - `readme` edits: image links, supported languages list
 
 ## 1.2.2
-- description & keywords updated in `package.json`
+- Description & keywords updated in `package.json`
 
 ## 1.2.0
-- made tag/bracket/brace colors consistent
-- changes to improve highlighting for React/jsx
-- slight refactoring
+- Made tag/bracket/brace colors consistent
+- Changes to improve highlighting for React/jsx
+- Slight refactoring
 - `readme` edits
 
 ## 1.1.4
 - `readme` edits
 
 ## 1.1.0
-- fixed operator keyword highlighting ('new' in Babel/JSX).
+- Fixed operator keyword highlighting ('new' in Babel/JSX).
 - DOM variable & methods (in JavaScript) now have correct highlighting.
-- various punctuation fixes.
-- refined highlighting for classes & methods.
-- additional tweaks
-- added screenshots
+- Various punctuation fixes.
+- Refined highlighting for classes & methods.
+- Additional tweaks
+- Added screenshots
 
 ## 1.0.0 - First Release
 - Initial work done

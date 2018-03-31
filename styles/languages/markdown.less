@@ -1,6 +1,11 @@
 .syntax--md {
     &.syntax--text {}
 
+    &.syntax--heading,
+    &.syntax--heading .syntax--punctuation {
+        color: @pink;
+    }
+
     &.syntax--list {
         .syntax--punctuation {
             color: @bright-blue;
@@ -16,7 +21,7 @@
         font-style: bold;
 
         .syntax--punctuation {
-            color: @dark-blue;
+            color: @gray;
         }
     }
 
@@ -25,7 +30,7 @@
         font-style: italic;
 
         .syntax--punctuation {
-            color: @light-blue;
+            color: @gray;
         }
     }
 
@@ -36,7 +41,7 @@
     }
 
     &.syntax--hr {
-        color: @dark-blue;
+        color: @pink;
     }
 
     &.syntax--table.syntax--storage {
@@ -58,19 +63,19 @@
             color: @orange;
         }
     }
-    
+
     &.syntax--link .syntax--punctuation {
-        color: @very-light-gray;
+        color: @gray;
     }
-    
+
     .syntax--image.syntax--link.syntax--string,
     .syntax--text.syntax--link.syntax--string {
         color: @light-blue;
     }
-    
+
     .syntax--uri.syntax--underline.syntax--link,
     .syntax--destination.syntax--link {
-      color: @orange;
+      color: @gray;
     }
 }
 
