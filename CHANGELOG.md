@@ -2,6 +2,7 @@
 
 ## 2.6.0
 - Added `.editorconfig` file
+- Added support for `.vim` files
 
 ## 2.5.0
 - Added support for `.editorconfig` files

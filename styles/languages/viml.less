@@ -1,0 +1,94 @@
+.syntax--viml {
+
+    .syntax--support {
+
+        &.syntax--type {
+            color: @seafoam-green;
+            &.syntax--highlight-group {
+                // tabline, cursorline, noshowmode, notitle, nowrap, relativenumber, ruler, showmatch
+            }
+        }
+
+        &.syntax--function {
+            // undofile, shiftwidth, imap
+            &.syntax--command {
+                // call, set, (set) number, smap, noswapfile, source
+                color: @dark-blue;
+            }
+            &.syntax--vimSynType {
+                // enable
+            }
+            &.syntax--auto-event {
+                // colorscheme, BufReadPost, bufenter, syntax
+            }
+            &.syntax--vimFTOption    {
+                // plugin, indent, (eol),
+            }
+            &.syntax--vimPattern {
+                // (eol), start
+            }
+            &.syntax--vimUserAttrbCmplt {
+                // command
+            }
+        }
+
+        &.syntax--variable {
+
+        }
+        &.syntax--variable.syntax--option {
+            // eol, termguicolors, guifont, synmaxcol, undodir, isprint, report
+        }
+
+        &.syntax--constant.syntax--attribute {
+            // background
+        }
+    }
+
+    .syntax--storage {
+        &.syntax--modifier.syntax--force {
+            // !
+        }
+        &.syntax--type.syntax--let {
+            // let
+        }
+        &.syntax--function {
+            // end, augroup
+            color: @pink;
+        }
+    }
+
+    .syntax--punctuation.syntax--separator.syntax--colon {
+        // :
+    }
+    .syntax--storage.syntax--modifier.syntax--scope,
+    .syntax--punctuation.syntax--definition.syntax--scope.syntax--key-value {
+        // g:
+    }
+
+    .syntax--meta.syntax--syntax-item {
+        // syntax
+    }
+
+    .syntax--meta.syntax--define-augroup {
+
+    }
+
+    .syntax--function.syntax--command {
+        color: @light-blue;
+    }
+
+    .syntax--variable.syntax--other {
+
+    }
+
+    .syntax--constant.syntax--pathname {
+
+    }
+
+    .syntax--keyword.syntax--operator.syntax--logical {
+        // *, /, &&,
+    }
+
+    // .syntax--comment.syntax--inline.syntax--quotes {{{
+    // .syntax--entity.syntax--name.syntax--fold.syntax--heading {{{
+}
